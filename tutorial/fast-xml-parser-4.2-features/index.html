@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/assets/images/icon.png">
+
+<!-- change your GA id in _config.yml -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4812VFLT3M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4812VFLT3M');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4922790412146333" crossorigin="anonymous"></script>
+
+
+
+<title>Fast XML Parser v4.2 Features | SoloThought</title>
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Fast XML Parser v4.2 Features | Solo Thought</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Fast XML Parser v4.2 Features" />
+<meta name="author" content="amit" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Fast XML Parser was initially developed to support npm package Stubmatic which is used for the rapid development of mock web services. Now Fast XML Parser has more than 9 million weekly downloads and approximately half a million projects on GitHub are using it including Microsoft, IBM, AWS, and many other big companies." />
+<meta property="og:description" content="Fast XML Parser was initially developed to support npm package Stubmatic which is used for the rapid development of mock web services. Now Fast XML Parser has more than 9 million weekly downloads and approximately half a million projects on GitHub are using it including Microsoft, IBM, AWS, and many other big companies." />
+<link rel="canonical" href="https://solothought.com/tutorial/fast-xml-parser-4.2-features/" />
+<meta property="og:url" content="https://solothought.com/tutorial/fast-xml-parser-4.2-features/" />
+<meta property="og:site_name" content="Solo Thought" />
+<meta property="og:image" content="https://solothought.com/fxpv4.2.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-04-09T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://solothought.com/fxpv4.2.png" />
+<meta property="twitter:title" content="Fast XML Parser v4.2 Features" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"amit"},"dateModified":"2023-04-09T00:00:00+00:00","datePublished":"2023-04-09T00:00:00+00:00","description":"Fast XML Parser was initially developed to support npm package Stubmatic which is used for the rapid development of mock web services. Now Fast XML Parser has more than 9 million weekly downloads and approximately half a million projects on GitHub are using it including Microsoft, IBM, AWS, and many other big companies.","headline":"Fast XML Parser v4.2 Features","image":"https://solothought.com/fxpv4.2.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://solothought.com/tutorial/fast-xml-parser-4.2-features/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://solothought.com/assets/images/logo.png"},"name":"amit"},"url":"https://solothought.com/tutorial/fast-xml-parser-4.2-features/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+<link href="/assets/css/screen.css" rel="stylesheet">
+
+<link href="/assets/css/main.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
+</head>
+
+
+
+
+<body class="layout-post">
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+
+		<!-- <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather+Sans:300,300i,400,400i,700,700i" rel="stylesheet"> -->
+		<link href="https://fonts.googleapis.com/css?family=Righteous&family=Poppins" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+	</noscript>
+
+
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+
+    <div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="/">
+    <img src="/assets/images/logo.png" alt="SoloThought">
+    </a>
+    <!-- End Logo -->
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSolo" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSolo">
+
+        <!-- Begin Menu -->
+
+            <ul class="navbar-nav ms-auto">
+
+                
+                <li class="nav-item">
+                
+                <a class="nav-link" href="/index.html">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <!-- <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a> -->
+
+                    
+                        
+                            
+                                <a class="dropdown-item" href="/categories#tutorial">tutorial (4)</a>
+                            
+                        
+                    
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Open Source
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <!-- <div class="dropdown-divider">Libraries</div> -->
+                        <a class="dropdown-item" href="https://github.com/NaturalIntelligence/fast-xml-parser"><strong>Fast XML Parser</strong> in JS</a>
+                        <a class="dropdown-item" href="https://github.com/NaturalIntelligence/Stubmatic"><strong>Stubmatic</strong> - Mocking library for QAs</a>
+                      <a class="dropdown-item" href="https://github.com/NaturalIntelligence/nimn-spec"><strong>Nimn</strong> - Smaller than XML, JSON, Msgpack, Gzip</a>
+                      <a class="dropdown-item" href="https://github.com/solothought/shabdawali"><strong>Shabdawali</strong> - Human like Typing Effect</a>
+                      <a class="dropdown-item" href="https://github.com/solothought/vaarta"><strong>Vaarta</strong> - Typing Chat effect</a>
+                      <a class="dropdown-item" href="https://github.com/node-muneem/anumargak"><strong>Anumargak</strong> - Fast routing lib</a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/fast-lorem-ipsum"><strong>Fast Lorem Ipsum</strong> - generator</a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/fastify-xml-body-parser"><strong>Fastify XML Body Parser</strong></a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/cucumon"><strong>Cucumon</strong> - Better parser for Gherkin files</a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/strnum"><strong>Strnum</strong> - String to Number converter</a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/detailed-xml-validator"><strong>Detailed XML Validator</strong> - Light and effective XML schema validator</a>
+                      <div class="dropdown-divider">Online tool</div>
+                      <a class="dropdown-item" href="/imglab/"><strong>Imglab</strong> - Annotate images for ML</a>
+                      <a class="dropdown-item" href="/matchit/"><strong>Match it</strong> - Create card game</a>
+                      <div class="dropdown-divider">Research</div>
+                      <a class="dropdown-item" href="https://bigbit.github.io/bigbitjs/"><strong>BigBit</strong> - Numeric Datatype</a>
+                    </div>
+                </li>
+
+                <script src="/assets/js/lunr.js"></script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+</form>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+
+            </ul>
+
+        <!-- End Menu -->
+
+    </div>
+
+    </div>
+</nav>
+<!-- End Navigation
+================================================== -->
+
+<div class="site-content">
+
+
+<div class="container">
+
+<!-- Site Title
+================================================== -->
+
+
+<!-- Content
+================================================== -->
+<!-- <div id="gaerr" class="alert alert-danger">
+    All the stats like page views, trending posts, post for you are derived from Google analytics. Please enable Google analytics for accurate stats.
+</div> -->
+
+<div id="main-content" class="main-content">
+    <!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            <div class="share sticky-top sticky-top-offset">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ms-1 me-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Fast XML Parser v4.2 Features&url=https://solothought.com/tutorial/fast-xml-parser-4.2-features/" onclick="shareWith('twitter',this.href)">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ms-1 me-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=https://solothought.com/tutorial/fast-xml-parser-4.2-features/" onclick="shareWith('facebook',this.href)">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ms-1 me-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https://solothought.com/tutorial/fast-xml-parser-4.2-features/" onclick="shareWith('linkedin',this.href)">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        
+        <li class="ms-1 me-1">
+            <a target="_blank" href="https://getpocket.com/save?url=https://solothought.com/tutorial/fast-xml-parser-4.2-features/"  target="_blank" onclick="gtag('event', 'share', { 'target': 'getpocket' });">
+                <i class="fab fa-get-pocket"></i>
+            </a>
+        </li>
+
+    </ul>
+    
+    <div class="sep">
+    </div>
+    <ul>
+        <li>
+        <a class="small smoothscroll" href="#disqus_thread"></a>
+        </li>
+    </ul>
+    
+</div>
+<script>
+    function shareWith(target, url){
+        if(target === "linkedin") {window.open(url, 'width=550,height=435');return false;}
+        else if(target === "facebook" || target === "twitter"){
+            window.open(this.href, target+'-share', 'width=550,height=435');return false;
+        }
+        if(gtag){
+            gtag('event', 'share', { 'target': target });
+        }
+   }
+</script>
+        </div>
+
+        <!-- Post -->
+        
+        
+        
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <main>
+            
+            <div class="mainheading">
+                <!-- Post Title -->
+                <h1 class="posttitle">Fast XML Parser v4.2 Features</h1>
+            </div>
+            
+            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+            
+            <!-- End Adsense -->
+
+            <!-- Post Featured Image -->
+            
+                
+                <!-- Display post image if it is not being displayed as hero image  -->
+                <figure>
+                    <div class="container-fluid">
+                        <div class="row">
+                        <div class="col">
+                    
+                    <img class="featured-image img-fluid d-block mx-auto" src="https://solothought.com//assets/images/posts/fxpv4.2.png" alt="Fast XML Parser v4.2 Features">
+                    
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+                
+            
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <article>
+            <div class="article-post">
+                <!-- Toc if any -->
+                
+                <!-- End Toc -->
+                <p><a href="https://github.com/NaturalIntelligence/fast-xml-parser">Fast XML Parser</a> was initially developed to support npm package <a href="https://github.com/NaturalIntelligence/stubmatic/">Stubmatic</a> which is used for the rapid development of mock web services. Now Fast XML Parser has more than 9 million weekly downloads and approximately half a million projects on GitHub are using it including Microsoft, IBM, AWS, and many other big companies.</p>
+
+<p>In this post, we’ll talk about new features launched in V4.1.4 and v4.2.0</p>
+
+<div class="alert alert-info">
+  <p><strong>📌 Info</strong></p>
+  <p>Use `oneListGroup` property to guide builder not to generate separate parent tag for each child of a list. Use `updateTag` method with parer to update attrbutes name, attributes values, and tag name. You can also skip a tag from parsing result.</p>
+</div>
+
+<h2 id="onelistgroup-for-xml-builder"><code class="language-plaintext highlighter-rouge">oneListGroup</code> for XML builder</h2>
+
+<p>Ideally there is no group needed in XML for repetitive tags. But having it may make more sense to understand the data.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre><span class="nx">Addresses</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="na">Address</span><span class="p">:</span> <span class="p">{</span>
+            <span class="na">line1</span><span class="p">:</span> <span class="dl">""</span>
+            <span class="na">line2</span><span class="p">:</span> <span class="dl">""</span>
+            <span class="na">line3</span><span class="p">:</span> <span class="dl">""</span>
+            <span class="nx">city</span><span class="o">&gt;</span><span class="p">:</span> <span class="dl">""</span>
+        <span class="p">}</span>
+    <span class="p">},{</span>
+        <span class="na">Address</span><span class="p">:</span> <span class="p">{</span>
+            <span class="na">line1</span><span class="p">:</span> <span class="dl">""</span>
+            <span class="na">line2</span><span class="p">:</span> <span class="dl">""</span>
+            <span class="na">line3</span><span class="p">:</span> <span class="dl">""</span>
+            <span class="nx">city</span><span class="o">&gt;</span><span class="p">:</span> <span class="dl">""</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>XML Builder was previously enclosing each <code class="language-plaintext highlighter-rouge">Address</code> in <code class="language-plaintext highlighter-rouge">Addresses</code> tag separately before v4.1.4. Now, if you set <code class="language-plaintext highlighter-rouge">oneListGroup: true</code> as an option to Builder it makes only one group same as in the above JSON.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">builder</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">XMLBuilder</span><span class="p">({</span>
+        <span class="na">oneListGroup</span><span class="p">:</span><span class="dl">"</span><span class="s2">true</span><span class="dl">"</span><span class="p">,</span>
+        <span class="na">format</span><span class="p">:</span> <span class="kc">true</span>
+    <span class="p">});</span>
+<span class="kd">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">builder</span><span class="p">.</span><span class="nf">build</span><span class="p">(</span><span class="nx">jObj</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Output</p>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;Addresses&gt;</span>
+    <span class="nt">&lt;Address&gt;</span>
+        <span class="nt">&lt;line1&gt;&lt;/line1&gt;</span>
+        <span class="nt">&lt;line2&gt;&lt;/line2&gt;</span>
+        <span class="nt">&lt;line3&gt;&lt;/line3&gt;</span>
+        <span class="nt">&lt;city&gt;&lt;/city&gt;</span>
+    <span class="nt">&lt;/Address&gt;</span>
+    <span class="nt">&lt;Address&gt;</span>
+        <span class="nt">&lt;line1&gt;&lt;/line1&gt;</span>
+        <span class="nt">&lt;line2&gt;&lt;/line2&gt;</span>
+        <span class="nt">&lt;line3&gt;&lt;/line3&gt;</span>
+        <span class="nt">&lt;city&gt;&lt;/city&gt;</span>
+    <span class="nt">&lt;/Address&gt;</span>
+<span class="nt">&lt;/Addresses&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="change-attributes">Change Attributes</h2>
+
+<div class="alert alert-primary">
+    
+    <strong>Note:</strong> This feature is currently added to the XML parser only.
+</div>
+
+<p>Sometimes incoming XML doesn’t fit to our expectations. We may want to skip a few attributes of a tag from the parsing result. Sometimes we want to aggregate all the attributes in one or just change the value or name of some attributes. <code class="language-plaintext highlighter-rouge">updateTag</code> method in parser’s option gives the independency to manage attributes in your way.</p>
+
+<p>Input</p>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;root&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">keep=</span><span class="s">"me"</span> <span class="na">skip=</span><span class="s">"me"</span><span class="nt">&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">skip=</span><span class="s">"me"</span><span class="nt">&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">need=</span><span class="s">"friend"</span><span class="nt">&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">camel=</span><span class="s">"case"</span> <span class="na">MakeMe=</span><span class="s">"lower"</span><span class="nt">&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;b</span> <span class="na">change=</span><span class="s">"val"</span><span class="nt">&gt;&lt;/b&gt;</span>
+<span class="nt">&lt;/root&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Code</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">attributeNamePrefix</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+    <span class="na">ignoreAttributes</span><span class="p">:</span>    <span class="kc">false</span><span class="p">,</span>
+    <span class="nf">updateTag</span><span class="p">(</span><span class="nx">tagName</span><span class="p">,</span> <span class="nx">jPath</span><span class="p">,</span> <span class="nx">attrs</span><span class="p">){</span>
+        <span class="nf">if</span><span class="p">(</span><span class="nx">attrs</span><span class="p">[</span><span class="dl">"</span><span class="s2">skip</span><span class="dl">"</span><span class="p">])</span> <span class="k">delete</span> <span class="nx">attrs</span><span class="p">[</span><span class="dl">"</span><span class="s2">skip</span><span class="dl">"</span><span class="p">]</span>
+        <span class="nf">if</span><span class="p">(</span><span class="nx">attrs</span><span class="p">[</span><span class="dl">"</span><span class="s2">camel</span><span class="dl">"</span><span class="p">])</span> <span class="p">{</span>
+            <span class="nx">attrs</span><span class="p">[</span><span class="dl">"</span><span class="s2">Camel</span><span class="dl">"</span><span class="p">]</span> <span class="o">=</span> <span class="nx">attrs</span><span class="p">[</span><span class="dl">"</span><span class="s2">camel</span><span class="dl">"</span><span class="p">];</span>
+            <span class="k">delete</span> <span class="nx">attrs</span><span class="p">[</span><span class="dl">"</span><span class="s2">camel</span><span class="dl">"</span><span class="p">];</span>
+        <span class="p">}</span>
+        <span class="nf">if</span><span class="p">(</span><span class="nx">attrs</span><span class="p">[</span><span class="dl">"</span><span class="s2">need</span><span class="dl">"</span><span class="p">])</span> <span class="p">{</span>
+            <span class="nx">attrs</span><span class="p">[</span><span class="dl">"</span><span class="s2">friend</span><span class="dl">"</span><span class="p">]</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">me</span><span class="dl">"</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nf">if</span><span class="p">(</span><span class="nx">attrs</span><span class="p">[</span><span class="dl">"</span><span class="s2">MakeMe</span><span class="dl">"</span><span class="p">])</span> <span class="p">{</span>
+            <span class="nx">attrs</span><span class="p">[</span><span class="dl">"</span><span class="s2">makeme</span><span class="dl">"</span><span class="p">]</span> <span class="o">=</span> <span class="nx">attrs</span><span class="p">[</span><span class="dl">"</span><span class="s2">MakeMe</span><span class="dl">"</span><span class="p">];</span>
+            <span class="k">delete</span> <span class="nx">attrs</span><span class="p">[</span><span class="dl">"</span><span class="s2">MakeMe</span><span class="dl">"</span><span class="p">];</span>
+        <span class="p">}</span>
+        <span class="nf">if</span><span class="p">(</span><span class="nx">attrs</span><span class="p">[</span><span class="dl">"</span><span class="s2">change</span><span class="dl">"</span><span class="p">])</span> <span class="p">{</span>
+            <span class="nx">attrs</span><span class="p">[</span><span class="dl">"</span><span class="s2">change</span><span class="dl">"</span><span class="p">]</span> <span class="o">=</span> <span class="nx">attrs</span><span class="p">[</span><span class="dl">"</span><span class="s2">change</span><span class="dl">"</span><span class="p">].</span><span class="nf">toUpperCase</span><span class="p">();</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nx">tagName</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kd">const</span> <span class="nx">parser</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">XMLParser</span><span class="p">(</span><span class="nx">options</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">parser</span><span class="p">.</span><span class="nf">parse</span><span class="p">(</span><span class="nx">xmlData</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Output</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="rouge-code"><pre><span class="p">{</span>
+    <span class="dl">"</span><span class="s2">root</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="dl">"</span><span class="s2">keep</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">me</span><span class="dl">"</span>
+            <span class="p">},</span>
+            <span class="dl">""</span><span class="p">,</span>
+            <span class="p">{</span>
+                <span class="dl">"</span><span class="s2">need</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">friend</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">friend</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">me</span><span class="dl">"</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="dl">"</span><span class="s2">Camel</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">case</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">makeme</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">lower</span><span class="dl">"</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">change</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">VAL</span><span class="dl">"</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="alert alert-primary">
+    
+    <strong>Note:</strong> Please remember that `ignoreAttributes: false` is set
+</div>
+
+<h2 id="change-tag-name-or-skip-a-tag">Change Tag name or skip a tag</h2>
+
+<p>Though <code class="language-plaintext highlighter-rouge">updateTag</code> doesn’t give you full control to manage tag but you can change tag name or skip a tag from the parsing result. Suppose, you’re parsing a HTML document and want to skip all the script tags or you want to change the name of a tag when it is not properly formatted. You may also conditionally skip a tag like to skip <code class="language-plaintext highlighter-rouge">img</code> tag for big images.</p>
+
+<p>Input</p>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;header&gt;&lt;/header&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"highlight"</span> <span class="nt">&gt;</span>Post title<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;content&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">width=</span><span class="s">"200"</span> <span class="na">height=</span><span class="s">"500"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>some text<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">width=</span><span class="s">"200"</span> <span class="na">height=</span><span class="s">"200"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">join=</span><span class="s">"a"</span> <span class="na">all=</span><span class="s">"b"</span> <span class="na">in=</span><span class="s">"c"</span> <span class="na">one=</span><span class="s">"d"</span> <span class="nt">&gt;</span>some text 2<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">width=</span><span class="s">"500"</span> <span class="na">height=</span><span class="s">"500"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/content&gt;</span>
+        <span class="nt">&lt;script&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Code</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+</pre></td><td class="rouge-code"><pre><span class="kd">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">ignoreAttributes</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="na">attributeNamePrefix</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+    <span class="na">updateTag</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">tagname</span><span class="p">,</span> <span class="nx">jPath</span><span class="p">,</span> <span class="nx">attrs</span><span class="p">){</span>
+        
+        <span class="nf">if</span><span class="p">(</span><span class="nx">tagname</span> <span class="o">===</span><span class="dl">"</span><span class="s2">h1</span><span class="dl">"</span> <span class="o">&amp;&amp;</span> <span class="nx">attrs</span><span class="p">[</span><span class="dl">"</span><span class="s2">class</span><span class="dl">"</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="nx">attrs</span><span class="p">[</span><span class="dl">"</span><span class="s2">class</span><span class="dl">"</span><span class="p">].</span><span class="nf">indexOf</span><span class="p">(</span><span class="dl">"</span><span class="s2">highlight</span><span class="dl">"</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">){</span>
+            <span class="nx">attrs</span><span class="p">[</span><span class="dl">"</span><span class="s2">class</span><span class="dl">"</span><span class="p">]</span> <span class="o">+=</span> <span class="dl">"</span><span class="s2"> underline</span><span class="dl">"</span>
+        <span class="p">}</span><span class="k">else</span> <span class="nf">if</span><span class="p">(</span><span class="nx">attrs</span><span class="p">[</span><span class="dl">"</span><span class="s2">join</span><span class="dl">"</span><span class="p">]){</span>
+            <span class="kd">let</span> <span class="nx">val</span> <span class="o">=</span> <span class="dl">""</span><span class="p">;</span>
+            <span class="nb">Object</span><span class="p">.</span><span class="nf">keys</span><span class="p">(</span><span class="nx">attrs</span><span class="p">).</span><span class="nf">forEach</span><span class="p">(</span> <span class="nx">a</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                <span class="nx">val</span><span class="o">+=</span> <span class="nx">attrs</span><span class="p">[</span><span class="nx">a</span><span class="p">]</span>
+                <span class="k">delete</span> <span class="nx">attrs</span><span class="p">[</span><span class="nx">a</span><span class="p">];</span>
+            <span class="p">});</span>
+            <span class="nx">attrs</span><span class="p">[</span><span class="dl">"</span><span class="s2">joint</span><span class="dl">"</span><span class="p">]</span> <span class="o">=</span> <span class="nx">val</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nf">if</span><span class="p">(</span><span class="nx">tagname</span> <span class="o">===</span> <span class="dl">"</span><span class="s2">script</span><span class="dl">"</span><span class="p">)</span> <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="k">else</span> <span class="nf">if</span><span class="p">(</span><span class="nx">tagname</span> <span class="o">===</span> <span class="dl">"</span><span class="s2">img</span><span class="dl">"</span><span class="p">){</span>
+            <span class="nf">if</span><span class="p">(</span><span class="nx">attrs</span><span class="p">.</span><span class="nx">width</span> <span class="o">&gt;</span> <span class="mi">200</span> <span class="o">||</span> <span class="nx">attrs</span><span class="p">.</span><span class="nx">height</span> <span class="o">&gt;</span> <span class="mi">200</span><span class="p">)</span> <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="p">}</span><span class="k">else</span> <span class="nf">if</span><span class="p">(</span><span class="nx">tagname</span> <span class="o">===</span> <span class="dl">"</span><span class="s2">content</span><span class="dl">"</span><span class="p">){</span>
+            <span class="k">return</span> <span class="dl">"</span><span class="s2">div</span><span class="dl">"</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nx">tagname</span><span class="p">;</span>
+    <span class="p">},</span>
+    <span class="na">unpairedTags</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">img</span><span class="dl">"</span><span class="p">]</span>
+<span class="p">};</span>
+<span class="kd">const</span> <span class="nx">parser</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">XMLParser</span><span class="p">(</span><span class="nx">options</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">parser</span><span class="p">.</span><span class="nf">parse</span><span class="p">(</span><span class="nx">xmlData</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Output</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+</pre></td><td class="rouge-code"><pre><span class="p">{</span>
+    <span class="dl">"</span><span class="s2">html</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">header</span><span class="dl">"</span><span class="p">:</span> <span class="dl">""</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">body</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">h1</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="dl">"</span><span class="s2">#text</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Post title</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">class</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">highlight underline</span><span class="dl">"</span>
+            <span class="p">},</span>
+            <span class="dl">"</span><span class="s2">div</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="dl">"</span><span class="s2">p</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="dl">"</span><span class="s2">some text</span><span class="dl">"</span><span class="p">,</span>
+                    <span class="p">{</span>
+                        <span class="dl">"</span><span class="s2">#text</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">some text 2</span><span class="dl">"</span><span class="p">,</span>
+                        <span class="dl">"</span><span class="s2">joint</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">abcd</span><span class="dl">"</span>
+                    <span class="p">}</span>
+                <span class="p">],</span>
+                <span class="dl">"</span><span class="s2">img</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="dl">"</span><span class="s2">width</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">200</span><span class="dl">"</span><span class="p">,</span>
+                    <span class="dl">"</span><span class="s2">height</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">200</span><span class="dl">"</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+
+                
+            </div>
+            
+
+            <!-- Rating -->
+            
+
+            <!-- Author Box -->
+            
+                <div class="row post-top-meta">
+    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+        
+        <img class="author-thumb" src="https://www.gravatar.com/avatar/37060302386aaf411d69559680562234?s=250&d=mm&r=x" alt="Amit">
+        
+    </div>
+    <div class="col-xs-12 col-md-9 col-lg-10 text-md-left">
+        <a target="_blank" class="link-dark" href="https://amitkumargupta.work">Amit</a>
+
+        
+            
+                <a target="_blank" href="https://twitter.com/amitguptagwl" ><i class="fab fa-twitter px-2"></i></a>
+             
+            
+                <a target="_blank" href="https://www.linkedin.com/in/amitguptagwl"><i class="fab fa-linkedin px-2"></i></a>
+             
+            
+                <a target="_blank" href="https://github.com/amitguptagwl"><i class="fab fa-github px-2"></i></a>
+            
+        
+        <span class="author-description">Author & Maintainer of many opensourse projects like fast-xml-parser, imglab, stubmatic etc. Very much interested in research & innovations.</span>
+    </div>
+</div>
+            
+            </article>
+            
+            
+            <!-- Post Date -->
+            <div class="after-post-tags clearfix">
+                <i class="fa fa-calendar-alt me-2"></i>
+                <span class="post-date"><time class="post-date" datetime="2023-04-09">09 Apr 2023</time></span>           
+                
+                <!-- Post Tags -->
+                <ul class="tags float-end">
+                    
+                    <li><i class="fas fa-tags"></i></li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/tags#nodejs">#nodejs</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/tags#xml">#xml</a>
+                    </li>
+                    
+                </ul>
+                <!-- End Tags -->
+            </div>
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            
+            <a class="prev d-block col-md-6" href="//tutorial/setup-jekyll-vscode-container/"> &laquo; Setup Jekyll Vscode Dev Container</a>
+            
+            
+            <a class="next d-block col-md-6 text-lg-right" href="//tutorial/kungfu-java-concepts/">Story of Kungfu Java Valley &raquo; </a>
+            
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+            </main>
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+
+<!-- Begin Comments
+================================================== -->
+
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <section class="disqus"></section>
+<!-- <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = ''; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section> -->
+
+            </div>
+        </div>
+    </div>
+
+<!--End Comments
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+</div>
+
+    
+<!-- Bottom Alert Bar for Patreon
+================================================== -->
+<!-- <div class="alertbar">
+	<div class="container text-center">
+		<span>Access high quality assets of this post on <a href="https://www.patreon.com/Solothought">Patreon</a></span>
+	</div>
+</div> -->
+</div>
+
+<!-- Categories Jumbotron
+================================================== -->
+<!-- <div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="d-md-flex align-items-center justify-content-center h-100">
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+            </div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+            
+            
+                
+                    <a class="mt-1 mb-1" href="/categories#tutorial">tutorial (4)</a>
+                
+            
+            
+		</div>
+	</div>
+</div> -->
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                Copyright © 2023 SoloThought 
+            </div>
+            <!-- <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                Social Handlers
+            </div> -->
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+  <!-- Cookie consent banner -->
+  <div id="cookieConsent" class="alert alert-dismissible alert-info text-center fixed-bottom mb-0">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    This website uses Google Analytics to analyze website traffic and improve your experience. By continuing to use this site, you consent to the use of cookies in accordance with our <a href="/privacypoicy" >Privacy Policy</a>.
+  </div>
+  <script>
+    // Hide cookie consent on button click
+    document.querySelector('#cookieConsent .close').addEventListener('click', function () {
+      document.querySelector('#cookieConsent').style.display = 'none';
+    });
+  </script>
+<!-- Scripts
+================================================== -->
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> -->
+
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+<script src="/assets/js/mediumish.js"></script>
+
+
+
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+<!-- 
+<script id="dsq-count-scr" src="//.disqus.com/count.js"></script>
+ -->
+
+</body>
+</html>

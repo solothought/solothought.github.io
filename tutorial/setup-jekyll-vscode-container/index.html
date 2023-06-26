@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/assets/images/icon.png">
+
+<!-- change your GA id in _config.yml -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4812VFLT3M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4812VFLT3M');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4922790412146333" crossorigin="anonymous"></script>
+
+
+
+<title>Setup Jekyll Vscode Dev Container | SoloThought</title>
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Setup Jekyll Vscode Dev Container | Solo Thought</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Setup Jekyll Vscode Dev Container" />
+<meta name="author" content="amit" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Just 3 steps to setup Jekyll environment using vscode container to design themes or to write blog posts locally." />
+<meta property="og:description" content="Just 3 steps to setup Jekyll environment using vscode container to design themes or to write blog posts locally." />
+<link rel="canonical" href="https://solothought.com/tutorial/setup-jekyll-vscode-container/" />
+<meta property="og:url" content="https://solothought.com/tutorial/setup-jekyll-vscode-container/" />
+<meta property="og:site_name" content="Solo Thought" />
+<meta property="og:image" content="https://solothought.com/vscode-jekyll.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-04-02T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://solothought.com/vscode-jekyll.png" />
+<meta property="twitter:title" content="Setup Jekyll Vscode Dev Container" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"amit"},"dateModified":"2023-04-02T00:00:00+00:00","datePublished":"2023-04-02T00:00:00+00:00","description":"Just 3 steps to setup Jekyll environment using vscode container to design themes or to write blog posts locally.","headline":"Setup Jekyll Vscode Dev Container","image":"https://solothought.com/vscode-jekyll.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://solothought.com/tutorial/setup-jekyll-vscode-container/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://solothought.com/assets/images/logo.png"},"name":"amit"},"url":"https://solothought.com/tutorial/setup-jekyll-vscode-container/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+<link href="/assets/css/screen.css" rel="stylesheet">
+
+<link href="/assets/css/main.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
+</head>
+
+
+
+
+<body class="layout-post">
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+
+		<!-- <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather+Sans:300,300i,400,400i,700,700i" rel="stylesheet"> -->
+		<link href="https://fonts.googleapis.com/css?family=Righteous&family=Poppins" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+	</noscript>
+
+
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+
+    <div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="/">
+    <img src="/assets/images/logo.png" alt="SoloThought">
+    </a>
+    <!-- End Logo -->
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSolo" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSolo">
+
+        <!-- Begin Menu -->
+
+            <ul class="navbar-nav ms-auto">
+
+                
+                <li class="nav-item">
+                
+                <a class="nav-link" href="/index.html">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <!-- <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a> -->
+
+                    
+                        
+                            
+                                <a class="dropdown-item" href="/categories#tutorial">tutorial (4)</a>
+                            
+                        
+                    
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Open Source
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <!-- <div class="dropdown-divider">Libraries</div> -->
+                        <a class="dropdown-item" href="https://github.com/NaturalIntelligence/fast-xml-parser"><strong>Fast XML Parser</strong> in JS</a>
+                        <a class="dropdown-item" href="https://github.com/NaturalIntelligence/Stubmatic"><strong>Stubmatic</strong> - Mocking library for QAs</a>
+                      <a class="dropdown-item" href="https://github.com/NaturalIntelligence/nimn-spec"><strong>Nimn</strong> - Smaller than XML, JSON, Msgpack, Gzip</a>
+                      <a class="dropdown-item" href="https://github.com/solothought/shabdawali"><strong>Shabdawali</strong> - Human like Typing Effect</a>
+                      <a class="dropdown-item" href="https://github.com/solothought/vaarta"><strong>Vaarta</strong> - Typing Chat effect</a>
+                      <a class="dropdown-item" href="https://github.com/node-muneem/anumargak"><strong>Anumargak</strong> - Fast routing lib</a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/fast-lorem-ipsum"><strong>Fast Lorem Ipsum</strong> - generator</a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/fastify-xml-body-parser"><strong>Fastify XML Body Parser</strong></a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/cucumon"><strong>Cucumon</strong> - Better parser for Gherkin files</a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/strnum"><strong>Strnum</strong> - String to Number converter</a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/detailed-xml-validator"><strong>Detailed XML Validator</strong> - Light and effective XML schema validator</a>
+                      <div class="dropdown-divider">Online tool</div>
+                      <a class="dropdown-item" href="/imglab/"><strong>Imglab</strong> - Annotate images for ML</a>
+                      <a class="dropdown-item" href="/matchit/"><strong>Match it</strong> - Create card game</a>
+                      <div class="dropdown-divider">Research</div>
+                      <a class="dropdown-item" href="https://bigbit.github.io/bigbitjs/"><strong>BigBit</strong> - Numeric Datatype</a>
+                    </div>
+                </li>
+
+                <script src="/assets/js/lunr.js"></script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+</form>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+
+            </ul>
+
+        <!-- End Menu -->
+
+    </div>
+
+    </div>
+</nav>
+<!-- End Navigation
+================================================== -->
+
+<div class="site-content">
+
+
+<div class="container">
+
+<!-- Site Title
+================================================== -->
+
+
+<!-- Content
+================================================== -->
+<!-- <div id="gaerr" class="alert alert-danger">
+    All the stats like page views, trending posts, post for you are derived from Google analytics. Please enable Google analytics for accurate stats.
+</div> -->
+
+<div id="main-content" class="main-content">
+    <!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            <div class="share sticky-top sticky-top-offset">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ms-1 me-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Setup Jekyll Vscode Dev Container&url=https://solothought.com/tutorial/setup-jekyll-vscode-container/" onclick="shareWith('twitter',this.href)">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ms-1 me-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=https://solothought.com/tutorial/setup-jekyll-vscode-container/" onclick="shareWith('facebook',this.href)">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ms-1 me-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https://solothought.com/tutorial/setup-jekyll-vscode-container/" onclick="shareWith('linkedin',this.href)">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        
+        <li class="ms-1 me-1">
+            <a target="_blank" href="https://getpocket.com/save?url=https://solothought.com/tutorial/setup-jekyll-vscode-container/"  target="_blank" onclick="gtag('event', 'share', { 'target': 'getpocket' });">
+                <i class="fab fa-get-pocket"></i>
+            </a>
+        </li>
+
+    </ul>
+    
+    <div class="sep">
+    </div>
+    <ul>
+        <li>
+        <a class="small smoothscroll" href="#disqus_thread"></a>
+        </li>
+    </ul>
+    
+</div>
+<script>
+    function shareWith(target, url){
+        if(target === "linkedin") {window.open(url, 'width=550,height=435');return false;}
+        else if(target === "facebook" || target === "twitter"){
+            window.open(this.href, target+'-share', 'width=550,height=435');return false;
+        }
+        if(gtag){
+            gtag('event', 'share', { 'target': target });
+        }
+   }
+</script>
+        </div>
+
+        <!-- Post -->
+        
+        
+        
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <main>
+            
+            <div class="mainheading">
+                <!-- Post Title -->
+                <h1 class="posttitle">Setup Jekyll Vscode Dev Container</h1>
+            </div>
+            
+            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+            
+            <!-- End Adsense -->
+
+            <!-- Post Featured Image -->
+            
+                
+                <!-- Display post image if it is not being displayed as hero image  -->
+                <figure>
+                    <div class="container-fluid">
+                        <div class="row">
+                        <div class="col">
+                    
+                    <img class="featured-image img-fluid d-block mx-auto" src="https://solothought.com//assets/images/posts/vscode-jekyll.png" alt="Setup Jekyll Vscode Dev Container">
+                    
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+                
+            
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <article>
+            <div class="article-post">
+                <!-- Toc if any -->
+                
+                <!-- End Toc -->
+                <p>This is a quick guide to setup Jekyll environment for jekyll theme development or to write blog posts locally. You can download ready-to-use source-code from Github.</p>
+
+<div class="span6 ">
+<div class="fs-4">
+<span class="fa-stack" style="margin-left: -0.5rem;">
+    <span class="fa fa-circle fa-stack-2x"></span>
+    <strong class="fa-stack-1x" style="color: white;">1</strong>
+</span>
+<span>Setup your machine</span></div>
+<div class="mycontent-right">
+
+    <p>Please ensure that following dependencies are present on your machine</p>
+    <ol>
+      <li><a href="https://docs.docker.com/desktop/install/ubuntu/">Docker</a></li>
+      <li><a href="https://git-scm.com/download/linux">Git</a></li>
+      <li><a href="https://code.visualstudio.com/">Vscode</a> with following extensions
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">Dev containers</code></li>
+          <li><code class="language-plaintext highlighter-rouge">Remote Development</code></li>
+          <li><code class="language-plaintext highlighter-rouge">Remote Explorer</code></li>
+          <li><code class="language-plaintext highlighter-rouge">Remote Tunnels</code></li>
+        </ul>
+      </li>
+    </ol>
+
+  </div>
+</div>
+
+<div class="span6 ">
+<div class="fs-4">
+<span class="fa-stack" style="margin-left: -0.5rem;">
+    <span class="fa fa-circle fa-stack-2x"></span>
+    <strong class="fa-stack-1x" style="color: white;">2</strong>
+</span>
+<span>Jekyll Dev container</span></div>
+<div class="mycontent-right">
+
+    <p>Clone jekyll dev-container repository or <a href="https://github.com/solothought/jekyll-vscode-devcontainer">download</a> it from Github.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nv">$ </span>git clone git@github.com:solothought/jekyll-vscode-devcontainer.git solothought-jekyll-vscode-devcontainer
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+
+    <p>Click on green icon in left-bottom corner of vscode &gt; select <code class="language-plaintext highlighter-rouge">Reopen in Container</code>. It will be download and install some necessary packages on first run.
+<img src="/assets/images/posts/vscode-devcontainer.jpg" alt="" /></p>
+
+    <p>Go to <code class="language-plaintext highlighter-rouge">view</code> menu &gt; Select <code class="language-plaintext highlighter-rouge">Terminal</code> option. Or <code>Ctrl+`</code>. This will open Terminal inside the jekyll ontainer. You’ll see 2 ports open. But you can’t still open the site as no theme is generated or set yet.</p>
+
+    <p>Click on <code class="language-plaintext highlighter-rouge">+</code> icon to create a new theme or to explore what is inside the container.
+<img src="/assets/images/posts/vscode-jekyll-terminal.png" alt="" /></p>
+
+    <p>Here, you can run jekyll commands</p>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">jekyll clean</code></li>
+      <li><code class="language-plaintext highlighter-rouge">jekyll new</code></li>
+      <li><code class="language-plaintext highlighter-rouge">jekyll build</code></li>
+      <li><code class="language-plaintext highlighter-rouge">jekyll serve</code></li>
+    </ul>
+  </div>
+</div>
+
+<div class="span6 ">
+<div class="fs-4">
+<span class="fa-stack" style="margin-left: -0.5rem;">
+    <span class="fa fa-circle fa-stack-2x"></span>
+    <strong class="fa-stack-1x" style="color: white;">3</strong>
+</span>
+<span>Jekyll Theme</span></div>
+<div class="mycontent-right">
+
+    <p>You can create a base theme your own or <a href="https://jekyllthemes.io/">download</a> a theme of your choice.</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="rouge-code"><pre>vscode ➜ /workspaces/solothought-jekyll-vscode-devcontainer <span class="o">(</span>main<span class="o">)</span> <span class="nv">$ </span>jekyll new solothought
+Running bundle <span class="nb">install </span><span class="k">in</span> /workspaces/solothought-jekyll-vscode-devcontainer/solothought... 
+  Bundler: Fetching gem metadata from https://rubygems.org/............
+  Bundler: Resolving dependencies...
+  Bundler: Using public_suffix 5.0.1
+  Bundler: Using bundler 2.4.7
+  Bundler: Using colorator 1.1.0
+  Bundler: Using concurrent-ruby 1.2.2
+  Bundler: Using eventmachine 1.2.7
+  Bundler: Using ffi 1.15.5
+  ...
+  Bundler: Bundle <span class="nb">complete</span><span class="o">!</span> 7 Gemfile dependencies, 33 gems now installed.
+  Bundler: Use <span class="sb">`</span>bundle info <span class="o">[</span>gemname]<span class="sb">`</span> to see where a bundled gem is installed.
+New jekyll site installed <span class="k">in</span> /workspaces/solothought-jekyll-vscode-devcontainer/solothought. 
+vscode ➜ /workspaces/solothought-jekyll-vscode-devcontainer <span class="o">(</span>main<span class="o">)</span> <span class="err">$</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>This will create a theme folder <code class="language-plaintext highlighter-rouge">solothought</code> in project directory.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre>    ...
+    ├── .devcontainer
+    ├── .vscode
+    ├── solothought
+       └── _posts
+       └── _drafts
+       └── _site
+       └── _config.yml
+       └── 404.html
+       └── Gemfile
+       └── Gemfile.lock
+       └── index.markdown
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+
+    <p>Go inside the folder and build it.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre>vscode ➜ /workspaces/solothought-jekyll-vscode-devcontainer <span class="o">(</span>main<span class="o">)</span> <span class="nv">$ </span><span class="nb">cd </span>solothought/
+vscode ➜ /workspaces/solothought-jekyll-vscode-devcontainer/solothought <span class="o">(</span>main<span class="o">)</span> <span class="nv">$ </span>jekyll serve
+...
+                    <span class="k">done in </span>0.431 seconds.
+ Auto-regeneration: enabled <span class="k">for</span> <span class="s1">'/workspaces/solothought-jekyll-vscode-devcontainer/solothought'</span>
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>Open <code class="language-plaintext highlighter-rouge">http://127.0.0.1:4000/</code> in the browser to check how it look.</p>
+  </div>
+</div>
+
+<div class="alert alert-primary">
+    
+    <strong>Note:</strong> If you're downloading a theme from somewhere else then delete `Gemfile.lock` file before building theme as it might be pointing to some old dependencies
+</div>
+
+<p>Instead of typing a command manually, you can also run vscode task. Go to <code class="language-plaintext highlighter-rouge">Terminal</code> &gt; <code class="language-plaintext highlighter-rouge">Run Task</code> &gt; Select the relevant task. You can find all the tasks in <code class="language-plaintext highlighter-rouge">.vscode\tasks.json</code>.</p>
+
+<p>Since, we have genrated the theme in a different folder instead of project root, you’ll have to uncomment <code class="language-plaintext highlighter-rouge">cwd</code> option in <code class="language-plaintext highlighter-rouge">tasks.json</code> so the Jekyll commands run from the correct directory.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="p">{</span><span class="w">
+    </span><span class="nl">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Serve"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"shell"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bundle exec jekyll serve --livereload"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"group"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"test"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="nl">"options"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="err">//</span><span class="w">     </span><span class="nl">"cwd"</span><span class="p">:</span><span class="w"> </span><span class="s2">"${workspaceFolder}/solothought"</span><span class="w">
+    </span><span class="err">//</span><span class="w"> </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"isBackground"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+                
+            </div>
+            
+
+            <!-- Rating -->
+            
+
+            <!-- Author Box -->
+            
+                <div class="row post-top-meta">
+    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+        
+        <img class="author-thumb" src="https://www.gravatar.com/avatar/37060302386aaf411d69559680562234?s=250&d=mm&r=x" alt="Amit">
+        
+    </div>
+    <div class="col-xs-12 col-md-9 col-lg-10 text-md-left">
+        <a target="_blank" class="link-dark" href="https://amitkumargupta.work">Amit</a>
+
+        
+            
+                <a target="_blank" href="https://twitter.com/amitguptagwl" ><i class="fab fa-twitter px-2"></i></a>
+             
+            
+                <a target="_blank" href="https://www.linkedin.com/in/amitguptagwl"><i class="fab fa-linkedin px-2"></i></a>
+             
+            
+                <a target="_blank" href="https://github.com/amitguptagwl"><i class="fab fa-github px-2"></i></a>
+            
+        
+        <span class="author-description">Author & Maintainer of many opensourse projects like fast-xml-parser, imglab, stubmatic etc. Very much interested in research & innovations.</span>
+    </div>
+</div>
+            
+            </article>
+            
+            
+            <!-- Post Date -->
+            <div class="after-post-tags clearfix">
+                <i class="fa fa-calendar-alt me-2"></i>
+                <span class="post-date"><time class="post-date" datetime="2023-04-02">02 Apr 2023</time></span>           
+                
+                <!-- Post Tags -->
+                <ul class="tags float-end">
+                    
+                    <li><i class="fas fa-tags"></i></li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/tags#devcontainer">#devcontainer</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/tags#jekyll">#jekyll</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/tags#vscode">#vscode</a>
+                    </li>
+                    
+                </ul>
+                <!-- End Tags -->
+            </div>
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            
+            <a class="prev d-block col-md-6" href="//tutorial/better-seo-url/"> &laquo; Make a Better SEO URL</a>
+            
+            
+            <a class="next d-block col-md-6 text-lg-right" href="//tutorial/fast-xml-parser-4.2-features/">Fast XML Parser v4.2 Features &raquo; </a>
+            
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+            </main>
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+
+<!-- Begin Comments
+================================================== -->
+
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <section class="disqus"></section>
+<!-- <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = ''; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section> -->
+
+            </div>
+        </div>
+    </div>
+
+<!--End Comments
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+</div>
+
+    
+<!-- Bottom Alert Bar for Patreon
+================================================== -->
+<!-- <div class="alertbar">
+	<div class="container text-center">
+		<span>Access high quality assets of this post on <a href="https://www.patreon.com/Solothought">Patreon</a></span>
+	</div>
+</div> -->
+</div>
+
+<!-- Categories Jumbotron
+================================================== -->
+<!-- <div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="d-md-flex align-items-center justify-content-center h-100">
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+            </div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+            
+            
+                
+                    <a class="mt-1 mb-1" href="/categories#tutorial">tutorial (4)</a>
+                
+            
+            
+		</div>
+	</div>
+</div> -->
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                Copyright © 2023 SoloThought 
+            </div>
+            <!-- <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                Social Handlers
+            </div> -->
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+  <!-- Cookie consent banner -->
+  <div id="cookieConsent" class="alert alert-dismissible alert-info text-center fixed-bottom mb-0">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    This website uses Google Analytics to analyze website traffic and improve your experience. By continuing to use this site, you consent to the use of cookies in accordance with our <a href="/privacypoicy" >Privacy Policy</a>.
+  </div>
+  <script>
+    // Hide cookie consent on button click
+    document.querySelector('#cookieConsent .close').addEventListener('click', function () {
+      document.querySelector('#cookieConsent').style.display = 'none';
+    });
+  </script>
+<!-- Scripts
+================================================== -->
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> -->
+
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+<script src="/assets/js/mediumish.js"></script>
+
+
+
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+<!-- 
+<script id="dsq-count-scr" src="//.disqus.com/count.js"></script>
+ -->
+
+</body>
+</html>
