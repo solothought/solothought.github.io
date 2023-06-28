@@ -12,8 +12,8 @@
     <description>Collection of curated articles with in depth analysis on a topic to present a different perspective with interactive illustrations</description>
     <link>https://solothought.com/</link>
     <atom:link href="https://solothought.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Jun 2023 08:43:05 +0000</pubDate>
-    <lastBuildDate>Tue, 27 Jun 2023 08:43:05 +0000</lastBuildDate>
+    <pubDate>Wed, 28 Jun 2023 08:22:29 +0000</pubDate>
+    <lastBuildDate>Wed, 28 Jun 2023 08:22:29 +0000</lastBuildDate>
     <language>en-US</language>
     <sy:updatePeriod> daily	</sy:updatePeriod>
     <sy:updateFrequency> 1 </sy:updateFrequency>
@@ -28,7 +28,7 @@
 
 &lt;p&gt;Each master possessed secret skills that were passed down through generations.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/posts/KungFu_java_relationships.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/KungFu_java_relationships.webp&quot; alt=&quot;Explaining Java Inheritance using Kungfu Panda story covering abstract, sealed, final classes&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Master Oogway, with his deep understanding of the universe, had mastered the art of harnessing the power of chi. This secret skill allowed him to achieve a state of calmness and centeredness, even in the face of adversity. He kept this skill private, sharing it only with his most trusted students.&lt;/p&gt;
 
@@ -90,7 +90,7 @@
 
 &lt;p&gt;In their world, the masters possessed a unique magic that allowed them to create virtual images, or instances, of themselves. These images were sent into battle to protect the village and its inhabitants. Any villager in need could request the masters to create an image and accompany them in their quest to safeguard the village. However, Master Shifu possessed some &lt;strong&gt;static&lt;/strong&gt; skills like the ability to open the gate of the temple effortlessly. He doesn’t need any of his images to do the same.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/posts/KungFu_child_relationship.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/KungFu_child_relationship.webp&quot; alt=&quot;Explaining Java instances using Kungfu Panda story&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;To prevent malevolent warriors, such as the infamous Kai, from harnessing their powers, both Master Oogway and Master Shifu &lt;strong&gt;sealed&lt;/strong&gt; their skills securely. They were well aware of the potential dangers that could arise if their knowledge fell into the wrong hands. Additionally, both masters were marked as Temple Savers, an honorable position signifying their commitment to protecting the sacred grounds.&lt;/p&gt;
 
@@ -229,7 +229,7 @@
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;During one eventful day, Master Shifu presented a final green-stone to the panda. This unique stone possessed a special power to freeze the enemy power for sometime. Intrigued, the panda decided to create a “green-stone” of his own to experiment and develop a new weapon similar to the one Master Shifu possessed. However, an unexpected interruption occurred when some villagers approached the panda, requesting his assistance in fighting against their enemies. Unfortunately, the panda forgot to remove the weapon he had recently created and inadvertently shared his image with the villagers.&lt;/p&gt;
-&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;/assets/images/posts/java_panda_shifu_green_stone.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align: center;&quot;&gt;&lt;img src=&quot;/assets/images/posts/java_panda_shifu_green_stone.webp&quot; alt=&quot;Explaining Java variable shadowing using Kungfu Panda story&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Though villagers somehow won the fight, he got to know that “great-stone” didn’t work at all. He was surprised as Master Shifu himself showed his power to him. He went to Master Shifu to know why it failed in the war field.&lt;/p&gt;
 
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
@@ -298,6 +298,8 @@
         <category>java</category>
         
         <category>story</category>
+        
+        <category>java17</category>
         
         
         <category>tutorial</category>
