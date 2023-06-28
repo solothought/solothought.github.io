@@ -4,8 +4,6 @@ name: Publish Sitemap
 on:
   push:
     branches: [ main ]
-    paths:
-      - sitemap.xml
 
 jobs:
   ping:
