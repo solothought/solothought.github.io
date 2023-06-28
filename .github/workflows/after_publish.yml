@@ -1,0 +1,16 @@
+
+name: Publish Sitemap
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - sitemap.xml
+
+jobs:
+  ping:
+    name: Ping Google
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send HTTP GET request
+        run: curl https://www.google.com/ping?sitemap=https://solothought.com/sitemap.xml
