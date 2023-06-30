@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/assets/images/icon.png">
+
+<!-- change your GA id in _config.yml -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4812VFLT3M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4812VFLT3M');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4922790412146333" crossorigin="anonymous"></script>
+
+
+
+<title>Story of Kungfu Java Valley - Explanation | SoloThought</title>
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Story of Kungfu Java Valley - Explanation | Solo Thought</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Story of Kungfu Java Valley - Explanation" />
+<meta name="author" content="amit" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="In the last article, The story of Kungfu Java Valley , we read about Java Valley and how Po became Master Po. There were many Java concepts we already read in that article. In this article, we’ll focus more on the technical side and reveal remaining hidden Java concepts. I’ll extend the story in the next article to understand more concepts. I hope you’ll enjoy it." />
+<meta property="og:description" content="In the last article, The story of Kungfu Java Valley , we read about Java Valley and how Po became Master Po. There were many Java concepts we already read in that article. In this article, we’ll focus more on the technical side and reveal remaining hidden Java concepts. I’ll extend the story in the next article to understand more concepts. I hope you’ll enjoy it." />
+<link rel="canonical" href="https://solothought.com/tutorial/kungfu-java-concepts-explanation/" />
+<meta property="og:url" content="https://solothought.com/tutorial/kungfu-java-concepts-explanation/" />
+<meta property="og:site_name" content="Solo Thought" />
+<meta property="og:image" content="https://solothought.com/panda_teaching_code.webp" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-06-27T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://solothought.com/panda_teaching_code.webp" />
+<meta property="twitter:title" content="Story of Kungfu Java Valley - Explanation" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"amit"},"dateModified":"2023-06-27T00:00:00+00:00","datePublished":"2023-06-27T00:00:00+00:00","description":"In the last article, The story of Kungfu Java Valley , we read about Java Valley and how Po became Master Po. There were many Java concepts we already read in that article. In this article, we’ll focus more on the technical side and reveal remaining hidden Java concepts. I’ll extend the story in the next article to understand more concepts. I hope you’ll enjoy it.","headline":"Story of Kungfu Java Valley - Explanation","image":"https://solothought.com/panda_teaching_code.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://solothought.com/tutorial/kungfu-java-concepts-explanation/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://solothought.com/assets/images/logo.png"},"name":"amit"},"url":"https://solothought.com/tutorial/kungfu-java-concepts-explanation/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+<link href="/assets/css/screen.css" rel="stylesheet">
+
+<link href="/assets/css/main.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
+</head>
+
+
+
+
+<body class="layout-post">
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+
+		<!-- <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather+Sans:300,300i,400,400i,700,700i" rel="stylesheet"> -->
+		<link href="https://fonts.googleapis.com/css?family=Righteous&family=Poppins" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+	</noscript>
+
+
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+
+    <div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="/">
+    <img src="/assets/images/logo.png" alt="SoloThought">
+    </a>
+    <!-- End Logo -->
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSolo" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSolo">
+
+        <!-- Begin Menu -->
+
+            <ul class="navbar-nav ms-auto">
+
+                
+                <li class="nav-item">
+                
+                <a class="nav-link" href="/index.html">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <!-- <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a> -->
+
+                    
+                        
+                            
+                                <a class="dropdown-item" href="/categories#tutorial">tutorial (6)</a>
+                            
+                        
+                    
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Open Source
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <!-- <div class="dropdown-divider">Libraries</div> -->
+                        <a class="dropdown-item" href="https://github.com/NaturalIntelligence/fast-xml-parser"><strong>Fast XML Parser</strong> in JS</a>
+                        <a class="dropdown-item" href="https://github.com/NaturalIntelligence/Stubmatic"><strong>Stubmatic</strong> - Mocking library for QAs</a>
+                      <a class="dropdown-item" href="https://github.com/NaturalIntelligence/nimn-spec"><strong>Nimn</strong> - Smaller than XML, JSON, Msgpack, Gzip</a>
+                      <a class="dropdown-item" href="https://github.com/solothought/shabdawali"><strong>Shabdawali</strong> - Human like Typing Effect</a>
+                      <a class="dropdown-item" href="https://github.com/solothought/vaarta"><strong>Vaarta</strong> - Typing Chat effect</a>
+                      <a class="dropdown-item" href="https://github.com/node-muneem/anumargak"><strong>Anumargak</strong> - Fast routing lib</a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/fast-lorem-ipsum"><strong>Fast Lorem Ipsum</strong> - generator</a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/fastify-xml-body-parser"><strong>Fastify XML Body Parser</strong></a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/cucumon"><strong>Cucumon</strong> - Better parser for Gherkin files</a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/strnum"><strong>Strnum</strong> - String to Number converter</a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/detailed-xml-validator"><strong>Detailed XML Validator</strong> - Light and effective XML schema validator</a>
+                      <div class="dropdown-divider">Online tool</div>
+                      <a class="dropdown-item" href="/imglab/"><strong>Imglab</strong> - Annotate images for ML</a>
+                      <a class="dropdown-item" href="/matchit/"><strong>Match it</strong> - Create card game</a>
+                      <div class="dropdown-divider">Research</div>
+                      <a class="dropdown-item" href="https://bigbit.github.io/bigbitjs/"><strong>BigBit</strong> - Numeric Datatype</a>
+                    </div>
+                </li>
+
+                <script src="/assets/js/lunr.js"></script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+</form>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+
+            </ul>
+
+        <!-- End Menu -->
+
+    </div>
+
+    </div>
+</nav>
+<!-- End Navigation
+================================================== -->
+
+<div class="site-content">
+
+
+<div class="container">
+
+<!-- Site Title
+================================================== -->
+
+
+<!-- Content
+================================================== -->
+<!-- <div id="gaerr" class="alert alert-danger">
+    All the stats like page views, trending posts, post for you are derived from Google analytics. Please enable Google analytics for accurate stats.
+</div> -->
+
+<div id="main-content" class="main-content">
+    <!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            <div class="share sticky-top sticky-top-offset">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ms-1 me-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Story of Kungfu Java Valley - Explanation&url=https://solothought.com/tutorial/kungfu-java-concepts-explanation/" onclick="shareWith('twitter',this.href)">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ms-1 me-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=https://solothought.com/tutorial/kungfu-java-concepts-explanation/" onclick="shareWith('facebook',this.href)">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ms-1 me-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https://solothought.com/tutorial/kungfu-java-concepts-explanation/" onclick="shareWith('linkedin',this.href)">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        
+        <li class="ms-1 me-1">
+            <a target="_blank" href="https://getpocket.com/save?url=https://solothought.com/tutorial/kungfu-java-concepts-explanation/"  target="_blank" onclick="gtag('event', 'share', { 'target': 'getpocket' });">
+                <i class="fab fa-get-pocket"></i>
+            </a>
+        </li>
+
+    </ul>
+    
+    <div class="sep">
+    </div>
+    <ul>
+        <li>
+        <a class="small smoothscroll" href="#disqus_thread"></a>
+        </li>
+    </ul>
+    
+</div>
+<script>
+    function shareWith(target, url){
+        if(target === "linkedin") {window.open(url, 'width=550,height=435');return false;}
+        else if(target === "facebook" || target === "twitter"){
+            window.open(this.href, target+'-share', 'width=550,height=435');return false;
+        }
+        if(gtag){
+            gtag('event', 'share', { 'target': target });
+        }
+   }
+</script>
+        </div>
+
+        <!-- Post -->
+        
+        
+        
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <main>
+            
+            <div class="mainheading">
+                <!-- Post Title -->
+                <h1 class="posttitle">Story of Kungfu Java Valley - Explanation</h1>
+            </div>
+            
+            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+            
+            <!-- End Adsense -->
+
+            <!-- Post Featured Image -->
+            
+                
+                <!-- Display post image if it is not being displayed as hero image  -->
+                <figure>
+                    <div class="container-fluid">
+                        <div class="row">
+                        <div class="col">
+                    
+                    <img class="featured-image img-fluid d-block mx-auto" src="https://solothought.com//assets/images/posts/panda_teaching_code.webp" alt="Story of Kungfu Java Valley - Explanation">
+                    
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+                
+            
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <article>
+            <div class="article-post">
+                <!-- Toc if any -->
+                
+                <!-- End Toc -->
+                <p>In the last article, <a href="/tutorial/kungfu-java-concepts/">The story of Kungfu Java Valley</a> , we read about Java Valley and how Po became Master Po. There were many Java concepts we already read in that article. In this article, we’ll focus more on the technical side and reveal remaining hidden Java concepts. I’ll extend the story in the next article to understand more concepts. I hope you’ll enjoy it.</p>
+
+<h3 id="abstract-class">Abstract Class</h3>
+<p>Master Oogway – the wise old turtle, is an abstract class who has an abstract method  <code class="language-plaintext highlighter-rouge">fight</code>. Every master has to find their techniques to fight. In Java, an abstract method needs to be implemented compulsorily by the sub-classes (notice that I didn’t use the word “child” for sub-class). If a sub-class doesn’t want to implement an abstract method, it can also declare the method as abstract so it’s sub-classes can implement them. But in this case, it also needs to be abstract.</p>
+
+<h4 id="instance-reference">Instance reference</h4>
+
+<p>Though Master Oogway wants their type to develop fighting skill, he never fights himself. Hence, no one can request him to create his images or instances (you can consider it a child). This is the same as we can’t instantiate an abstract class in Java. However, a newly trained master may take the reference of his master or master of master for initial fightings until he gains some confidence.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nc">Oogway</span> <span class="n">ninjaTurtle</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Po</span><span class="o">();</span> <span class="c1">//Referenced by master class</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>This is not only to gain confidence, but it’s always good if the master is used as a reference and use the skills of any student as per need. Eg Po can use his skills to defeat the enemy and Tigress can use her skills. But Master Shifu can use skills of both;</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nc">Shifu</span> <span class="n">fighter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Po</span><span class="o">();</span>
+<span class="nc">Po</span> <span class="n">fighter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Shifu</span><span class="o">();</span> <span class="c1">//Not allowed</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="alert alert-info">
+  <p><strong>📌 Info</strong></p>
+  <p>A student can't be a reference for his master</p>
+</div>
+
+<p>When we write a post on a blog, we define categories and tags. These are the markers to group particular type of posts. Though they define the type of post, they are still marker not the class. A post is a type of blog-page. A blog-page can be a type of web-page and so on.</p>
+
+<div class="alert alert-info">
+  <p><strong>📌 Info</strong></p>
+  <p>I use "marker" in most of the places in this article to "Interface".</p>
+</div>
+
+<h3 id="interface">Interface</h3>
+<p>A marker can have some default implementation of instructions to reduce the work overload on new Masters or masters with different skill. For example, some masters are the warrior but some are the teacher of secret  skills. There are people in the temple who are not even the master but they help to manage other work of the temple. Sometimes, in their absence, suppose an invigilator,  a master who is marked as an invigilator as well, can give extra hands if available. These masters need not to be specialized and can cope with default skills already defined by Marker. Same as Java interface may have a <strong>default</strong> implementation of a method.</p>
+
+<p class="text-center"><img src="/assets/images/posts/tigress_invigilator_java_interface.png" alt="java interface" /></p>
+
+<p>The person who is in-charge of  villager training might be surprised when he saw a warrior image (or instance) to perform the duty of invigilator. Without going in the complexity of a warrior, the in-charge person can use the expected skill of invigilator given by the Marker. But this is possible only if this skill is public. Hence, Java interface methods are supposed to be public. The all other methods which are private are just the supporter methods for default implementation.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="kd">interface</span> <span class="nc">Invigilator</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">checkId</span><span class="o">()</span> <span class="o">{}</span>
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">checkAttendance</span><span class="o">()</span> <span class="o">{}</span>
+
+    <span class="k">default</span> <span class="kt">void</span> <span class="nf">startExam</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">checkId</span><span class="o">();</span>
+        <span class="n">checkAttendance</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Starting exam..."</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+<span class="o">:</span>
+<span class="nc">Invigilator</span> <span class="n">nonExperinced</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Tigress</span><span class="o">();</span> <span class="c1">// Tigress implements Invigilator </span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="interface-vs-abstract--class">Interface vs Abstract  class</h3>
+
+<p>This is worth noticing that Oogway represents a class of his own type. Since he is abstract, he can instruct his types (sub-classes) to implement some mandatory skills just like a Marker (or Interface) does. But if he will provide the default implementation of the mandatory skill then the other master may ignore the importance of the mandatory skill they should develop. Hence, in Java, markers support default implementation for a method a class should implement but an abstract class doesn’t. However, there can be some skills a master class has and a type class can override it.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+</pre></td><td class="rouge-code"><pre><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Oogway</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">reducePressure</span><span class="o">(){</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Meditate"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Shifu</span> <span class="kd">extends</span> <span class="nc">Oogway</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">reducePressure</span><span class="o">(){</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Balance on toe"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Po</span> <span class="kd">extends</span> <span class="nc">Shifu</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">reducePressure</span><span class="o">(){</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Eat momos!!"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Oogway</span> <span class="n">firstTimeFighter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Po</span><span class="o">();</span>
+        <span class="n">firstTimeFighter</span><span class="o">.</span><span class="na">reducePressure</span><span class="o">();</span> <span class="c1">// "Eat momos!!"</span>
+        
+        <span class="nc">Shifu</span> <span class="n">secondTimeFighter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Po</span><span class="o">();</span>
+        <span class="n">secondTimeFighter</span><span class="o">.</span><span class="na">reducePressure</span><span class="o">();</span> <span class="c1">// "Eat momos!!"</span>
+        
+        <span class="nc">Shifu</span> <span class="n">experiencedFighter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Shifu</span><span class="o">();</span>
+        <span class="n">experiencedFighter</span><span class="o">.</span><span class="na">reducePressure</span><span class="o">();</span> <span class="c1">// "Balance on toe"</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>It’s obvious that some of the villagers are confused between the importance of being abstract or marker. Are you one of the villagers!? 😂</p>
+
+<p>Let me take a chance to clear up that confusion. A marker (or interface) can be considered a lightweight abstract solution. An image of some master can play multiple roles due to the markers. Since a marker is a light-weight solution, it can’t be instantiated but can be used as reference purposes only. Since they can’t be instantiated, they can’t have instance variables and the variables they have are supposed to be public, static and final. Because without public, they can’t be used. Without <code class="language-plaintext highlighter-rouge">static</code>, they can’t be used as no instance. Without <code class="language-plaintext highlighter-rouge">final</code>, their state can be changed but the state will be changed which can cause inconsistency. So an interface creates very less memory footprint.
+<small>Note that the methods implemented in an interface can create instance variables.</small></p>
+
+<blockquote>
+  <p>Using  <code class="language-plaintext highlighter-rouge">public</code>, <code class="language-plaintext highlighter-rouge">static</code>, <code class="language-plaintext highlighter-rouge">final</code> keywords with the variable in an Interface is optional.</p>
+</blockquote>
+
+<h3 id="the-importance-of-abstract-class">The importance of abstract class</h3>
+<p>A master with a marker seems similar to an abstract master. But there are some meaningful differences;</p>
+<ul>
+  <li>A master (class) with a marker (interface) can be instantiated but an abstract master can’t be. An abstract master can be considered as a guide. Or a template may be.</li>
+  <li>Since an abstract class is like a concrete class without the ability to be instantiated, a method can even an abstract method too. This is how the template pattern is implemented;</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+</pre></td><td class="rouge-code"><pre><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Oogway</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">boolean</span> <span class="n">साम</span><span class="o">();</span>
+    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">boolean</span> <span class="n">दाम</span><span class="o">();</span>
+    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">boolean</span> <span class="n">दन्ड</span><span class="o">();</span>
+	<span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">boolean</span> <span class="n">भेद</span><span class="err">​</span><span class="o">();</span>
+
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">protectTheTemple</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">if</span><span class="o">(!</span><span class="n">साम</span><span class="o">()</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">दाम</span><span class="o">()</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">दन्ड</span><span class="o">()</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">भेद</span><span class="o">());</span> <span class="k">return</span> <span class="kc">false</span> <span class="k">else</span> <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Shifu</span> <span class="kd">extends</span> <span class="nc">Oogway</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">boolean</span> <span class="n">साम</span><span class="o">(){</span>
+		<span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+	<span class="o">}</span>
+    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">boolean</span> <span class="n">दाम</span><span class="o">();</span>
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="n">दन्ड</span><span class="o">(){</span>
+	    <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+    <span class="o">}</span>
+	<span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">boolean</span> <span class="n">भेद</span><span class="err">​</span><span class="o">();</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">TaiLung</span> <span class="kd">extends</span> <span class="nc">Shifu</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">boolean</span> <span class="n">दाम</span><span class="o">(){</span>
+		<span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">boolean</span> <span class="n">भेद</span><span class="err">​</span><span class="o">(){</span>
+		<span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">BattelField</span><span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="nc">Oogway</span> <span class="n">fighter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">TaiLung</span><span class="o">();</span>
+		<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">fighter</span><span class="o">.</span><span class="na">protectTheTemple</span><span class="o">());</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="alert alert-note">
+  <p><strong></strong></p>
+  <p>In above example, I used unicode just for an example. But Java supports unicode in String value from Java 12.</p>
+</div>
+
+<p>In other words, we can say that when Oogway can fight with the skills of Tai Lung, Oogway is abstract.</p>
+
+<h3 id="interface-default-methods">Interface default methods</h3>
+<p>It doesn’t matter If there are 2 markers having a common method because the skill implemented by a master is supposed to be used further. But if more than 1 marker has a default method then the master can’t ignore it as it will create confusion. So the master is supposed to implement the skill otherwise the battle, I mean your application will not even start.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre><span class="kd">interface</span> <span class="nc">PhonixFire</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="k">default</span> <span class="kt">void</span> <span class="nf">fly</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"I'm flying!"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">interface</span> <span class="nc">EagalEye</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="k">default</span> <span class="kt">void</span> <span class="nf">fly</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"I fly high"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">interface</span> <span class="nc">Po</span> <span class="kd">implements</span> <span class="nc">PhonixFire</span><span class="o">,</span> <span class="nc">EagalEye</span><span class="o">{</span>
+    <span class="kd">public</span> <span class="k">default</span> <span class="kt">void</span> <span class="nf">fly</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"I afraid to fly but will learn to ride the weapon which can fly"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Remember that if Master Shifu is marked as Trainer, Po doesn’t become trainer automatically. Po also need to be marked as Trainer explicitly. Means Po needs to implement Trainer interface.</p>
+
+<h3 id="shadowing">Shadowing</h3>
+
+<p>In the last article, Master Shifu explained Po with the metaphor of lanterns that if a sub-type declares a variable with the same name his master used, then the value of sub-type will shadow the value of master.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+</pre></td><td class="rouge-code"><pre><span class="kd">class</span> <span class="nc">Master</span><span class="o">{</span>
+    <span class="kd">final</span> <span class="kt">int</span> <span class="n">x</span><span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+    <span class="kd">static</span> <span class="kt">int</span> <span class="n">y</span><span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">z</span><span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Subtype</span> <span class="kd">extends</span> <span class="nc">Master</span><span class="o">{</span>
+    <span class="kt">int</span> <span class="n">x</span><span class="o">=</span> <span class="mi">20</span><span class="o">;</span>
+    <span class="kd">static</span> <span class="kt">int</span> <span class="n">y</span><span class="o">=</span> <span class="mi">20</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">z</span><span class="o">=</span> <span class="mi">20</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">Exception</span> <span class="o">{</span>
+        
+       <span class="nc">Master</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Master</span><span class="o">();</span> 
+       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">x</span><span class="o">);</span><span class="c1">//10</span>
+       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">y</span><span class="o">);</span><span class="c1">//10</span>
+       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">z</span><span class="o">);</span><span class="c1">//10</span>
+       
+       <span class="nc">Subtype</span> <span class="n">b</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Subtype</span><span class="o">();</span> 
+       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">b</span><span class="o">.</span><span class="na">x</span><span class="o">);</span><span class="c1">//20</span>
+       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">b</span><span class="o">.</span><span class="na">y</span><span class="o">);</span><span class="c1">//20</span>
+       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">b</span><span class="o">.</span><span class="na">z</span><span class="o">);</span><span class="c1">//20</span>
+       
+       <span class="nc">Master</span> <span class="n">c</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Subtype</span><span class="o">();</span>
+       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">c</span><span class="o">.</span><span class="na">x</span><span class="o">);</span><span class="c1">//10</span>
+       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">c</span><span class="o">.</span><span class="na">y</span><span class="o">);</span><span class="c1">//10</span>
+       <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">c</span><span class="o">.</span><span class="na">z</span><span class="o">);</span><span class="c1">//10</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>In Java, when a subclass declares a variable with the same name as a variable in its superclass, the subclass variable “hides” or shadows the superclass variable. This means that when accessing the variable through a reference of the superclass type, the superclass variable will be used, regardless of the actual object’s type.</p>
+
+<h4 id="dynamic-method-dispatch-or-late-binding">Dynamic method dispatch or late binding</h4>
+
+<p>But there is a twist; If you use a reference of the <code class="language-plaintext highlighter-rouge">Master</code> class but call a method of the <code class="language-plaintext highlighter-rouge">Subtype</code> class that uses the variables, the method will still use the variables of the <code class="language-plaintext highlighter-rouge">Subtype</code> class. This behavior is determined at runtime and is known as dynamic method dispatch or late binding.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+</pre></td><td class="rouge-code"><pre><span class="kd">class</span> <span class="nc">Master</span> <span class="o">{</span>
+    <span class="kd">final</span> <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+    <span class="kd">static</span> <span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">printVariables</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">x</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">y</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">z</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Subtype</span> <span class="kd">extends</span> <span class="nc">Master</span> <span class="o">{</span>
+    <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">20</span><span class="o">;</span>
+    <span class="kd">static</span> <span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">20</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">20</span><span class="o">;</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">printVariables</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">x</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">y</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">z</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">Exception</span> <span class="o">{</span>
+        <span class="nc">Master</span> <span class="n">c</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Subtype</span><span class="o">();</span>
+        <span class="n">c</span><span class="o">.</span><span class="na">printVariables</span><span class="o">();</span>  <span class="c1">// Calls the overridden method in Subtype</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>20
+20
+20
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Note that we’re not using <code class="language-plaintext highlighter-rouge">printVariables</code> of Master class in above example but still declared it as we’re calling <code class="language-plaintext highlighter-rouge">printVariables</code> using the reference of Master class. Thought <code class="language-plaintext highlighter-rouge">printVariables</code> of Subtype would be called but if <code class="language-plaintext highlighter-rouge">printVariables</code> is not present in Master class then it’ll throw error at runtime: <code class="language-plaintext highlighter-rouge">error: cannot find symbol</code>.</p>
+
+<div class="alert alert-info">
+  <p><strong>📌 Info</strong></p>
+  <p>When you use Master class as reference, all the methods and variables that you call via the reference variable must present in master class.</p>
+</div>
+
+<h3 id="method-overriding-and-shadowing">Method Overriding and shadowing</h3>
+
+<ul>
+  <li>A static method can be shadowed by the subtype</li>
+  <li>A final method can’t be overriden. Hence, gives error</li>
+  <li>Normal methods are overriden by subtype</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td><td class="rouge-code"><pre><span class="kd">class</span> <span class="nc">Master</span> <span class="o">{</span>
+    <span class="kd">static</span> <span class="kt">int</span> <span class="nf">m</span><span class="o">()</span> <span class="o">{</span><span class="k">return</span> <span class="mi">10</span><span class="o">;}</span>
+     <span class="kt">int</span> <span class="nf">m1</span><span class="o">()</span> <span class="o">{</span><span class="k">return</span> <span class="mi">10</span><span class="o">;}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Subtype</span> <span class="kd">extends</span> <span class="nc">Master</span> <span class="o">{</span>
+    <span class="kd">static</span> <span class="kt">int</span> <span class="nf">m</span><span class="o">()</span> <span class="o">{</span><span class="k">return</span> <span class="mi">20</span><span class="o">;}</span>
+     <span class="kt">int</span> <span class="nf">m1</span><span class="o">()</span> <span class="o">{</span><span class="k">return</span> <span class="mi">20</span><span class="o">;}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">Exception</span> <span class="o">{</span>
+        <span class="nc">Master</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Master</span><span class="o">();</span>
+        <span class="nc">Subtype</span> <span class="n">b</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Subtype</span><span class="o">();</span>
+        <span class="nc">Master</span> <span class="n">c</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Subtype</span><span class="o">();</span>
+        <span class="n">c</span><span class="o">.</span><span class="na">printVariables</span><span class="o">();</span>  <span class="c1">// Calls the method of Subtype class</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">m</span><span class="o">());</span> <span class="c1">//10</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">b</span><span class="o">.</span><span class="na">m</span><span class="o">());</span> <span class="c1">//20 //Shadowing</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">c</span><span class="o">.</span><span class="na">m</span><span class="o">());</span> <span class="c1">//10 </span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">m1</span><span class="o">());</span> <span class="c1">//10</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">b</span><span class="o">.</span><span class="na">m1</span><span class="o">());</span> <span class="c1">//20 //Overriding</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">c</span><span class="o">.</span><span class="na">m1</span><span class="o">());</span> <span class="c1">//20 //Overriding</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>I hope I have covered all the concepts. I explained in the original story.</p>
+
+                
+            </div>
+            
+            <div>
+                <p>
+                    Your <a href="https://github.com/solothought/solothought.github.io/discussions/" target="_blank">feedback</a> is really important. So I can improve my future articles and correct what I have already published. You can also suggest if you want me to write an article on particular topic. 
+                    If you really like this blog, or article, please share with others. That's the only way I can buy time to write more articles.</p>
+            </div>
+
+            <!-- Rating -->
+            
+
+            <!-- Author Box -->
+            
+                <div class="row post-top-meta">
+    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+        
+        <img class="author-thumb" src="https://www.gravatar.com/avatar/37060302386aaf411d69559680562234?s=250&d=mm&r=x" alt="Amit">
+        
+    </div>
+    <div class="col-xs-12 col-md-9 col-lg-10 text-md-left">
+        <a target="_blank" class="link-dark" href="https://amitkumargupta.work">Amit</a>
+
+        
+            
+                <a target="_blank" href="https://twitter.com/amitguptagwl" ><i class="fab fa-twitter px-2"></i></a>
+             
+            
+                <a target="_blank" href="https://www.linkedin.com/in/amitguptagwl"><i class="fab fa-linkedin px-2"></i></a>
+             
+            
+                <a target="_blank" href="https://github.com/amitguptagwl"><i class="fab fa-github px-2"></i></a>
+            
+        
+        <span class="author-description">Author & Maintainer of many opensourse projects like fast-xml-parser, imglab, stubmatic etc. Very much interested in research & innovations.</span>
+    </div>
+</div>
+            
+            </article>
+            
+            
+            <!-- Post Date -->
+            <div class="after-post-tags clearfix">
+                <i class="fa fa-calendar-alt me-2"></i>
+                <span class="post-date"><time class="post-date" datetime="2023-06-27">27 Jun 2023</time></span>           
+                
+                <!-- Post Tags -->
+                <ul class="tags float-end">
+                    
+                    <li><i class="fas fa-tags"></i></li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/tags#java">#java</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/tags#story">#story</a>
+                    </li>
+                    
+                </ul>
+                <!-- End Tags -->
+            </div>
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            
+            <a class="prev d-block col-md-6" href="//tutorial/kungfu-java-concepts/"> &laquo; Story of Kungfu Java Valley</a>
+            
+            
+            <a class="next d-block col-md-6 text-lg-right" href="//tutorial/the-preparation-of-battle/">Chapter 2: The Preparation of Battle &raquo; </a>
+            
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+            </main>
+        </div>
+        <!-- End Post -->
+        
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+<div class="relatedPosts">
+
+  <h3>Related post</h3>
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+    
+    
+
+    
+
+    
+
+  
+
+    
+    
+
+    
+
+    
+
+  
+
+    
+    
+
+    
+
+    
+
+  
+
+    
+    
+
+    
+
+    
+
+  
+
+    
+    
+
+    
+
+    
+
+  
+
+    
+    
+
+    
+
+    
+
+  
+
+</div>
+<!-- Begin Comments
+================================================== -->
+
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <section class="disqus"></section>
+<!-- <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = ''; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section> -->
+
+            </div>
+        </div>
+    </div>
+
+<!--End Comments
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+</div>
+
+    
+<!-- Bottom Alert Bar for Patreon
+================================================== -->
+<!-- <div class="alertbar">
+	<div class="container text-center">
+		<span>Access high quality assets of this post on <a href="https://www.patreon.com/Solothought">Patreon</a></span>
+	</div>
+</div> -->
+</div>
+
+<!-- Categories Jumbotron
+================================================== -->
+<!-- <div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="d-md-flex align-items-center justify-content-center h-100">
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+            </div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+            
+            
+                
+                    <a class="mt-1 mb-1" href="/categories#tutorial">tutorial (6)</a>
+                
+            
+            
+		</div>
+	</div>
+</div> -->
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                Copyright © 2023 SoloThought 
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                <a href="https://github.com/solothought" class="btn-social btn-outline  m-2"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/solothought_q" class="btn-social btn-outline  m-2"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:solothought.official@gmail.com" class="btn-social btn-outline  m-2"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/solothought/solothought.github.io/discussions" class="btn-social btn-outline  m-2"><i class="fas fa-comments"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+  <!-- Cookie consent banner -->
+  <div id="cookieConsent" class="alert alert-dismissible alert-info text-center fixed-bottom mb-0">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    This website uses Google Analytics to analyze website traffic and improve your experience. By continuing to use this site, you consent to the use of cookies in accordance with our <a href="/privacypoicy" >Privacy Policy</a> and <a href="/termandconditions" >Term and Conditions</a>.
+  </div>
+  <script>
+    // Hide cookie consent on button click
+    document.querySelector('#cookieConsent .close').addEventListener('click', function () {
+      document.querySelector('#cookieConsent').style.display = 'none';
+    });
+  </script>
+<!-- Scripts
+================================================== -->
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> -->
+
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+<script src="/assets/js/mediumish.js"></script>
+
+
+
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+<!-- 
+<script id="dsq-count-scr" src="//.disqus.com/count.js"></script>
+ -->
+
+</body>
+</html>
