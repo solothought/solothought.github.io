@@ -3,12 +3,25 @@
   
     
     <url>
+      <loc>https://solothought.com/tutorial/easy-steps-launch-ec2/</loc>
+      
+        <lastmod>2023-07-03T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority></url>
+    
+  
+    
+    <url>
       <loc>https://solothought.com/tutorial/the-preparation-of-battle/</loc>
       
         <lastmod>2023-06-29T00:00:00+00:00</lastmod>
       
       
-        <changefreq>daily</changefreq>
+        <changefreq>monthly</changefreq>
       
       
         <priority>0.5</priority></url>
@@ -21,7 +34,7 @@
         <lastmod>2023-06-27T00:00:00+00:00</lastmod>
       
       
-        <changefreq>daily</changefreq>
+        <changefreq>monthly</changefreq>
       
       
         <priority>0.5</priority></url>
@@ -34,7 +47,7 @@
         <lastmod>2023-06-24T00:00:00+00:00</lastmod>
       
       
-        <changefreq>daily</changefreq>
+        <changefreq>monthly</changefreq>
       
       
         <priority>0.5</priority></url>
@@ -47,7 +60,7 @@
         <lastmod>2023-04-09T00:00:00+00:00</lastmod>
       
       
-        <changefreq>daily</changefreq>
+        <changefreq>monthly</changefreq>
       
       
         <priority>0.5</priority></url>
@@ -60,7 +73,7 @@
         <lastmod>2023-04-02T00:00:00+00:00</lastmod>
       
       
-        <changefreq>daily</changefreq>
+        <changefreq>monthly</changefreq>
       
       
         <priority>0.5</priority></url>
@@ -73,7 +86,7 @@
         <lastmod>2023-04-01T00:00:00+00:00</lastmod>
       
       
-        <changefreq>daily</changefreq>
+        <changefreq>monthly</changefreq>
       
       
         <priority>0.5</priority></url>
@@ -86,7 +99,7 @@
       <url>
         <loc>https://solothought.com/about</loc>
         
-          <lastmod>2023-06-30T06:26:46+00:00</lastmod>
+          <lastmod>2023-07-03T07:48:43+00:00</lastmod>
         
         
           <changefreq>monthly</changefreq>
@@ -111,7 +124,7 @@
       <url>
         <loc>https://solothought.com/privacypoicy</loc>
         
-          <lastmod>2023-06-30T06:26:46+00:00</lastmod>
+          <lastmod>2023-07-03T07:48:43+00:00</lastmod>
         
         
           <changefreq>monthly</changefreq>
@@ -130,7 +143,7 @@
       <url>
         <loc>https://solothought.com/termandconditions</loc>
         
-          <lastmod>2023-06-30T06:26:46+00:00</lastmod>
+          <lastmod>2023-07-03T07:48:43+00:00</lastmod>
         
         
           <changefreq>monthly</changefreq>
@@ -139,6 +152,8 @@
           <priority>0.5</priority>
         
        </url>
+    
+  
     
   
     

@@ -12,13 +12,214 @@
     <description>Collection of curated articles with in depth analysis on a topic to present a different perspective with interactive illustrations</description>
     <link>https://solothought.com/</link>
     <atom:link href="https://solothought.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 30 Jun 2023 06:26:46 +0000</pubDate>
-    <lastBuildDate>Fri, 30 Jun 2023 06:26:46 +0000</lastBuildDate>
+    <pubDate>Mon, 03 Jul 2023 07:48:43 +0000</pubDate>
+    <lastBuildDate>Mon, 03 Jul 2023 07:48:43 +0000</lastBuildDate>
     <language>en-US</language>
     <sy:updatePeriod> daily	</sy:updatePeriod>
     <sy:updateFrequency> 1 </sy:updateFrequency>
     <generator>Jekyll v4.3.2</generator>
 
+    
+      <item>
+        <title>9 Easy steps to Setup EC2 instance</title>
+        <description>&lt;p&gt;In this article, we’re going to create an EC2 instance inside a subnet inside a VPC inside a availability zone inside a region inside AWS.&lt;/p&gt;
+
+&lt;p class=&quot;text-center display-6&quot;&gt;AWS [ Region [ AZ [ VPC [ Subnet [ EC2 ] ] ] ] ]&lt;/p&gt;
+
+&lt;h1 id=&quot;basics&quot;&gt;Basics&lt;/h1&gt;
+&lt;p&gt;Before we start, let’s understand some very minimum terminologies to understand some AWS jargon in easy language.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;EC2:&lt;/strong&gt; Elastic Compute Cloud. This is a service that provides virtual machines that you can use to run your applications.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;AMI&lt;/strong&gt; (Amazon Machine Image) is a template that contains the software configuration (for example, an operating system, an application server, and applications) for an EC2 instance. You can launch multiple instances from a single AMI.&lt;/li&gt;
+      &lt;li&gt;An &lt;strong&gt;instance type&lt;/strong&gt; is a type of EC2 instance that has a specific set of hardware specifications, such as the number of CPU cores, the amount of memory, and the storage capacity. Eg General Purpose, Compute/Memory/Storage/GPU Optimized. (Eg T2 micro, T2 small, etc.)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;VPC:&lt;/strong&gt; Virtual Private Cloud. This is a logically isolated section of the AWS Cloud where you can launch your EC2 instances.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Subnet:&lt;/strong&gt; A logical division of a VPC. Subnets can be used to group EC2 instances together based on their function or security requirements. A range of IP address will be reserved for this subnet. An EC2 instance will be assigned to some IP address from this range.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Security group (SG):&lt;/strong&gt; A set of rules that control inbound and outbound traffic for your EC2 instances. Security groups can be used to control who can access your EC2 instances and what resources they can access.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;IAM roles:&lt;/strong&gt; Permissions that can be assigned to EC2 instances. IAM roles allow you to grant permissions to EC2 instances without having to manually configure the permissions on each instance.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Key pair:&lt;/strong&gt; A set of public and private keys that can be used to authenticate to your EC2 instances. Key pairs are used when you connect to your EC2 instances using SSH.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;EBS:&lt;/strong&gt; Elastic Block Store. This is a storage service that provides persistent block storage volumes for your EC2 instances. EBS volumes can be used to store data that needs to be kept persistent, even if your EC2 instance is terminated.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;EFS:&lt;/strong&gt; Elastic File System. This is a file storage service that provides scalable, highly available, and durable file storage for your EC2 instances. EFS can be used to share files between EC2 instances, and it can also be used to store data that needs to be accessed by multiple users or applications.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Prerequisite&lt;/strong&gt;: I’m expecting that following are already setup;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;AWS account&lt;/li&gt;
+  &lt;li&gt;VPC&lt;/li&gt;
+  &lt;li&gt;Subnet&lt;/li&gt;
+  &lt;li&gt;IAM Role&lt;/li&gt;
+  &lt;li&gt;Security Group&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;steps&quot;&gt;Steps&lt;/h2&gt;
+&lt;p&gt;It is in summary what you’ve to do. Refer the quick reference image to visualize and understand it properly.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Login to EC2 Dashboard&lt;/strong&gt;: AWS account &amp;gt; AWS Services tab &amp;gt; Select “Compute” { list of service }&lt;/li&gt;
+  &lt;li&gt;Select AWS &lt;strong&gt;Region&lt;/strong&gt; &amp;gt; Launch Instance&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Select AMI&lt;/strong&gt;(Image): Set of OS, Software, libraries etc (just like VM image, Docker image, or ISO image)&lt;/li&gt;
+  &lt;li&gt;Choose &lt;strong&gt;Instance Type&lt;/strong&gt;: Select the hardware capacity for your virtual machine.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Configure instance details&lt;/strong&gt;
+    &lt;ol&gt;
+      &lt;li&gt;&lt;strong&gt;No. of instances&lt;/strong&gt;: you can provision up to 20 instances at a time.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Purchase Options&lt;/strong&gt;: Request Spot Instances? Yes/No&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Networking details&lt;/strong&gt;: In which VPC (Virtual Private Cloud) you want to launch your instance and under which subnets inside your VPC. AWS will assign a dynamic IP to it from their pool of IPs once the instance is launched.
+        &lt;ol&gt;
+          &lt;li&gt;VPC,&lt;/li&gt;
+          &lt;li&gt;Subnet,&lt;/li&gt;
+          &lt;li&gt;Auto assign Pubic IP? Yes/No
+Auto assigned public IP can be changed when an instance restarts (shutdown -&amp;gt; starts). To assign a static IP check &lt;a href=&quot;#appendix&quot;&gt;appendix&lt;/a&gt;.&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;IAM Role&lt;/strong&gt;: Access permissions&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Shutdown Behaviour&lt;/strong&gt;: Stop or Terminate
+        &lt;ol&gt;
+          &lt;li&gt;&lt;strong&gt;Enable termination protection&lt;/strong&gt;: In case, you have accidentally terminated your instance, AWS has a layer of security mechanism. It will not delete your instance if you have enabled accidental termination protection.&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Under Monitoring&lt;/strong&gt;: you can enable Detailed Monitoring if your instance is a business critical instance. Basic monitoring is free of cost.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Under Tenancy&lt;/strong&gt;: If your application is a highly secure application, then you should go for dedicated capacity otherwise shared tenancy.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Add Storage&lt;/strong&gt;: AWS provides 3 types of EBS volumes- Magnetic, General Purpose SSD, Provisioned IOPs.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Tag Instance&lt;/strong&gt;: To find an instance easily&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Create/Select Security Group (SG)&lt;/strong&gt;: Consider it as firewall to control incoming and outgoing connections/traffic. In this article, I consider that SG is already created.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Add SSH keys&lt;/strong&gt;: To access the virtual machine from terminal. Download the keys and add them to your login software or OS.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;To see all launched instances: AWS account &amp;gt; “Instances” from left panel&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/AWS-SOLOTHOUGHT-EC2.webp&quot; alt=&quot;AWS EC2 setup quick reference by solothought&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;hr&quot;&gt;&lt;hr /&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;appendix&quot;&gt;Appendix&lt;/h1&gt;
+
+&lt;h2 id=&quot;static-ip-address&quot;&gt;Static IP address&lt;/h2&gt;
+&lt;p&gt;&lt;small&gt;This is an optional step&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Need&lt;/strong&gt;: To assign a static IP address to a EC2 instance or VPC so that it is not changed when your virtual machine starts again.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/AWS-EIP-solothought.webp&quot; alt=&quot;AWS EIP steps&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Steps&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Login to EIP Dashboard&lt;/strong&gt;: AWS account &amp;gt; “Elastic IPs” from left panel&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Create a Static IP Address&lt;/strong&gt;: Allocate New Address &amp;gt; VPC/EC2&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Bind&lt;/strong&gt; address to an EC2: Select already created IP address &amp;gt; “Actions” menu &amp;gt; “Associate Address” &amp;gt; Search for your instance &amp;gt; “Associate”&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can check the associated EIP from Instances dashboard.&lt;/p&gt;
+
+&lt;div class=&quot;alert alert-success&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;✔️ Tip&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;From the “Actions” menu of EIP dashboard, you can release or delete previous address to &lt;span style=&quot;background:#d3f8b6&quot;&gt;reduce cost&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;login-to-ec2-instance&quot;&gt;&lt;a href=&quot;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html&quot;&gt;Login to EC2 instance&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;You can check the status, and the configuration of EC2 instance from EC2 dashboard.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;ssh &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; /path/key-pair-name.pem instance-user-name@instance-public-dns-name
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;instance-public-dns-name:  Use the IP address of your machine to connect.&lt;/li&gt;
+  &lt;li&gt;You must have already downloaded the SSH keys during the instance creation. Setup them to the software or OS you’ll be using for login.&lt;/li&gt;
+  &lt;li&gt;Open the port for SSH connection in security group. You can optionally add the IP address of the machine you’ll be accessing the EC2 instance from.&lt;/li&gt;
+  &lt;li&gt;There is a default user name based on the AMI you used. Once you login with default user name, you can create more users for safety reasons.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Default Users&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;AMI&lt;/th&gt;
+      &lt;th&gt;user name&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Amazon Linux 2023, Amazon Linux 2, or the Amazon Linux AMI&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ec2-user&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CentOS AMI&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;centos&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ec2-user&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Debian AMI&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;admin&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Fedora AMI&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fedora&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ec2-user&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RHEL AMI&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ec2-user&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;root&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SUSE AMI&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ec2-user&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;root&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ubuntu AMI&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ubuntu&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Oracle AMI&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ec2-user&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bitnami AMI&lt;/td&gt;
+      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bitnami&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;small&gt;Otherwise, check with the AMI provider.&lt;/small&gt;&lt;/p&gt;
+
+&lt;div class=&quot;alert alert-success&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;✔️ Tip&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;Avoid using the default user &amp;amp; SSH keys if there are multiple users. For this, &lt;a href=&quot;https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs.html&quot;&gt;Create key pair&lt;/a&gt; &amp;gt; import the public key to EC2 instance &amp;gt; share private key with other users&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;snapshot&quot;&gt;Snapshot&lt;/h2&gt;
+&lt;p&gt;Amazon provided AMIs are a standard set of software and OS which can’t be modified. Consider them like a docker image. We can create an instance from them just like we create docker container.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What if we change anything in the instance and restart it?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The changes will be lost. Every time, we restart an instance, it starts from a base image from scratch. To persist the changes, you can take the snapshot.&lt;/p&gt;
+
+&lt;p&gt;You can either take the snapshot of complete EC2 instance which includes OS, applications and data or just the volume that include only data. If you take the snapshot of an instance, you can use it to create an AMI. You need not to stop the instance to take it’s snapshot. To take the snapshot of a volume, you must stop the running instance first.&lt;/p&gt;
+
+&lt;p&gt;For a good practice, you should remove temp folder, cache, logs, or any temporary data before taking snapshot of an instance. So the size of the image is lesser.&lt;/p&gt;
+
+&lt;div class=&quot;hr&quot;&gt;&lt;hr /&gt;&lt;/div&gt;
+&lt;p&gt;I tried to cover all the basic details you need to understand and setup EC2 instances. In the next article, we’ll see how to manage an EC2 instance.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 03 Jul 2023 00:00:00 +0000</pubDate>
+        <link>https://solothought.com/tutorial/easy-steps-launch-ec2/</link>
+        <guid isPermaLink="true">https://solothought.com/tutorial/easy-steps-launch-ec2/</guid>
+        
+        <category>aws</category>
+        
+        <category>ec2</category>
+        
+        <category>quickref</category>
+        
+        
+        <category>tutorial</category>
+        
+      </item>
     
       <item>
         <title>Chapter 2: The Preparation of Battle</title>
@@ -289,11 +490,14 @@
 
 &lt;p&gt;It was within this sacred space that Po’s friends, the village warriors and scholars, gathered to discuss their dreams and aspirations. They saw in Po a kindred spirit, someone with a passion for knowledge and a burning desire to leave his mark on the world. Encouraged by their unwavering support, they convinced Po that he had the potential to become a great master by contributing his own literature to the library.&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/KungFu_scroll_java_generics.webp&quot; alt=&quot;Explain Java generics through scroll&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;With their words echoing in his mind, Po felt a surge of determination coursing through his veins. He imagined himself standing amongst the ancient scrolls, sharing his wisdom and insights with future generations. The thought of leaving a lasting legacy, a testament to his growth and understanding, inspired him to embark on this ambitious journey.&lt;/p&gt;
 
 &lt;p&gt;But the road to becoming a great master was not without its challenges. Doubts crept into Po’s mind, whispering tales of inadequacy and fear of failure. It was during these moments of uncertainty that his friends became his pillars of support, reminding him of his unique perspective and the value he could bring to the library.&lt;/p&gt;
 
-&lt;p&gt;One day, after hours of contemplation, Po’s mind was buzzing with excitement. He had come up with a brilliant idea to contribute to the library. Determined to make it a reality, he woke up early in the morning, the sun barely peeking over the horizon. The village was still shrouded in a hazy mist, and the air was filled with the aroma of freshly brewed tea.&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;&lt;img src=&quot;/assets/images/posts/MrPingMain.webp&quot; alt=&quot;Mr Ping and his secret noodles recipe&quot; /&gt;
+One day, after hours of contemplation, Po’s mind was buzzing with excitement. He had come up with a brilliant idea to contribute to the library. Determined to make it a reality, he woke up early in the morning, the sun barely peeking over the horizon. The village was still shrouded in a hazy mist, and the air was filled with the aroma of freshly brewed tea.&lt;/p&gt;
 
 &lt;p&gt;Po quietly slipped out of his bed, careful not to disturb his sleeping companions. With a sense of purpose in his heart, he made his way to his father’s noodle shop. The door creaked open, and Po found his father, Mr. Ping, already hard at work, kneading the dough and preparing the ingredients for the day’s noodles.&lt;/p&gt;
 
@@ -546,14 +750,14 @@
 
 &lt;div class=&quot;alert alert-info&quot;&gt;
   &lt;p&gt;&lt;strong&gt;📌 Info&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;A student can&apos;t be a reference for his master&lt;/p&gt;
+  &lt;p&gt;A student can’t be a reference for his master&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;When we write a post on a blog, we define categories and tags. These are the markers to group particular type of posts. Though they define the type of post, they are still marker not the class. A post is a type of blog-page. A blog-page can be a type of web-page and so on.&lt;/p&gt;
 
 &lt;div class=&quot;alert alert-info&quot;&gt;
   &lt;p&gt;&lt;strong&gt;📌 Info&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;I use &quot;marker&quot; in most of the places in this article to &quot;Interface&quot;.&lt;/p&gt;
+  &lt;p&gt;I use “marker” in most of the places in this article to “Interface”.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h3 id=&quot;interface&quot;&gt;Interface&lt;/h3&gt;
@@ -1296,7 +1500,7 @@
 
 &lt;div class=&quot;alert alert-warning&quot;&gt;
   &lt;p&gt;&lt;strong&gt;⚠️ Warning&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;In this article, inheritance is considered as a `type` relationship not as a &quot;parent-child&quot; relationship. Think in this way, Human class is inherited by Superman class. But Superman is not the child of the human but it is the type of Human.&lt;/p&gt;
+  &lt;p&gt;In this article, inheritance is considered as a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;type&lt;/code&gt; relationship not as a “parent-child” relationship. Think in this way, Human class is inherited by Superman class. But Superman is not the child of the human but it is the type of Human.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;p&gt;In the next article, I’ll explain to you all the Java concepts covered in this article. So bookmark this article.&lt;/p&gt;
@@ -1326,7 +1530,7 @@
 
 &lt;div class=&quot;alert alert-info&quot;&gt;
   &lt;p&gt;&lt;strong&gt;📌 Info&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;Use `oneListGroup` property to guide builder not to generate separate parent tag for each child of a list. Use `updateTag` method with parer to update attrbutes name, attributes values, and tag name. You can also skip a tag from parsing result.&lt;/p&gt;
+  &lt;p&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;oneListGroup&lt;/code&gt; property to guide builder not to generate separate parent tag for each child of a list. Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;updateTag&lt;/code&gt; method with parer to update attrbutes name, attributes values, and tag name. You can also skip a tag from parsing result.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;onelistgroup-for-xml-builder&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;oneListGroup&lt;/code&gt; for XML builder&lt;/h2&gt;
@@ -1742,7 +1946,7 @@
     &lt;p&gt;Click on green icon in left-bottom corner of vscode &amp;gt; select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Reopen in Container&lt;/code&gt;. It will be download and install some necessary packages on first run.
 &lt;img src=&quot;/assets/images/posts/vscode-devcontainer.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-    &lt;p&gt;Go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;view&lt;/code&gt; menu &amp;gt; Select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Terminal&lt;/code&gt; option. Or &lt;code&gt;Ctrl+`&lt;/code&gt;. This will open Terminal inside the jekyll ontainer. You’ll see 2 ports open. But you can’t still open the site as no theme is generated or set yet.&lt;/p&gt;
+    &lt;p&gt;Go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;view&lt;/code&gt; menu &amp;gt; Select &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Terminal&lt;/code&gt; option. Or &lt;code&gt;Ctrl+`&lt;/code&gt;. This will open Terminal inside the jekyll container. You’ll see 2 ports open. But you can’t still open the site as no theme is generated or set yet.&lt;/p&gt;
 
     &lt;p&gt;Click on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt; icon to create a new theme or to explore what is inside the container.
 &lt;img src=&quot;/assets/images/posts/vscode-jekyll-terminal.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
