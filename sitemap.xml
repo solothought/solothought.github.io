@@ -3,6 +3,19 @@
   
     
     <url>
+      <loc>https://solothought.com/tutorial/aws-story/</loc>
+      
+        <lastmod>2023-07-18T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority></url>
+    
+  
+    
+    <url>
       <loc>https://solothought.com/tutorial/easy-steps-launch-ec2/</loc>
       
         <lastmod>2023-07-03T00:00:00+00:00</lastmod>
@@ -99,7 +112,7 @@
       <url>
         <loc>https://solothought.com/about</loc>
         
-          <lastmod>2023-07-03T07:48:43+00:00</lastmod>
+          <lastmod>2023-07-19T02:41:40+00:00</lastmod>
         
         
           <changefreq>monthly</changefreq>
@@ -124,7 +137,7 @@
       <url>
         <loc>https://solothought.com/privacypoicy</loc>
         
-          <lastmod>2023-07-03T07:48:43+00:00</lastmod>
+          <lastmod>2023-07-19T02:41:40+00:00</lastmod>
         
         
           <changefreq>monthly</changefreq>
@@ -143,7 +156,7 @@
       <url>
         <loc>https://solothought.com/termandconditions</loc>
         
-          <lastmod>2023-07-03T07:48:43+00:00</lastmod>
+          <lastmod>2023-07-19T02:41:40+00:00</lastmod>
         
         
           <changefreq>monthly</changefreq>
