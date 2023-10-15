@@ -467,12 +467,21 @@ img.thumbnail {
   padding-left: 25px;
 }
 
-#cookie-banner {
-  background: black;
-  color: white;
-  width: 100vw;
+/* CSS for the "myst" overlay */
+.myst-overlay {
   position: absolute;
-  top: 0px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity and color as needed */
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* CSS for the hover effect */
+.hovermyst:hover .myst-overlay {
+  opacity: 0; /* Hide the overlay when the cursor is over the image */
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -12,13 +12,57 @@
     <description>Collection of curated articles with in depth analysis on a topic to present a different perspective with interactive illustrations</description>
     <link>https://solothought.com/</link>
     <atom:link href="https://solothought.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 24 Jul 2023 14:44:02 +0000</pubDate>
-    <lastBuildDate>Mon, 24 Jul 2023 14:44:02 +0000</lastBuildDate>
+    <pubDate>Sun, 15 Oct 2023 10:52:38 +0000</pubDate>
+    <lastBuildDate>Sun, 15 Oct 2023 10:52:38 +0000</lastBuildDate>
     <language>en-US</language>
     <sy:updatePeriod> daily	</sy:updatePeriod>
     <sy:updateFrequency> 1 </sy:updateFrequency>
     <generator>Jekyll v4.3.2</generator>
 
+    
+      <item>
+        <title>Fast XML Parser v5 - Pre release</title>
+        <description>&lt;p&gt;You decide what to change next&lt;/p&gt;
+
+&lt;p&gt;I’m working on Fast-XML-Parser v5 from a long time. It’s Parser is almost ready but before finalizing the changes and approach, I want you to control this release.&lt;/p&gt;
+
+&lt;p&gt;FXP parser is now broken down in 3 separate units so user can control them as per their convenience.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;SourceReader&lt;/li&gt;
+  &lt;li&gt;Processor&lt;/li&gt;
+  &lt;li&gt;OutputBuilder&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;SourceReader reads the data and give it to the processor. It can read the data from a buffer, stream, string, or some encrypted encoded data of your choice. You can fully control it. Now you can decide if CPU is more important or memory.&lt;/p&gt;
+
+&lt;p&gt;Output builder is responsible to create the final data structure. It can be a JSON format, YAML, Nimn. You can store the output in memory, or write it to the stream. You can control if an attribute or a tag should be skipped or how their values should be parsed. Don’t worry, it’s easy.&lt;/p&gt;
+
+&lt;p&gt;In the upcoming version, I’m reducing the configuration as much as possible so they confuse you less but still keep the process customizable as per your need. Every unit can be configured separately.&lt;/p&gt;
+
+&lt;h2 id=&quot;expected-release-date&quot;&gt;Expected Release date&lt;/h2&gt;
+
+&lt;p&gt;Well! I can’t commit any date right now. Since I don’t want to compromise with the performance, I rewrite a lot of code multiple times until I achieve the desire throughput. This makes the process slow. On top of that, I’ve limited time for open-source. So sometimes I need to pause the development for many months.&lt;/p&gt;
+
+&lt;p&gt;Parser part is almost completed. I’ve to just brainstorm on jpath. I want to provide the better way of providing the jpath that can support more features in future. Once it is done, I need to sync all the source readers  and output builders that I’ll provide within the  package by default. However, you can create your own as well.&lt;/p&gt;
+
+&lt;p&gt;Once the parser is done, my plan is to embed the validator within the parser but with flexible and strict rules of throwing exception. Finally, I will work on builder so that it can also support external output builder. This can help you to work with big files.&lt;/p&gt;
+
+&lt;p&gt;Somewhere in between, I need to sync the patches developed after I cut v5 branch. And complete the tests. It’ll be a big set.&lt;/p&gt;
+
+&lt;p&gt;So keep checking this page once in a month for new updates. In the next update, I’ll give hint about changes in configuration. So you can give me your suggestions.&lt;/p&gt;
+
+&lt;p&gt;If you have any suggestion or question then let’s &lt;a href=&quot;https://github.com/NaturalIntelligence/fast-xml-parser/discussions/586&quot;&gt;discuss&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 14 Oct 2023 00:00:00 +0000</pubDate>
+        <link>https://solothought.com/info/fxp-5-prerelease/</link>
+        <guid isPermaLink="true">https://solothought.com/info/fxp-5-prerelease/</guid>
+        
+        <category>opensource</category>
+        
+        
+        <category>info</category>
+        
+      </item>
     
       <item>
         <title>Amir Wishu Sehgal cafe: The story of opportunities</title>
@@ -142,9 +186,13 @@
 
 &lt;p&gt;This incident inspired Sangeeta, as she witnessed firsthand how Amir’s dedication to providing reliable and accessible technology made a difference in people’s lives. She was grateful for the distributed setup and recognized the value it brought to the community. This experience motivated her to explore ways to contribute to the community herself, realizing the potential of technology in creating opportunities and overcoming challenges.&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;/assets/images/posts/sangeeta-at-GCP.webp&quot;&gt;San geeta, a fictional character of AWS story&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&quot;hr&quot;&gt;&lt;hr /&gt;&lt;/div&gt;
 
-&lt;p class=&quot;text-center&quot;&gt;&lt;img src=&quot;/assets/images/posts/sangeeta-at-GCP.webp&quot; alt=&quot;Sangeeta, a fictional character of AWS story&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;text-center hovermyst&quot;&gt;
+&lt;img src=&quot;/assets/images/posts/sangeeta-at-GCP.webp&quot; alt=&quot;&quot; /&gt;
+&lt;div class=&quot;myst-overlay&quot;&gt;&lt;/div&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Though the story doesn’t end here, I would like to feel this mesmerizing moment where the raindrops continued to fall, but they were no longer a hindrance. They became a backdrop to the triumph and resilience of Sangeeta. This moment was filled with an overwhelming sense of joy, as the sound of laughter and the warmth of hugs filled the air. It was a moment that would forever be etched in their memories and mine too. Each drop landing softly on Sangeeta’s face, a delicate dance between the raindrops and her tears. The wetness mingled together, as if the rain itself was joining her in her emotional journey. But amidst the rain-soaked chaos, a glimmer of happiness flickered in Sangeeta’s eyes, a spark of triumph that couldn’t be extinguished. Amidst the downpour, Amir stood on the opposite side of the shop, pushed back by the crowd. Happiness on his face with a big smile over the worry and anticipation he had.&lt;/p&gt;
 

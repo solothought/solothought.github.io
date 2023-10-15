@@ -113,6 +113,8 @@
                             
                                 <a class="dropdown-item" href="/categories#tutorial">tutorial (8)</a>
                             
+                                <a class="dropdown-item" href="/categories#info">info (1)</a>
+                            
                         
                     
 
@@ -293,6 +295,8 @@
                 
                     <a class="mt-1 mb-1" href="/categories#tutorial">tutorial (8)</a>
                 
+                    <a class="mt-1 mb-1" href="/categories#info">info (1)</a>
+                
             
             
 		</div>
@@ -349,5 +353,20 @@
 
 <!--  -->
 
+<script>
+    // Wait for the document to be ready
+    $(document).ready(function() {
+      // Add event listener for mouseover (cursor on the image)
+      $('.hovermyst').on('mouseover', function() {
+        $(this).find('.myst-overlay').css('opacity', 0); // Hide the overlay
+      });
+  
+      // Add event listener for mouseout (cursor off the image)
+      $('.hovermyst').on('mouseout', function() {
+        $(this).find('.myst-overlay').css('opacity', 1); // Show the overlay
+      });
+    });
+  </script>
+  
 </body>
 </html>

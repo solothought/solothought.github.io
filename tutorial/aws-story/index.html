@@ -117,6 +117,8 @@
                             
                                 <a class="dropdown-item" href="/categories#tutorial">tutorial (8)</a>
                             
+                                <a class="dropdown-item" href="/categories#info">info (1)</a>
+                            
                         
                     
 
@@ -417,9 +419,13 @@
 
 <p>This incident inspired Sangeeta, as she witnessed firsthand how Amir’s dedication to providing reliable and accessible technology made a difference in people’s lives. She was grateful for the distributed setup and recognized the value it brought to the community. This experience motivated her to explore ways to contribute to the community herself, realizing the potential of technology in creating opportunities and overcoming challenges.</p>
 
+<p><a href="/assets/images/posts/sangeeta-at-GCP.webp">San geeta, a fictional character of AWS story</a></p>
 <div class="hr"><hr /></div>
 
-<p class="text-center"><img src="/assets/images/posts/sangeeta-at-GCP.webp" alt="Sangeeta, a fictional character of AWS story" /></p>
+<p class="text-center hovermyst">
+<img src="/assets/images/posts/sangeeta-at-GCP.webp" alt="" />
+<div class="myst-overlay"></div>
+</p>
 
 <p>Though the story doesn’t end here, I would like to feel this mesmerizing moment where the raindrops continued to fall, but they were no longer a hindrance. They became a backdrop to the triumph and resilience of Sangeeta. This moment was filled with an overwhelming sense of joy, as the sound of laughter and the warmth of hugs filled the air. It was a moment that would forever be etched in their memories and mine too. Each drop landing softly on Sangeeta’s face, a delicate dance between the raindrops and her tears. The wetness mingled together, as if the rain itself was joining her in her emotional journey. But amidst the rain-soaked chaos, a glimmer of happiness flickered in Sangeeta’s eyes, a spark of triumph that couldn’t be extinguished. Amidst the downpour, Amir stood on the opposite side of the shop, pushed back by the crowd. Happiness on his face with a big smile over the worry and anticipation he had.</p>
 
@@ -494,6 +500,8 @@
             <a class="prev d-block col-md-6" href="//tutorial/easy-steps-launch-ec2/"> &laquo; 9 Easy steps to Setup EC2 instance</a>
             
             
+            <a class="next d-block col-md-6 text-lg-right" href="//info/fxp-5-prerelease/">Fast XML Parser v5 - Pre release &raquo; </a>
+            
             <div class="clearfix"></div>
             </div>
             <!-- End Categories -->
@@ -516,6 +524,15 @@
   
 
   
+
+  
+
+    
+    
+
+    
+
+    
 
   
 
@@ -652,6 +669,8 @@ https://search.google.com/structured-data/testing-tool/u/0/
                 
                     <a class="mt-1 mb-1" href="/categories#tutorial">tutorial (8)</a>
                 
+                    <a class="mt-1 mb-1" href="/categories#info">info (1)</a>
+                
             
             
 		</div>
@@ -710,5 +729,20 @@ https://search.google.com/structured-data/testing-tool/u/0/
 <script id="dsq-count-scr" src="//.disqus.com/count.js"></script>
  -->
 
+<script>
+    // Wait for the document to be ready
+    $(document).ready(function() {
+      // Add event listener for mouseover (cursor on the image)
+      $('.hovermyst').on('mouseover', function() {
+        $(this).find('.myst-overlay').css('opacity', 0); // Hide the overlay
+      });
+  
+      // Add event listener for mouseout (cursor off the image)
+      $('.hovermyst').on('mouseout', function() {
+        $(this).find('.myst-overlay').css('opacity', 1); // Show the overlay
+      });
+    });
+  </script>
+  
 </body>
 </html>
