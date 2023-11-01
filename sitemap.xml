@@ -3,6 +3,32 @@
   
     
     <url>
+      <loc>https://solothought.com/tech%20philosophy/secure-otp-architecture/</loc>
+      
+        <lastmod>2023-11-01T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority></url>
+    
+  
+    
+    <url>
+      <loc>https://solothought.com/tutorial/python-function-quick-ref/</loc>
+      
+        <lastmod>2023-10-24T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority></url>
+    
+  
+    
+    <url>
       <loc>https://solothought.com/tutorial/python-list-quick-ref/</loc>
       
         <lastmod>2023-10-22T00:00:00+00:00</lastmod>
@@ -32,19 +58,6 @@
       <loc>https://solothought.com/tutorial/aws-story/</loc>
       
         <lastmod>2023-07-18T00:00:00+00:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority></url>
-    
-  
-    
-    <url>
-      <loc>https://solothought.com/tutorial/easy-steps-launch-ec2/</loc>
-      
-        <lastmod>2023-07-03T00:00:00+00:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -138,7 +151,7 @@
       <url>
         <loc>https://solothought.com/about</loc>
         
-          <lastmod>2023-10-23T09:36:37+00:00</lastmod>
+          <lastmod>2023-11-01T06:01:45+00:00</lastmod>
         
         
           <changefreq>monthly</changefreq>
@@ -163,7 +176,7 @@
       <url>
         <loc>https://solothought.com/privacypoicy</loc>
         
-          <lastmod>2023-10-23T09:36:37+00:00</lastmod>
+          <lastmod>2023-11-01T06:01:45+00:00</lastmod>
         
         
           <changefreq>monthly</changefreq>
@@ -182,7 +195,7 @@
       <url>
         <loc>https://solothought.com/termandconditions</loc>
         
-          <lastmod>2023-10-23T09:36:37+00:00</lastmod>
+          <lastmod>2023-11-01T06:01:45+00:00</lastmod>
         
         
           <changefreq>monthly</changefreq>
@@ -191,6 +204,8 @@
           <priority>0.5</priority>
         
        </url>
+    
+  
     
   
     

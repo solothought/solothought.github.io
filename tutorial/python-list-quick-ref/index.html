@@ -115,9 +115,11 @@
                     
                         
                             
-                                <a class="dropdown-item" href="/categories#tutorial">tutorial (9)</a>
+                                <a class="dropdown-item" href="/categories#Tutorial">Tutorial (9)</a>
                             
-                                <a class="dropdown-item" href="/categories#info">info (1)</a>
+                                <a class="dropdown-item" href="/categories#Info">Info (1)</a>
+                            
+                                <a class="dropdown-item" href="/categories#Tech-Philosophy">Tech Philosophy (1)</a>
                             
                         
                     
@@ -337,6 +339,19 @@
 10
 11
 12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
 </pre></td><td class="rouge-code"><pre><span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="s">"S"</span><span class="p">,</span><span class="s">"O"</span><span class="p">,</span><span class="s">"L"</span><span class="p">,</span><span class="s">"O"</span><span class="p">,</span><span class="s">"T"</span><span class="p">,</span><span class="s">"H"</span><span class="p">,</span><span class="s">"O"</span><span class="p">,</span><span class="s">"U"</span><span class="p">,</span><span class="s">"G"</span><span class="p">,</span><span class="s">"H"</span><span class="p">]</span>
 <span class="nf">print</span><span class="p">(</span><span class="nb">list</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>      <span class="c1">#['S', 'O', 'L', 'O']
 </span><span class="nf">print</span><span class="p">(</span><span class="nb">list</span><span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>     <span class="c1">#['S', 'O', 'L', 'O']
@@ -349,13 +364,178 @@
 </span>
 <span class="nb">list</span> <span class="o">=</span> <span class="nb">list</span> <span class="o">+</span> <span class="p">[</span><span class="s">"."</span><span class="p">,</span><span class="s">"C"</span><span class="p">,</span><span class="s">"O"</span><span class="p">,</span><span class="s">"M"</span><span class="p">]</span>
 <span class="nf">print</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>           <span class="c1">#['S', 'O', 'L', 'O', 'T', 'H', 'O', 'U', 'G', 'H', 'T', '.', 'C', 'O', 'M']
-</span></pre></td></tr></tbody></table></code></pre></div></div>
+</span>
+<span class="c1">#Unpacking
+</span><span class="n">platform</span> <span class="o">=</span> <span class="p">[</span><span class="s">'S'</span><span class="p">,</span> <span class="s">'O'</span><span class="p">,</span> <span class="s">'L'</span><span class="p">,</span> <span class="s">'O'</span><span class="p">,</span> <span class="s">'💭'</span><span class="p">]</span>
+<span class="n">other</span> <span class="o">=</span> <span class="p">[</span><span class="o">*</span><span class="n">platform</span><span class="p">]</span>   <span class="c1">#supported by tuple, set
+</span><span class="n">another</span> <span class="o">=</span> <span class="n">platform</span><span class="p">[:]</span> <span class="c1">#supported by tuple but not set
+</span>
+<span class="c1">#dictionary
+</span><span class="n">about</span> <span class="o">=</span> <span class="p">{</span> 
+  <span class="s">"feature"</span> <span class="p">:</span> <span class="s">"simplified"</span><span class="p">,</span>
+  <span class="s">"aim"</span>     <span class="p">:</span> <span class="s">"another perspective"</span>
+<span class="p">}</span>
 
-<p>I hope now it is pretty clear to you. If you still have any doubt then let’s catch up on the <a href="https://github.com/solothought/solothought.github.io/discussions/">discussion</a> page.</p>
+<span class="p">{</span><span class="o">**</span><span class="n">about</span><span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="compare">Compare</h2>
+
+<p>Python supports different similar data structure. And you should understand the difference.</p>
+<ul>
+  <li>Lists are editable, indexed, ordered</li>
+  <li>Tuples are read only lists</li>
+  <li>Set are like set :) You can say unique list. And not ordered.</li>
+  <li>Dictionary is like json or map or object</li>
+</ul>
+
+<p>You can store different data types in any of above DS. And you can have nested DS as well.</p>
+
+<p><img src="/assets/images/posts/solothought-python-list-set-tuple-dictionary.webp" alt="solothought python list set tuple dictionary quick comparison" /></p>
+
+<h2 id="quiz">Quiz</h2>
+
+<p>Let’s check if you really understand it. Remember that a question may have multiple answers.</p>
+
+<div id="quizcarousel" class="carousel carousel-dark slide shadow" data-bs-ride="carousel">
+  <p><button class="carousel-control-prev" type="button" data-bs-target="#quizcarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#quizcarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button></p>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card">
+        <div class="card-header text-center">
+          Question 1
+        </div>
+        <div class="card-body">
+          <p>Select <code class="language-plaintext highlighter-rouge">['T', 'H', 'O', 'U', 'G', 'H', 'T']</code> from <code class="language-plaintext highlighter-rouge">['S', 'O', 'L', 'O', 'T', 'H', 'O', 'U', 'G', 'H', 'T', '.', 'C', 'O', 'M']</code>
+          </p>
+          <ol class="list-group list-group-flush quiz-list">
+            <li class="list-group-item quiz-option-correct">list[4:11]</li>
+            <li class="list-group-item quiz-option">list[4:10]</li>
+            <li class="list-group-item quiz-option-correct">list[-5:-12:-1][::-1]</li>
+            <li class="list-group-item quiz-option">None</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card">
+        <div class="card-header text-center">
+          Question 2
+        </div>
+        <div class="card-body">
+          <p>You’re given with following lists. Select the correct option to build <code class="language-plaintext highlighter-rouge">['S', 'O', 'L', 'O', 'T', 'H', 'O', 'U', 'G', 'H', 'T', '.', 'C', 'O', 'M']</code>
+          </p>
+<div>
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>a = ["S","O","L","O"]
+b = ["T","H","O","U","G","H", "T"]
+c = ['M', 'O', 'O', 'C', '.']
+</pre></td></tr></tbody></table></code></pre></div>            </div>
+          </div>
+          <ol class="list-group list-group-flush quiz-list">
+            <li class="list-group-item quiz-option">
+<div>
+                <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>c = c.remove("O")
+c.reverse()
+a + b + c
+</pre></td></tr></tbody></table></code></pre></div>                </div>
+              </div>
+            </li>
+            <li class="list-group-item quiz-option">a + b + c.remove("O").reverse()</li>
+            <li class="list-group-item quiz-option-correct">
+<div>
+                <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>c.remove("O")
+c.reverse()
+a + b + c
+</pre></td></tr></tbody></table></code></pre></div>                </div>
+              </div>
+            </li>
+            <li class="list-group-item quiz-option">None</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card">
+        <div class="card-header text-center">
+          Question 3
+        </div>
+        <div class="card-body">
+          <p>Your target is to remove <code class="language-plaintext highlighter-rouge">['S', 'O', 'L', 'O']</code> from <code class="language-plaintext highlighter-rouge">list = ['S', 'O', 'L', 'O', 'T', 'H', 'O', 'U', 'G', 'H', 'T', '.', 'C', 'O', 'M']</code>
+          </p>
+          <ol class="list-group list-group-flush quiz-list">
+            <li class="list-group-item quiz-option">list[0:3]=[]</li>
+            <li class="list-group-item quiz-option-correct">list[0:4]=[]</li>
+            <li class="list-group-item quiz-option">list.remove(0,4)</li>
+            <li class="list-group-item quiz-option">list = list.remove(0,4)</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card">
+        <div class="card-header text-center">
+          Question 4
+        </div>
+        <div class="card-body">
+          <p>For <code class="language-plaintext highlighter-rouge">list = ['S', 'O', 'L', 'O', 'T', 'H', 'O', 'U', 'G', 'H', 'T', '.', 'C', 'O', 'M']</code>, What would be the correct answer of <code class="language-plaintext highlighter-rouge">[x for x in list if x == "O"]</code>
+          </p>
+          <ol class="list-group list-group-flush quiz-list">
+            <li class="list-group-item quiz-option">Error</li>
+            <li class="list-group-item quiz-option">[]</li>
+            <li class="list-group-item quiz-option-correct">['O', 'O', 'O', 'O']</li>
+            <li class="list-group-item quiz-option">'OOOO'</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card">
+        <div class="card-header text-center">
+          Question 5
+        </div>
+        <div class="card-body">
+          <p>For <code class="language-plaintext highlighter-rouge">list = platform = ['S', 'O', 'L', 'O', '💭']</code>, which statement is correct to create a set from this list.
+          </p>
+          <ol class="list-group list-group-flush quiz-list">
+            <li class="list-group-item quiz-option">another = *platform</li>
+            <li class="list-group-item quiz-option">another = [*platform]</li>
+            <li class="list-group-item quiz-option">another = [**platform]</li>
+            <li class="list-group-item quiz-option-correct">another = {*platform}</li>
+            <li class="list-group-item quiz-option">another = platform[:]</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+
+  </div>
+</div>
+
+<p><br />
+I hope now it is pretty clear to you. If you still have any doubt then let’s catch up on the <a href="https://github.com/solothought/solothought.github.io/discussions/">discussion</a> page.</p>
 
                 
             </div>
             
+            <br />
+            <div class="hr"><hr /></div>
             <div>
                 <p>
                     Your <a href="https://github.com/solothought/solothought.github.io/discussions/" target="_blank">feedback</a> is really important. So I can improve my future articles and correct what I have already published. You can also suggest if you want me to write an article on particular topic. 
@@ -367,7 +547,7 @@
 
             <!-- Author Box -->
             
-                <div class="row post-top-meta">
+                <div class="row post-top-meta shadow rounded">
     <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
         
         <img class="author-thumb" src="https://www.gravatar.com/avatar/37060302386aaf411d69559680562234?s=250&d=mm&r=x" alt="Amit">
@@ -422,6 +602,8 @@
             <a class="prev d-block col-md-6" href="//info/fxp-5-prerelease/"> &laquo; Fast XML Parser v5 - Pre release</a>
             
             
+            <a class="next d-block col-md-6 text-lg-right" href="//tutorial/python-function-quick-ref/">Python Method - Quick Reference &raquo; </a>
+            
             <div class="clearfix"></div>
             </div>
             <!-- End Categories -->
@@ -433,7 +615,7 @@
 </div>
 <!-- End Article
 ================================================== -->
-<div class="relatedPosts">
+<!-- <div class="relatedPosts">
 
   <h3>Related post</h3>
 
@@ -537,7 +719,16 @@
 
   
 
-</div>
+    
+    
+
+    
+
+    
+
+  
+
+</div> -->
 <!-- Begin Comments
 ================================================== -->
 
@@ -596,9 +787,11 @@ https://search.google.com/structured-data/testing-tool/u/0/
             
             
                 
-                    <a class="mt-1 mb-1" href="/categories#tutorial">tutorial (9)</a>
+                    <a class="mt-1 mb-1" href="/categories#Tutorial">Tutorial (9)</a>
                 
-                    <a class="mt-1 mb-1" href="/categories#info">info (1)</a>
+                    <a class="mt-1 mb-1" href="/categories#Info">Info (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#Tech-Philosophy">Tech Philosophy (1)</a>
                 
             
             

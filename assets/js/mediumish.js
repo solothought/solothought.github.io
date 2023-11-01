@@ -21,14 +21,14 @@ jQuery(document).ready(function($){
     }
 
     // alertbar later
-    $(document).scroll(function () {
-        var y = $(this).scrollTop();
-        if (y > 280) {
-            $('.alertbar').fadeIn();
-        } else {
-            $('.alertbar').fadeOut();
-        }
-    });
+    // $(document).scroll(function () {
+    //     var y = $(this).scrollTop();
+    //     if (y > 280) {
+    //         $('.alertbar').fadeIn();
+    //     } else {
+    //         $('.alertbar').fadeOut();
+    //     }
+    // });
 
 
     // Smooth on external page
@@ -110,6 +110,16 @@ jQuery(document).ready(function($){
      $(document).on('click', '.spoiler', function() {
         $(this).removeClass('spoiler');
      });
+     
+     //easy quiz
+     $("li.quiz-option").on('click', function() {
+        $(this).addClass('bg-danger');
+     });
+     $("li.quiz-option-correct").on('click', function() {
+        $(this).addClass('bg-success');
+     });
+
+
     
  });   
 

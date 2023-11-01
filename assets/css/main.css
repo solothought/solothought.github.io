@@ -484,4 +484,21 @@ img.thumbnail {
   opacity: 0; /* Hide the overlay when the cursor is over the image */
 }
 
+.quiz-option, .quiz-option-correct {
+  cursor: pointer;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  bottom: auto;
+  top: 5px;
+  margin-bottom: 10px;
+}
+
+.list-group-flush > .list-group-item {
+  background: beige;
+  margin-top: 5px;
+}
+
 /*# sourceMappingURL=main.css.map */
