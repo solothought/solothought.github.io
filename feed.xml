@@ -29,13 +29,6 @@
         <link>https://solothought.com/tutorial/python-numpy/</link>
         <guid isPermaLink="true">https://solothought.com/tutorial/python-numpy/</guid>
         
-        <tag>python</tag>
-        
-        <tag>quickref</tag>
-        
-        <tag>illustrated</tag>
-        
-        
         <category>tutorial</category>
         
         <media:thumbnail url="https://solothought.com//assets/images/posts/numpy-create_s.webp" width="110" height="110" />
@@ -48,13 +41,7 @@
         <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/philosophy/secure-otp-architecture/</link>
         <guid isPermaLink="true">https://solothought.com/philosophy/secure-otp-architecture/</guid>
-        
-        <tag>architecture</tag>
-        
-        <tag>idea</tag>
-        
-        
-        <category>philosophy</category>
+            <category>philosophy</category>
         
         <media:thumbnail url="https://solothought.com//assets/images/posts/SMS_OTP_arch_thumb_s.webp" width="110" height="110" />
         <media:thumbnail url="https://solothought.com//assets/images/posts/SMS_OTP_arch_thumb_l.webp" width="324" height="216" />
@@ -66,13 +53,7 @@
         <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/python-function-quick-ref/</link>
         <guid isPermaLink="true">https://solothought.com/tutorial/python-function-quick-ref/</guid>
-        
-        <tag>python</tag>
-        
-        <tag>quickref</tag>
-        
-        
-        <category>tutorial</category>
+            <category>tutorial</category>
         
         <media:thumbnail url="https://solothought.com//assets/images/posts/solothought-python-def_s.webp" width="110" height="110" />
         <media:thumbnail url="https://solothought.com//assets/images/posts/solothought-python-def_l.webp" width="324" height="216" />
@@ -85,13 +66,7 @@
         <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/python-list-quick-ref/</link>
         <guid isPermaLink="true">https://solothought.com/tutorial/python-list-quick-ref/</guid>
-        
-        <tag>python</tag>
-        
-        <tag>quickref</tag>
-        
-        
-        <category>tutorial</category>
+            <category>tutorial</category>
         
         <media:thumbnail url="https://solothought.com//assets/images/posts/SoloThoughtArticles-PythonList_s.webp" width="110" height="110" />
         <media:thumbnail url="https://solothought.com//assets/images/posts/SoloThoughtArticles-PythonList_m.webp" width="324" height="216" />
@@ -105,8 +80,7 @@
         <link>https://solothought.com/info/fxp-5-prerelease/</link>
         <guid isPermaLink="true">https://solothought.com/info/fxp-5-prerelease/</guid>
         
-        <tag>opensource</tag>
-        
+                
         
         <category>info</category>
         
@@ -121,13 +95,7 @@
         <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/aws-story/</link>
         <guid isPermaLink="true">https://solothought.com/tutorial/aws-story/</guid>
-        
-        <tag>clouds</tag>
-        
-        <tag>storytelling</tag>
-        
-        
-        <category>tutorial</category>
+            <category>tutorial</category>
         
         <media:thumbnail url="https://solothought.com//assets/images/posts/sangeeta-at-GCP_s.webp" width="110" height="110" />
         <media:thumbnail url="https://solothought.com//assets/images/posts/sangeeta-at-GCP_m.webp" width="324" height="216" />
@@ -140,13 +108,7 @@
         <pubDate>Thu, 29 Jun 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/the-preparation-of-battle/</link>
         <guid isPermaLink="true">https://solothought.com/tutorial/the-preparation-of-battle/</guid>
-        
-        <tag>java</tag>
-        
-        <tag>storytelling</tag>
-        
-        
-        <category>tutorial</category>
+            <category>tutorial</category>
         
         <media:thumbnail url="https://solothought.com//assets/images/posts/java_enum_emtions_s.webp" width="110" height="110" />
         <media:thumbnail url="https://solothought.com//assets/images/posts/java_enum_emtions_m.webp" width="324" height="216" />
@@ -159,10 +121,8 @@
         <link>https://solothought.com/tutorial/kungfu-java-concepts-explanation/</link>
         <guid isPermaLink="true">https://solothought.com/tutorial/kungfu-java-concepts-explanation/</guid>
         
-        <tag>java</tag>
-        
-        <tag>story</tag>
-        
+                
+                
         
         <category>tutorial</category>
         
@@ -177,12 +137,9 @@
         <link>https://solothought.com/tutorial/kungfu-java-concepts/</link>
         <guid isPermaLink="true">https://solothought.com/tutorial/kungfu-java-concepts/</guid>
         
-        <tag>java</tag>
-        
-        <tag>storytelling</tag>
-        
-        <tag>java17</tag>
-        
+                
+                
+                
         
         <category>tutorial</category>
         
@@ -198,10 +155,8 @@
         <link>https://solothought.com/tutorial/fast-xml-parser-4.2-features/</link>
         <guid isPermaLink="true">https://solothought.com/tutorial/fast-xml-parser-4.2-features/</guid>
         
-        <tag>nodejs</tag>
-        
-        <tag>xml</tag>
-        
+                
+                
         
         <category>tutorial</category>
         
