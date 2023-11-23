@@ -23,7 +23,7 @@
     
       <item>
         <title>Visual Explaination of Python NumPy library</title>
-        <description>&lt;p&gt;NumPy is one of the popular Python libraries. In this article, we’ll understand its usage with graphics and more practical approach. So you can visually relate and remember it.&lt;/p&gt;
+        <description>NumPy is one of the popular Python libraries. In this article, we’ll understand its usage with graphics and more practical approach. So you can visually relate and remember it.
 </description>
         <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/python-numpy/</link>
@@ -80,7 +80,7 @@
     
       <item>
         <title>Python List - Quick Reference</title>
-        <description>&lt;p&gt;Just remember &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;list[start:end:-steps]&lt;/code&gt;. That’s all!&lt;/p&gt;
+        <description>Just remember &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;list[start:end:-steps]&lt;/code&gt;. That’s all!
 </description>
         <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/python-list-quick-ref/</link>
@@ -99,7 +99,7 @@
     
       <item>
         <title>Fast XML Parser v5 - Pre release</title>
-        <description>&lt;p&gt;You decide what to change next&lt;/p&gt;
+        <description>You decide what to change next
 </description>
         <pubDate>Sat, 14 Oct 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/info/fxp-5-prerelease/</link>
@@ -116,7 +116,7 @@
     
       <item>
         <title>Amir Wishu Sehgal cafe: The story of opportunities</title>
-        <description>&lt;p&gt;Amir Wishu Sehgal, a 23-year-old with dreams as vast as the open sky, resided in a small flat on rent. This humble abode happened to be in the same building as Gurutaap’s shop. The building was nestled in a close-knit community where people may not have been wealthy in material possessions, but they possessed hearts filled with warmth and generosity. It was a place where neighbors knew each other by name, where doors were always open for a cup of tea and a friendly chat.&lt;/p&gt;
+        <description>Amir Wishu Sehgal, a 23-year-old with dreams as vast as the open sky, resided in a small flat on rent. This humble abode happened to be in the same building as Gurutaap’s shop. The building was nestled in a close-knit community where people may not have been wealthy in material possessions, but they possessed hearts filled with warmth and generosity. It was a place where neighbors knew each other by name, where doors were always open for a cup of tea and a friendly chat.
 </description>
         <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/aws-story/</link>
@@ -135,7 +135,7 @@
     
       <item>
         <title>Chapter 2: The Preparation of Battle</title>
-        <description>&lt;p&gt;The Java valley is always under the threat. So all the masters must be prepared all the time.&lt;/p&gt;
+        <description>The Java valley is always under the threat. So all the masters must be prepared all the time.
 </description>
         <pubDate>Thu, 29 Jun 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/the-preparation-of-battle/</link>
@@ -154,8 +154,7 @@
     
       <item>
         <title>Story of Kungfu Java Valley - Explanation</title>
-        <description>&lt;p&gt;In the last article, &lt;a href=&quot;/tutorial/kungfu-java-concepts/&quot;&gt;The story of Kungfu Java Valley&lt;/a&gt; , we read about Java Valley and how Po became Master Po. There were many Java concepts we already read in that article. In this article, we’ll focus more on the technical side and reveal remaining hidden Java concepts. I’ll extend the story in the next article to understand more concepts. I hope you’ll enjoy it.&lt;/p&gt;
-</description>
+        <description>Technical explaination of original Story of Kungfu Java Valley with more uncovered concepts.</description>
         <pubDate>Tue, 27 Jun 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/kungfu-java-concepts-explanation/</link>
         <guid isPermaLink="true">https://solothought.com/tutorial/kungfu-java-concepts-explanation/</guid>
@@ -193,7 +192,7 @@
     
       <item>
         <title>Fast XML Parser v4.2 Features</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/NaturalIntelligence/fast-xml-parser&quot;&gt;Fast XML Parser&lt;/a&gt; was initially developed to support npm package &lt;a href=&quot;https://github.com/NaturalIntelligence/stubmatic/&quot;&gt;Stubmatic&lt;/a&gt; which is used for the rapid development of mock web services. Now Fast XML Parser has more than 9 million weekly downloads and approximately half a million projects on GitHub are using it including Microsoft, IBM, AWS, and many other big companies.&lt;/p&gt;
+        <description>&lt;a href=&quot;https://github.com/NaturalIntelligence/fast-xml-parser&quot;&gt;Fast XML Parser&lt;/a&gt; was initially developed to support npm package &lt;a href=&quot;https://github.com/NaturalIntelligence/stubmatic/&quot;&gt;Stubmatic&lt;/a&gt; which is used for the rapid development of mock web services. Now Fast XML Parser has more than 9 million weekly downloads and approximately half a million projects on GitHub are using it including Microsoft, IBM, AWS, and many other big companies.
 </description>
         <pubDate>Sun, 09 Apr 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/fast-xml-parser-4.2-features/</link>
