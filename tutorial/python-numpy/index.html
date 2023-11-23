@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/assets/images/icon.png">
+
+<!-- change your GA id in _config.yml -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4812VFLT3M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4812VFLT3M');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4922790412146333" crossorigin="anonymous"></script>
+
+
+
+<title>Visual Explaination of Python NumPy library | SoloThought</title>
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Visual Explaination of Python NumPy library | Solo Thought</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Visual Explaination of Python NumPy library" />
+<meta name="author" content="amit" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="NumPy is one of the popular Python libraries. In this article, we’ll understand its usage with graphics and more practical approach. So you can visually relate and remember it." />
+<meta property="og:description" content="NumPy is one of the popular Python libraries. In this article, we’ll understand its usage with graphics and more practical approach. So you can visually relate and remember it." />
+<link rel="canonical" href="https://solothought.com/tutorial/python-numpy/" />
+<meta property="og:url" content="https://solothought.com/tutorial/python-numpy/" />
+<meta property="og:site_name" content="Solo Thought" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-11-04T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Visual Explaination of Python NumPy library" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"amit"},"dateModified":"2023-11-04T00:00:00+00:00","datePublished":"2023-11-04T00:00:00+00:00","description":"NumPy is one of the popular Python libraries. In this article, we’ll understand its usage with graphics and more practical approach. So you can visually relate and remember it.","headline":"Visual Explaination of Python NumPy library","mainEntityOfPage":{"@type":"WebPage","@id":"https://solothought.com/tutorial/python-numpy/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://solothought.com/assets/images/logo.png"},"name":"amit"},"url":"https://solothought.com/tutorial/python-numpy/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+<link href="/assets/css/screen.css" rel="stylesheet">
+
+<link href="/assets/css/main.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
+</head>
+
+
+
+
+<body class="layout-post">
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+
+		<!-- <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather+Sans:300,300i,400,400i,700,700i" rel="stylesheet"> -->
+		<link href="https://fonts.googleapis.com/css?family=Righteous&family=Poppins" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+	</noscript>
+
+
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+
+    <div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="/">
+    <img src="/assets/images/logo.png" alt="SoloThought">
+    </a>
+    <!-- End Logo -->
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSolo" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSolo">
+
+        <!-- Begin Menu -->
+
+            <ul class="navbar-nav ms-auto">
+
+                
+                <li class="nav-item">
+                
+                <a class="nav-link" href="/index.html">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Categories
+                    </a>
+                    <div class="dropdown-menu  text-capitalize" aria-labelledby="navbarDropdown">
+                      <!-- <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a> -->
+
+                    
+                        
+                            
+                                <a class="dropdown-item" href="/categories#tutorial">tutorial (10)</a>
+                            
+                                <a class="dropdown-item" href="/categories#info">info (1)</a>
+                            
+                                <a class="dropdown-item" href="/categories#philosophy">philosophy (1)</a>
+                            
+                        
+                    
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown text-capitalize">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Open Source
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <!-- <div class="dropdown-divider">Libraries</div> -->
+                        <a class="dropdown-item" href="https://github.com/NaturalIntelligence/fast-xml-parser"><strong>Fast XML Parser</strong> in JS</a>
+                        <a class="dropdown-item" href="https://github.com/NaturalIntelligence/Stubmatic"><strong>Stubmatic</strong> - Mocking library for QAs</a>
+                      <a class="dropdown-item" href="https://github.com/NaturalIntelligence/nimn-spec"><strong>Nimn</strong> - Smaller than XML, JSON, Msgpack, Gzip</a>
+                      <a class="dropdown-item" href="https://github.com/solothought/shabdawali"><strong>Shabdawali</strong> - Human like Typing Effect</a>
+                      <a class="dropdown-item" href="https://github.com/solothought/vaarta"><strong>Vaarta</strong> - Typing Chat effect</a>
+                      <a class="dropdown-item" href="https://github.com/node-muneem/anumargak"><strong>Anumargak</strong> - Fast routing lib</a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/fast-lorem-ipsum"><strong>Fast Lorem Ipsum</strong> - generator</a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/fastify-xml-body-parser"><strong>Fastify XML Body Parser</strong></a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/cucumon"><strong>Cucumon</strong> - Better parser for Gherkin files</a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/strnum"><strong>Strnum</strong> - String to Number converter</a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/detailed-xml-validator"><strong>Detailed XML Validator</strong> - Light and effective XML schema validator</a>
+                      <div class="dropdown-divider">Online tool</div>
+                      <a class="dropdown-item" href="/imglab/"><strong>Imglab</strong> - Annotate images for ML</a>
+                      <a class="dropdown-item" href="/matchit/"><strong>Match it</strong> - Create card game</a>
+                      <div class="dropdown-divider">Research</div>
+                      <a class="dropdown-item" href="https://bigbit.github.io/bigbitjs/"><strong>BigBit</strong> - Numeric Datatype</a>
+                    </div>
+                </li>
+
+                <script src="/assets/js/lunr.js"></script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+</form>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+
+            </ul>
+
+        <!-- End Menu -->
+
+    </div>
+
+    </div>
+</nav>
+<!-- End Navigation
+================================================== -->
+
+<div class="site-content">
+
+
+<div class="container">
+
+<!-- Site Title
+================================================== -->
+
+
+<!-- Content
+================================================== -->
+<!-- <div id="gaerr" class="alert alert-danger">
+    All the stats like page views, trending posts, post for you are derived from Google analytics. Please enable Google analytics for accurate stats.
+</div> -->
+
+<div id="main-content" class="main-content">
+    <!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            <div class="share sticky-top sticky-top-offset fixed-left">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ms-1 me-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Visual Explaination of Python NumPy library&url=https://solothought.com/tutorial/python-numpy/" onclick="shareWith('twitter',this.href)">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ms-1 me-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=https://solothought.com/tutorial/python-numpy/" onclick="shareWith('facebook',this.href)">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ms-1 me-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https://solothought.com/tutorial/python-numpy/" onclick="shareWith('linkedin',this.href)">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        
+        <li class="ms-1 me-1">
+            <a target="_blank" href="https://getpocket.com/save?url=https://solothought.com/tutorial/python-numpy/"  target="_blank" onclick="gtag('event', 'share', { 'target': 'getpocket' });">
+                <i class="fab fa-get-pocket"></i>
+            </a>
+        </li>
+
+    </ul>
+    
+    <div class="sep">
+    </div>
+    <ul>
+        <li>
+        <a class="small smoothscroll" href="#disqus_thread"></a>
+        </li>
+    </ul>
+    
+</div>
+<script>
+    function shareWith(target, url){
+        if(target === "linkedin") {window.open(url, 'width=550,height=435');return false;}
+        else if(target === "facebook" || target === "twitter"){
+            window.open(this.href, target+'-share', 'width=550,height=435');return false;
+        }
+        if(gtag){
+            gtag('event', 'share', { 'target': target });
+        }
+   }
+</script>
+        </div>
+
+        <!-- Post -->
+        
+        
+        
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <main>
+            
+            <div class="mainheading">
+                <!-- Post Title -->
+                <h1 class="posttitle">Visual Explaination of Python NumPy library</h1>
+            </div>
+            
+            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+            
+            <!-- End Adsense -->
+
+            <!-- Post Featured Image -->
+            
+                
+            
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <article>
+            <div class="article-post">
+                <!-- Toc if any -->
+                
+                <!-- End Toc -->
+                <p>NumPy is one of the popular Python libraries. In this article, we’ll understand its usage with graphics and more practical approach. So you can visually relate and remember it.</p>
+
+<div class="alert alert-warning">
+  <p><strong>⚠️ Warning</strong></p>
+  <p><small>All the images and contents used in this article are meant to be used on Solothought.com only. You can use it to make your personal note. But publishing it on any site, blog, video or other medium without a link to this site or article is prohibited.</small></p>
+</div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><img src="/assets/images/posts/numpy-create.webp" alt="python numpy array create" /></p>
+
+<p>You can create numpy array by passing an array, or an array of array for multi-dimension array. It supports many formats.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">(</span><span class="nf">list</span><span class="p">(</span><span class="nf">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)))</span> <span class="c1">#array([0, 1, 2, 3])
+</span><span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>   <span class="c1">#array([0, 1, 2, 3])
+</span><span class="n">np</span><span class="p">.</span><span class="nf">fromstring</span><span class="p">(</span><span class="s">'1 4 '</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s">' '</span><span class="p">)</span>
+<span class="n">np</span><span class="p">.</span><span class="nf">fromstring</span><span class="p">(</span><span class="s">'1, 2'</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s">','</span><span class="p">)</span>
+<span class="n">numpy</span><span class="p">.</span><span class="nf">frombuffer</span><span class="p">(</span><span class="nb">buffer</span><span class="p">,</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">,</span> <span class="n">count</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">numpy</span><span class="p">.</span><span class="nf">fromiter</span><span class="p">(</span><span class="n">iterable</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">count</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#from iterator
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Some quick ways to create NumPy arrays are</p>
+
+<p><img src="/assets/images/posts/numpy-create-easy.webp" alt="python numpy array create" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre><span class="n">site</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span>
+    <span class="p">[</span>
+      <span class="p">[</span><span class="s">"S"</span><span class="p">,</span><span class="s">"O"</span><span class="p">,</span><span class="s">"L"</span><span class="p">,</span><span class="s">"O"</span><span class="p">],[</span><span class="s">"T"</span><span class="p">,</span><span class="s">"H"</span><span class="p">,</span><span class="s">"O"</span><span class="p">,</span><span class="s">"T"</span><span class="p">]</span>
+    <span class="p">],</span>
+    <span class="p">[</span>
+      <span class="p">[</span><span class="s">'.'</span><span class="p">,</span><span class="s">'c'</span><span class="p">,</span><span class="s">'o'</span><span class="p">,</span><span class="s">'m'</span><span class="p">],[</span><span class="s">'b'</span><span class="p">,</span><span class="s">'l'</span><span class="p">,</span><span class="s">'o'</span><span class="p">,</span><span class="s">'g'</span><span class="p">]</span>
+    <span class="p">]</span>
+  <span class="p">]);</span>
+
+<span class="n">site</span><span class="p">.</span><span class="n">shape</span> <span class="c1"># (2, 2, 4)
+</span><span class="n">site</span><span class="p">.</span><span class="n">size</span>  <span class="c1"># 16
+</span><span class="n">site</span><span class="p">.</span><span class="n">ndim</span>  <span class="c1"># 3
+</span><span class="nf">len</span><span class="p">(</span><span class="n">site</span><span class="p">)</span>  <span class="c1"># 2
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>You can also create an array with random values</p>
+
+<p><img src="/assets/images/posts/numpy-create-random.webp" alt="python numpy array create" /></p>
+
+<h3 id="some-more-functions">Some more functions</h3>
+
+<ul>
+  <li><strong>arange</strong>: (a range) To create NumPy array.
+    <blockquote>
+      <p>np.arange(from ,to(not included), step)</p>
+    </blockquote>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="n">np</span><span class="p">.</span><span class="nf">arange</span><span class="p">(</span><span class="mi">1</span> <span class="p">,</span><span class="mi">15</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c1">#array([ 1,  3,  5,  7,  9, 11, 13])
+</span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">17</span><span class="p">).</span><span class="nf">reshape</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">a</span>
+<span class="c1"># array([[ 1,  2,  3,  4],
+#        [ 5,  6,  7,  8],
+#        [ 9, 10, 11, 12],
+#        [13, 14, 15, 16]])
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="arithmetic-operations">Arithmetic Operations</h2>
+
+<p><img src="/assets/images/posts/numpy-operation.webp" alt="python numpy direct operation" /></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span> <span class="o">-</span> <span class="mi">1</span> <span class="c1"># array([0, 1, 2, 3])
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>You can apply the other operations in the same way. However, remember that the right side array shape should be acceptable. This is also called Broadcasting.</p>
+
+<p><img src="/assets/images/posts/numpy-operation-wrong-shape.webp" alt="python numpy wrong shape operation" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="nc">A</span><span class="p">(</span><span class="mi">2</span><span class="o">-</span><span class="n">D</span> <span class="n">array</span><span class="p">):</span> <span class="mi">4</span> <span class="n">x</span> <span class="mi">3</span>
+<span class="nc">B</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">D</span> <span class="n">array</span><span class="p">):</span>     <span class="mi">3</span>
+<span class="n">Result</span>      <span class="p">:</span> <span class="mi">4</span> <span class="n">x</span> <span class="mi">3</span>
+
+<span class="nc">A</span><span class="p">(</span><span class="mi">4</span><span class="o">-</span><span class="n">D</span> <span class="n">array</span><span class="p">):</span> <span class="mi">7</span> <span class="n">x</span> <span class="mi">1</span> <span class="n">x</span> <span class="mi">6</span> <span class="n">x</span> <span class="mi">1</span>
+<span class="nc">B</span><span class="p">(</span><span class="mi">3</span><span class="o">-</span><span class="n">D</span> <span class="n">array</span><span class="p">):</span>     <span class="mi">3</span> <span class="n">x</span> <span class="mi">1</span> <span class="n">x</span> <span class="mi">5</span>
+<span class="n">Result</span>      <span class="p">:</span> <span class="mi">7</span> <span class="n">x</span> <span class="mi">3</span> <span class="n">x</span> <span class="mi">6</span> <span class="n">x</span> <span class="mi">5</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Other operations</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="n">np</span><span class="p">.</span><span class="nf">subtract</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="c1">#or a - b
+</span><span class="n">np</span><span class="p">.</span><span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="c1">#or a + b
+</span><span class="n">np</span><span class="p">.</span><span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="c1">#or a / b
+</span><span class="n">np</span><span class="p">.</span><span class="nf">multiply</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="c1">#or a * b
+</span><span class="n">a</span><span class="p">.</span><span class="nf">dot</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>    <span class="c1">#dot product between a,b
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><img src="/assets/images/posts/numpy-dot.webp" alt="python numpy dot operation" /></p>
+
+<p>You can also perform many math operations on all the elements of NumPy;</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="n">np</span><span class="p">.</span><span class="nf">exp</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>   <span class="c1">#Exponentiation
+</span><span class="n">np</span><span class="p">.</span><span class="nf">sqrt</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>  <span class="c1">#Square root
+</span><span class="n">np</span><span class="p">.</span><span class="nf">sin</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">np</span><span class="p">.</span><span class="nf">cos</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>  
+<span class="n">np</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="selection">Selection</h2>
+
+<p>To access an emelement from the array, you can use following patterns;</p>
+<ul>
+  <li>arr[from:to:step] - To create another array from the original array.
+    <ul>
+      <li>If <code class="language-plaintext highlighter-rouge">from</code> is not specified, it means 0</li>
+      <li>If <code class="language-plaintext highlighter-rouge">to</code> is not specified, it means length of that dimension</li>
+      <li>If <code class="language-plaintext highlighter-rouge">step</code> is not specified, it means 1</li>
+    </ul>
+  </li>
+  <li>arr[at] - To select an elemnt at specific index</li>
+  <li>arr[:] - all the elements of that dimension.</li>
+  <li>arr[…] - all the elements of that dimension.</li>
+</ul>
+
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">arr[:]</code> means from start to end with step 1. <code class="language-plaintext highlighter-rouge">arr[::]</code> also mean the same.</p>
+</blockquote>
+
+<p><img src="/assets/images/posts/numpy-selection.webp" alt="python numpy selection" /></p>
+
+<p>Isn’t it confusing that we can use multiple different expressions to select the same data from an array? Let’s understand why and how with examples.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="rouge-code"><pre><span class="n">site</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span>
+    <span class="p">[</span>
+      <span class="p">[</span><span class="s">"S"</span><span class="p">,</span><span class="s">"O"</span><span class="p">,</span><span class="s">"L"</span><span class="p">,</span><span class="s">"O"</span><span class="p">],[</span><span class="s">"T"</span><span class="p">,</span><span class="s">"H"</span><span class="p">,</span><span class="s">"O"</span><span class="p">,</span><span class="s">"T"</span><span class="p">]</span>
+    <span class="p">],</span>
+    <span class="p">[</span>
+      <span class="p">[</span><span class="s">'.'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">,</span> <span class="s">'o'</span><span class="p">,</span> <span class="s">'m'</span><span class="p">],</span> <span class="p">[</span><span class="s">'b'</span><span class="p">,</span> <span class="s">'l'</span><span class="p">,</span> <span class="s">'o'</span><span class="p">,</span> <span class="s">'g'</span><span class="p">]</span>
+    <span class="p">]</span>
+  <span class="p">]);</span>
+
+<span class="c1"># All below expressions result ['T', 'H', 'O', 'T']
+</span><span class="n">site</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">site</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">site</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="c1"># All below expressions result [['T', 'H', 'O', 'T']]
+</span><span class="n">site</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Did you understand the difference between <code class="language-plaintext highlighter-rouge">site[0][1]</code> and <code class="language-plaintext highlighter-rouge">site[0:1,1]</code>?</p>
+
+<p>In case of <code class="language-plaintext highlighter-rouge">site[0:1,1]</code>, we first create a new NumPy array then select it’s 2nd element.</p>
+
+<p><img src="/assets/images/posts/numpy-solothought-creation.webp" alt="python numpy selection difference" /></p>
+
+<p>In case of <code class="language-plaintext highlighter-rouge">site[0,1]</code>, we just refer the 2nd column of 1st element and return it.</p>
+
+<p><img src="/assets/images/posts/numpy-solothought-reference.webp" alt="python numpy selection difference" /></p>
+
+<h3 id="negative-index-and-direction">Negative index and direction</h3>
+
+<p>Nump array indexing work in the same way of <a href="/tutorial/python-list-quick-ref/">python native lists</a>. You can use negative step to reverse the list, or a negative index to select an item from reverse direction.</p>
+
+<p><img src="/assets/images/posts/numpy-negative-step-index.webp" alt="python numpy negative step, negative index" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre><span class="n">site</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span>
+    <span class="p">[</span>
+      <span class="p">[</span><span class="s">"S"</span><span class="p">,</span><span class="s">"O"</span><span class="p">,</span><span class="s">"L"</span><span class="p">,</span><span class="s">"O"</span><span class="p">],[</span><span class="s">"T"</span><span class="p">,</span><span class="s">"H"</span><span class="p">,</span><span class="s">"O"</span><span class="p">,</span><span class="s">"T"</span><span class="p">]</span>
+    <span class="p">],</span>
+    <span class="p">[</span>
+      <span class="p">[</span><span class="s">'.'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">,</span> <span class="s">'o'</span><span class="p">,</span> <span class="s">'m'</span><span class="p">],</span> <span class="p">[</span><span class="s">'b'</span><span class="p">,</span> <span class="s">'l'</span><span class="p">,</span> <span class="s">'o'</span><span class="p">,</span> <span class="s">'g'</span><span class="p">]</span>
+    <span class="p">]</span>
+  <span class="p">]);</span>
+<span class="n">site</span><span class="p">[:,:,::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre>array([[['O', 'L', 'O', 'S'],
+        ['T', 'O', 'H', 'T']],
+
+       [['m', 'o', 'c', '.'],
+        ['g', 'o', 'l', 'b']]], dtype='&lt;U1')
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="aggregation">Aggregation</h2>
+
+<p>NumPy provides direct function to perform an aggregation opperation and return the result.</p>
+
+<p><img src="/assets/images/posts/numpy-aggregation.webp" alt="python numpy aggregation" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>fn</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>a.sum()</td>
+      <td>sum</td>
+    </tr>
+    <tr>
+      <td>a.min()</td>
+      <td>min</td>
+    </tr>
+    <tr>
+      <td>a.max()</td>
+      <td>max</td>
+    </tr>
+    <tr>
+      <td>a.cumsum()</td>
+      <td>Cumulative sum</td>
+    </tr>
+    <tr>
+      <td>a.mean()</td>
+      <td>Mean</td>
+    </tr>
+    <tr>
+      <td>a.median()</td>
+      <td>Median</td>
+    </tr>
+    <tr>
+      <td>a.corrcoef()</td>
+      <td>Correlation coefficient</td>
+    </tr>
+    <tr>
+      <td>np.std(a)</td>
+      <td>Standard deviation</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="axis">Axis</h3>
+
+<p>You can perform aggregation on particular dimension as well.</p>
+
+<p><img src="/assets/images/posts/numpy-axis.webp" alt="python numpy aggregation" /></p>
+
+<p>For a 3d array, there are 3 axis. When you select a particular axis, an operation is performed that axis-wise.</p>
+
+<p><img src="/assets/images/posts/numpy-aggregation-sum.webp" alt="python numpy aggregation" /></p>
+
+<p>Let’s understand with one more example of <code class="language-plaintext highlighter-rouge">max</code> operation.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="n">npr</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">])</span>
+<span class="n">npr</span><span class="p">.</span><span class="nf">reshape</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">).</span><span class="nf">max</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><img src="/assets/images/posts/numpy-aggregation-max.webp" alt="python numpy aggregation" /></p>
+
+<h2 id="restructure">Restructure</h2>
+
+<p>Remember that each dimension should have same number of elements.</p>
+<ul>
+  <li>resize: Change the original array</li>
+  <li>reshape: Returns a new array</li>
+  <li>transpose: Rows into columns and vice versa</li>
+</ul>
+
+<p><img src="/assets/images/posts/numpy-restructure.webp" alt="python numpy resize reshape transpose" /></p>
+
+<p>You can append or concatenate 2 arrays in following ways;</p>
+
+<p><img src="/assets/images/posts/numpy-join.webp" alt="python numpy resize reshape transpose" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">insert</code> and <code class="language-plaintext highlighter-rouge">delete</code> works in the same way. For a 2d array, you can consider axis 0 as row and axis 1 as column. If you insert a single value, numpy automatically fill remaining items with the same value. Otherwise you need to take care of the size.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">).</span><span class="nf">reshape</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">insert</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="mi">1</span><span class="p">,[</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>array([[1, 2, 3],
+       [9, 9, 9],
+       [4, 5, 6],
+       [7, 8, 9]])
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Since each row has 3 items, you can insert either <code class="language-plaintext highlighter-rouge">9</code> or <code class="language-plaintext highlighter-rouge">[9,9,9]</code>. any other shape will give error.</p>
+
+<p class="float-end"><img src="/assets/images/posts/numpy-insert-axis-0.gif" alt="python numpy insert axis 0" /></p>
+<p><img src="/assets/images/posts/numpy-insert-axis-1.gif" alt="python numpy insert axis 0" /></p>
+
+<p>To understand delete operation, reverse the animation above.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">).</span><span class="nf">reshape</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">a2</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">insert</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="mi">1</span><span class="p">,[</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">a3</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="n">a2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">==</span> <span class="n">a3</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>array([[ True,  True,  True],
+       [ True,  True,  True],
+       [ True,  True,  True]])
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>If you want single value output</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">np</span><span class="p">.</span><span class="nf">array_equal</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">a3</span><span class="p">)</span> <span class="c1"># True
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><strong>Sort</strong> operation can also be performed on whole array or only on particular axis.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="n">a</span><span class="p">.</span><span class="nf">sort</span><span class="p">()</span>
+<span class="n">a2</span><span class="p">.</span><span class="nf">sort</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="advance-selection">Advance Selection</h2>
+
+<p>Values from NumPy array can be selected by passing truth values array.</p>
+
+<p><img src="/assets/images/posts/numpy-advance-selection.webp" alt="python numpy advance selection" /></p>
+
+<h2 id="clone">Clone</h2>
+
+<ul>
+  <li>Deep copy: <code class="language-plaintext highlighter-rouge">b = a[:]</code> or <code class="language-plaintext highlighter-rouge">b = a.copy()</code></li>
+  <li>View: <code class="language-plaintext highlighter-rouge">b = a.view()</code>. Any change in b will reflect on a other than change in shape</li>
+  <li>Shallow copy (or reference): <code class="language-plaintext highlighter-rouge">b = a</code>.</li>
+</ul>
+
+<div class="hr"><hr /></div>
+
+<p>NumPy has many useful functions that reduce a lot of effort of managing and manipulating data. What you need to understand is</p>
+
+<ul>
+  <li>Direct operations</li>
+  <li>Axis</li>
+  <li>Selection</li>
+</ul>
+
+<p>Once these concepts are clear, you can understand and use it’s any function easily. But still if you feel I should cover more functions, leave a message on discussion forum.</p>
+
+<p>There are many other things that you can do with numpy like storing and manipulating dates, solving math expressions, matrix, loafin or saving numpy array from/to a file etc.</p>
+
+
+                
+            </div>
+            
+            <br />
+            <div class="hr"><hr /></div>
+            <div>
+                <p>
+                    Your <a href="https://github.com/solothought/solothought.github.io/discussions/" target="_blank">feedback</a> is really important. So I can improve my future articles and correct what I have already published. You can also suggest if you want me to write an article on particular topic. 
+                    If you really like this blog, or article, please share with others. That's the only way I can buy time to write more articles.</p>
+            </div>
+
+            <!-- Rating -->
+            
+
+            <!-- Author Box -->
+            
+                <div class="row post-top-meta shadow rounded">
+    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+        
+        <img class="author-thumb" src="https://www.gravatar.com/avatar/37060302386aaf411d69559680562234?s=250&d=mm&r=x" alt="Amit">
+        
+    </div>
+    <div class="col-xs-12 col-md-9 col-lg-10 text-md-left">
+        <a target="_blank" class="link-dark" href="https://amitkumargupta.work">Amit</a>
+
+        
+            
+                <a target="_blank" href="https://twitter.com/amitguptagwl" ><i class="fab fa-twitter px-2"></i></a>
+             
+            
+                <a target="_blank" href="https://www.linkedin.com/in/amitguptagwl"><i class="fab fa-linkedin px-2"></i></a>
+             
+            
+                <a target="_blank" href="https://github.com/amitguptagwl"><i class="fab fa-github px-2"></i></a>
+            
+        
+        <span class="author-description">Author & Maintainer of many opensourse projects like fast-xml-parser, imglab, stubmatic etc. Very much interested in research & innovations.</span>
+    </div>
+</div>
+            
+            </article>
+            
+            
+            <!-- Post Date -->
+            <div class="after-post-tags clearfix">
+                <i class="fa fa-calendar-alt me-2"></i>
+                <span class="post-date"><time class="post-date" datetime="2023-11-04">04 Nov 2023</time></span>           
+                
+                <!-- Post Tags -->
+                <ul class="tags float-end">
+                    
+                    <li><i class="fas fa-tags"></i></li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/tags#illustrated">#illustrated</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/tags#python">#python</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/tags#quickref">#quickref</a>
+                    </li>
+                    
+                </ul>
+                <!-- End Tags -->
+            </div>
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            
+            <a class="prev d-block col-md-6" href="//philosophy/secure-otp-architecture/"> &laquo; System Design to secure OTP from Eavesdropping Apps</a>
+            
+            
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+            </main>
+        </div>
+        <!-- End Post -->
+        
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+<!-- <div class="relatedPosts">
+
+  <h3>Related post</h3>
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+    
+    
+
+    
+
+    
+
+  
+
+    
+    
+
+    
+
+    
+
+  
+
+    
+    
+
+    
+
+    
+
+  
+
+    
+    
+
+    
+
+    
+
+  
+
+    
+    
+
+    
+
+    
+
+  
+
+    
+    
+
+    
+
+    
+
+  
+
+    
+    
+
+    
+
+    
+
+  
+
+    
+    
+
+    
+
+    
+
+  
+
+    
+    
+
+    
+
+    
+
+  
+
+    
+    
+
+    
+
+    
+
+  
+
+    
+    
+
+    
+
+    
+
+  
+
+    
+    
+
+    
+
+    
+
+  
+
+</div> -->
+<!-- Begin Comments
+================================================== -->
+
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <section class="disqus"></section>
+<!-- <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = ''; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section> -->
+
+            </div>
+        </div>
+    </div>
+
+<!--End Comments
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+</div>
+
+    
+<!-- Bottom Alert Bar for Patreon
+================================================== -->
+<!-- <div class="alertbar">
+	<div class="container text-center">
+		<span>Access high quality assets of this post on <a href="https://www.patreon.com/Solothought">Patreon</a></span>
+	</div>
+</div> -->
+</div>
+
+<!-- Categories Jumbotron
+================================================== -->
+<!-- <div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="d-md-flex align-items-center justify-content-center h-100">
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+            </div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+            
+            
+                
+                    <a class="mt-1 mb-1" href="/categories#tutorial">tutorial (10)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#info">info (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#philosophy">philosophy (1)</a>
+                
+            
+            
+		</div>
+	</div>
+</div> -->
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                Copyright © 2023 SoloThought 
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                <a href="/feed.xml" class="btn-social btn-outline  m-2"><i class="fas fa-rss"></i></a>
+                <a href="/about" class="btn-social btn-outline  m-2"><i class="fas fa-bullhorn"></i></a>
+                <a href="https://github.com/solothought" class="btn-social btn-outline  m-2"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/solothought_q" class="btn-social btn-outline  m-2"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:solothought.official@gmail.com" class="btn-social btn-outline  m-2"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/solothought/solothought.github.io/discussions" class="btn-social btn-outline  m-2"><i class="fas fa-comments"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+  <!-- Cookie consent banner -->
+  <div id="cookieConsent" class="alert alert-dismissible alert-info text-center fixed-bottom mb-0">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    This website uses Google Analytics to analyze website traffic and improve your experience. By continuing to use this site, you consent to the use of cookies in accordance with our <a href="/privacypoicy" >Privacy Policy</a> and <a href="/termandconditions" >Term and Conditions</a>.
+  </div>
+  <script>
+    // Hide cookie consent on button click
+    document.querySelector('#cookieConsent .close').addEventListener('click', function () {
+      document.querySelector('#cookieConsent').style.display = 'none';
+    });
+  </script>
+<!-- Scripts
+================================================== -->
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> -->
+
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+<script src="/assets/js/mediumish.js"></script>
+
+
+
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+<!-- 
+<script id="dsq-count-scr" src="//.disqus.com/count.js"></script>
+ -->
+
+<script>
+    // Wait for the document to be ready
+    $(document).ready(function() {
+      // Add event listener for mouseover (cursor on the image)
+      $('.hovermyst').on('mouseover', function() {
+        $(this).find('.myst-overlay').css('opacity', 0); // Hide the overlay
+      });
+  
+      // Add event listener for mouseout (cursor off the image)
+      $('.hovermyst').on('mouseout', function() {
+        $(this).find('.myst-overlay').css('opacity', 1); // Show the overlay
+      });
+    });
+  </script>
+  
+</body>
+</html>
