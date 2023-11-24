@@ -13,8 +13,8 @@
     <description>Collection of curated articles with in depth analysis on a topic to present a different perspective with interactive illustrations</description>
     <link>https://solothought.com/</link>
     <atom:link href="https://solothought.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 23 Nov 2023 03:16:21 +0000</pubDate>
-    <lastBuildDate>Thu, 23 Nov 2023 03:16:21 +0000</lastBuildDate>
+    <pubDate>Fri, 24 Nov 2023 04:15:13 +0000</pubDate>
+    <lastBuildDate>Fri, 24 Nov 2023 04:15:13 +0000</lastBuildDate>
     <language>en-US</language>
     <sy:updatePeriod> daily	</sy:updatePeriod>
     <sy:updateFrequency> 1 </sy:updateFrequency>
@@ -22,8 +22,21 @@
 
     
       <item>
+        <title>AWS Database - Quick Reference Mindmap</title>
+        <description>A Quick reference visual guide to take decision for a AWS database</description>
+        <pubDate>Thu, 23 Nov 2023 00:00:00 +0000</pubDate>
+        <link>https://solothought.com/tutorial/aws-database-decision-tree-mindmap/</link>
+        <guid isPermaLink="true">https://solothought.com/tutorial/aws-database-decision-tree-mindmap/</guid>
+        
+        <category>tutorial</category>
+        
+        <media:thumbnail url="https://solothought.com//assets/images/posts/solothought-aws-db-quckref_s.webp" width="110" height="110" />
+        <media:thumbnail url="https://solothought.com//assets/images/posts/solothought-aws-db-quckref_l.webp" width="324" height="216" />
+      </item>
+    
+      <item>
         <title>Visual Explaination of Python NumPy library</title>
-        <description>NumPy is one of the popular Python libraries. In this article, we’ll understand its usage with graphics and more practical approach. So you can visually relate and remember it.
+        <description>NumPy is one of the popular Python libraries. In this article, we’ll understand its usage with graphics and more practical approach. So you can visually relate and remember it.;
 </description>
         <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/python-numpy/</link>
@@ -41,7 +54,8 @@
         <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/philosophy/secure-otp-architecture/</link>
         <guid isPermaLink="true">https://solothought.com/philosophy/secure-otp-architecture/</guid>
-            <category>philosophy</category>
+        
+        <category>philosophy</category>
         
         <media:thumbnail url="https://solothought.com//assets/images/posts/SMS_OTP_arch_thumb_s.webp" width="110" height="110" />
         <media:thumbnail url="https://solothought.com//assets/images/posts/SMS_OTP_arch_thumb_l.webp" width="324" height="216" />
@@ -53,7 +67,8 @@
         <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/python-function-quick-ref/</link>
         <guid isPermaLink="true">https://solothought.com/tutorial/python-function-quick-ref/</guid>
-            <category>tutorial</category>
+        
+        <category>tutorial</category>
         
         <media:thumbnail url="https://solothought.com//assets/images/posts/solothought-python-def_s.webp" width="110" height="110" />
         <media:thumbnail url="https://solothought.com//assets/images/posts/solothought-python-def_l.webp" width="324" height="216" />
@@ -61,12 +76,13 @@
     
       <item>
         <title>Python List - Quick Reference</title>
-        <description>Just remember &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;list[start:end:-steps]&lt;/code&gt;. That’s all!
+        <description>Just remember &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;list[start:end:-steps]&lt;/code&gt;. That’s all!;
 </description>
         <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/python-list-quick-ref/</link>
         <guid isPermaLink="true">https://solothought.com/tutorial/python-list-quick-ref/</guid>
-            <category>tutorial</category>
+        
+        <category>tutorial</category>
         
         <media:thumbnail url="https://solothought.com//assets/images/posts/SoloThoughtArticles-PythonList_s.webp" width="110" height="110" />
         <media:thumbnail url="https://solothought.com//assets/images/posts/SoloThoughtArticles-PythonList_m.webp" width="324" height="216" />
@@ -74,13 +90,11 @@
     
       <item>
         <title>Fast XML Parser v5 - Pre release</title>
-        <description>You decide what to change next
+        <description>You decide what to change next;
 </description>
         <pubDate>Sat, 14 Oct 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/info/fxp-5-prerelease/</link>
         <guid isPermaLink="true">https://solothought.com/info/fxp-5-prerelease/</guid>
-        
-                
         
         <category>info</category>
         
@@ -90,12 +104,13 @@
     
       <item>
         <title>Amir Wishu Sehgal cafe: The story of opportunities</title>
-        <description>Amir Wishu Sehgal, a 23-year-old with dreams as vast as the open sky, resided in a small flat on rent. This humble abode happened to be in the same building as Gurutaap’s shop. The building was nestled in a close-knit community where people may not have been wealthy in material possessions, but they possessed hearts filled with warmth and generosity. It was a place where neighbors knew each other by name, where doors were always open for a cup of tea and a friendly chat.
+        <description>Amir Wishu Sehgal, a 23-year-old with dreams as vast as the open sky, resided in a small flat on rent. This humble abode happened to be in the same building as Gurutaap’s shop. The building was nestled in a close-knit community where people may not have been wealthy in material possessions, but they possessed hearts filled with warmth and generosity. It was a place where neighbors knew each other by name, where doors were always open for a cup of tea and a friendly chat.;
 </description>
         <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/aws-story/</link>
         <guid isPermaLink="true">https://solothought.com/tutorial/aws-story/</guid>
-            <category>tutorial</category>
+        
+        <category>tutorial</category>
         
         <media:thumbnail url="https://solothought.com//assets/images/posts/sangeeta-at-GCP_s.webp" width="110" height="110" />
         <media:thumbnail url="https://solothought.com//assets/images/posts/sangeeta-at-GCP_m.webp" width="324" height="216" />
@@ -103,12 +118,13 @@
     
       <item>
         <title>Chapter 2: The Preparation of Battle</title>
-        <description>The Java valley is always under the threat. So all the masters must be prepared all the time.
+        <description>The Java valley is always under the threat. So all the masters must be prepared all the time.;
 </description>
         <pubDate>Thu, 29 Jun 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/the-preparation-of-battle/</link>
         <guid isPermaLink="true">https://solothought.com/tutorial/the-preparation-of-battle/</guid>
-            <category>tutorial</category>
+        
+        <category>tutorial</category>
         
         <media:thumbnail url="https://solothought.com//assets/images/posts/java_enum_emtions_s.webp" width="110" height="110" />
         <media:thumbnail url="https://solothought.com//assets/images/posts/java_enum_emtions_m.webp" width="324" height="216" />
@@ -116,13 +132,10 @@
     
       <item>
         <title>Story of Kungfu Java Valley - Explanation</title>
-        <description>Technical explaination of original Story of Kungfu Java Valley with more uncovered concepts.</description>
+        <description>Technical explaination of original Story of Kungfu Java Valley with more uncovered concepts</description>
         <pubDate>Tue, 27 Jun 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/kungfu-java-concepts-explanation/</link>
         <guid isPermaLink="true">https://solothought.com/tutorial/kungfu-java-concepts-explanation/</guid>
-        
-                
-                
         
         <category>tutorial</category>
         
@@ -137,31 +150,10 @@
         <link>https://solothought.com/tutorial/kungfu-java-concepts/</link>
         <guid isPermaLink="true">https://solothought.com/tutorial/kungfu-java-concepts/</guid>
         
-                
-                
-                
-        
         <category>tutorial</category>
         
         <media:thumbnail url="https://solothought.com//assets/images/posts/KungFu_child_relationship_s.webp" width="110" height="110" />
         <media:thumbnail url="https://solothought.com//assets/images/posts/KungFu_child_relationship_m.webp" width="324" height="216" />
-      </item>
-    
-      <item>
-        <title>Fast XML Parser v4.2 Features</title>
-        <description>&lt;a href=&quot;https://github.com/NaturalIntelligence/fast-xml-parser&quot;&gt;Fast XML Parser&lt;/a&gt; was initially developed to support npm package &lt;a href=&quot;https://github.com/NaturalIntelligence/stubmatic/&quot;&gt;Stubmatic&lt;/a&gt; which is used for the rapid development of mock web services. Now Fast XML Parser has more than 9 million weekly downloads and approximately half a million projects on GitHub are using it including Microsoft, IBM, AWS, and many other big companies.
-</description>
-        <pubDate>Sun, 09 Apr 2023 00:00:00 +0000</pubDate>
-        <link>https://solothought.com/tutorial/fast-xml-parser-4.2-features/</link>
-        <guid isPermaLink="true">https://solothought.com/tutorial/fast-xml-parser-4.2-features/</guid>
-        
-                
-                
-        
-        <category>tutorial</category>
-        
-        <media:thumbnail url="https://solothought.com//assets/images/posts/fxpv4.2_s.webp" width="110" height="110" />
-        <media:thumbnail url="https://solothought.com//assets/images/posts/fxpv4.2_m.webp" width="324" height="216" />
       </item>
     
   </channel>

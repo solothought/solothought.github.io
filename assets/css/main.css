@@ -501,14 +501,6 @@ img.thumbnail {
   margin-top: 5px;
 }
 
-.article-post img.full-width {
-  max-width: 100vw;
-  left: 50%;
-  position: relative;
-  margin: 0 auto;
-  transform: translateX(-50%);
-}
-
 @media (min-width: 780px) {
   .fixed-left {
     position: fixed;
