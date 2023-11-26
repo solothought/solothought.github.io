@@ -13,8 +13,8 @@
     <description>Collection of curated articles with in depth analysis on a topic to present a different perspective with interactive illustrations</description>
     <link>https://solothought.com/</link>
     <atom:link href="https://solothought.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 24 Nov 2023 04:15:13 +0000</pubDate>
-    <lastBuildDate>Fri, 24 Nov 2023 04:15:13 +0000</lastBuildDate>
+    <pubDate>Sun, 26 Nov 2023 02:18:59 +0000</pubDate>
+    <lastBuildDate>Sun, 26 Nov 2023 02:18:59 +0000</lastBuildDate>
     <language>en-US</language>
     <sy:updatePeriod> daily	</sy:updatePeriod>
     <sy:updateFrequency> 1 </sy:updateFrequency>
@@ -35,8 +35,8 @@
       </item>
     
       <item>
-        <title>Visual Explaination of Python NumPy library</title>
-        <description>NumPy is one of the popular Python libraries. In this article, we’ll understand its usage with graphics and more practical approach. So you can visually relate and remember it.;
+        <title>Visual Explanation of Python NumPy Library</title>
+        <description>NumPy is one of the popular Python libraries. In this article, we’ll understand its usage with graphics and more practical approach. So you can visually relate and remember it.
 </description>
         <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/python-numpy/</link>
@@ -76,7 +76,7 @@
     
       <item>
         <title>Python List - Quick Reference</title>
-        <description>Just remember &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;list[start:end:-steps]&lt;/code&gt;. That’s all!;
+        <description>Just remember &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;list[start:end:-steps]&lt;/code&gt;. That’s all!
 </description>
         <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/python-list-quick-ref/</link>
@@ -90,7 +90,7 @@
     
       <item>
         <title>Fast XML Parser v5 - Pre release</title>
-        <description>You decide what to change next;
+        <description>You decide what to change next
 </description>
         <pubDate>Sat, 14 Oct 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/info/fxp-5-prerelease/</link>
@@ -104,7 +104,7 @@
     
       <item>
         <title>Amir Wishu Sehgal cafe: The story of opportunities</title>
-        <description>Amir Wishu Sehgal, a 23-year-old with dreams as vast as the open sky, resided in a small flat on rent. This humble abode happened to be in the same building as Gurutaap’s shop. The building was nestled in a close-knit community where people may not have been wealthy in material possessions, but they possessed hearts filled with warmth and generosity. It was a place where neighbors knew each other by name, where doors were always open for a cup of tea and a friendly chat.;
+        <description>Amir Wishu Sehgal, a 23-year-old with dreams as vast as the open sky, resided in a small flat on rent. This humble abode happened to be in the same building as Gurutaap’s shop. The building was nestled in a close-knit community where people may not have been wealthy in material possessions, but they possessed hearts filled with warmth and generosity. It was a place where neighbors knew each other by name, where doors were always open for a cup of tea and a friendly chat.
 </description>
         <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/aws-story/</link>
@@ -118,7 +118,7 @@
     
       <item>
         <title>Chapter 2: The Preparation of Battle</title>
-        <description>The Java valley is always under the threat. So all the masters must be prepared all the time.;
+        <description>The Java valley is always under the threat. So all the masters must be prepared all the time.
 </description>
         <pubDate>Thu, 29 Jun 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/the-preparation-of-battle/</link>
