@@ -793,6 +793,25 @@
     <span class="o">}</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
+<p>In easy words, you can say overriding is a kind of shadowing that happens when child class implement the same method of parent class.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ShadowingExample</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span> <span class="c1">// Class-level variable</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">shadowMethod</span><span class="o">()</span> <span class="o">{</span>
+        <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">20</span><span class="o">;</span> <span class="c1">// Local variable shadowing the class-level variable</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Local variable num: "</span> <span class="o">+</span> <span class="n">num</span><span class="o">);</span> <span class="c1">// Prints the value of the local variable</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>I hope I have covered all the concepts. I explained in the original story.</p>
 
@@ -1106,15 +1125,15 @@
   
     
     
-    <h5><a href="/tutorial/kungfu-java-concepts/">Story of Kungfu Java Valley</a></h5>
-  
-    
-    
     <h5><a href="/tutorial/aws-story/">Amir Wishu Sehgal cafe: The story of opportunities</a></h5>
   
     
     
     <h5><a href="/tutorial/the-preparation-of-battle/">Chapter 2: The Preparation of Battle</a></h5>
+  
+    
+    
+    <h5><a href="/tutorial/kungfu-java-concepts/">Story of Kungfu Java Valley</a></h5>
   
 
 
