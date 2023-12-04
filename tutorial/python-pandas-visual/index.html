@@ -197,8 +197,11 @@
     All the stats like page views, trending posts, post for you are derived from Google analytics. Please enable Google analytics for accurate stats.
 </div> -->
 
-<div id="main-content" class="main-content">
-    <!-- Begin Article
+
+<div>
+
+    <div id="main-content" class="main-content">
+        <!-- Begin Article
 ================================================== -->
 <div class="container-fluid">
             <!-- Post Content -->
@@ -284,7 +287,7 @@
 <div class="row justify-content-center">
   <div class="col-md-7 justify-content-center">
 
-    <p>If you’ve gone through <a href="/tutorial/python-numpy/">visual explanation of Numpy Library</a>, there is one thing common in Numpy and panda that they both are used to store data and perform operations on that data.</p>
+    <p>If you’ve gone through the <a href="/tutorial/python-numpy/">visual explanation of Numpy Library</a>, there is one thing common in Numpy and panda that they both are used to store data and perform operations on that data.</p>
 
     <p>For a quick difference, remember Numpy as a group of lists or multi-dimensional arrays whereas remember Panda as a table. We call those tables, Data Frame.</p>
 
@@ -320,15 +323,15 @@
     <p><strong>Things to learn</strong>
 You can majorly divide your learning in 4 parts</p>
     <ol>
-      <li>Build Data frame: either in code itself or from some external file like excel, CSV etc. Adding or deleting rows or columns.</li>
+      <li>Build Data frame: either in code itself or from some external file like Excel, CSV etc. Adding or deleting rows or columns.</li>
       <li>Selection of data: Select a particular row or column, or a range. Group by data etc.</li>
       <li>Operation on data: Like aggregation, Handling NA values etc.</li>
       <li>Save Dataframe to a file: for future use.</li>
     </ol>
 
-    <p>For this tutorial, I’ve created a <a href="https://github.com/solothought/py-assets/tree/main/exercies/pandas">Jupiter notebook</a> for direct practice. So download it on your local or test it online while you’re going through this article. All the images in this tutorial are self explaintory. So I’ll not explain much. However, if there is something that you find incorrect, confusing or uncleared then leave me a message on discussion forum.</p>
+    <p>For this tutorial, I’ve created a <a href="https://github.com/solothought/py-assets/tree/main/exercies/pandas">Jupiter notebook</a> for direct practice. So download it on your local or test it online while you’re going through this article. All the images in this tutorial are self explanatory. So I’ll not explain much. However, if there is something that you find incorrect, confusing or unclear then leave me a message on the discussion forum.</p>
 
-    <p>First you need to read the data and buid a dataframe.</p>
+    <p>First, you need to read the data and build a dataframe.</p>
     <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -348,7 +351,7 @@ You can majorly divide your learning in 4 parts</p>
 <div class="row justify-content-center">
   <div class="col-md-7 justify-content-center">
 
-    <p>In above diagram, I’ve tried to explain different parts of a dataframe. This is the same datafram ,we’ll be using in our jupitor notebook and through out this tutorial. So understand it before scroll down.</p>
+    <p>In the above diagram, I’ve tried to explain different parts of a dataframe. This is the same datafram, we’ll be using in our Jupyter notebook and throughout this tutorial. So understand it before scrolling down.</p>
 
     <div class="hr"><hr /></div>
 
@@ -368,7 +371,7 @@ You can majorly divide your learning in 4 parts</p>
 </span><span class="n">solothought</span><span class="p">[</span><span class="s">"featured"</span><span class="p">]</span> <span class="o">=</span> <span class="n">solothought</span><span class="p">[</span><span class="s">"featured"</span><span class="p">].</span><span class="nf">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="bp">True</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s">'y'</span> <span class="k">else</span> <span class="bp">False</span><span class="p">)</span>
 </pre></td></tr></tbody></table></code></pre></div>    </div>
 
-    <p>You can add a row by concatenating another dataframe. And a column can be added directly like <code class="language-plaintext highlighter-rouge">solothought["published on"] = &lt;Series|list&gt;</code> in last in the same way we replaced <code class="language-plaintext highlighter-rouge">solothought["featured"]</code> above with new list. You can <code class="language-plaintext highlighter-rouge">insert</code> a column at particular position as well. Use <code class="language-plaintext highlighter-rouge">drop</code> to drop a column. Don’t forget to specify axis. We’ll learn more about it when we know how to select.</p>
+    <p>You can add a row by concatenating another dataframe. And a column can be added directly like <code class="language-plaintext highlighter-rouge">solothought["published on"] = &lt;Series|list&gt;</code> in last in the same way we replaced <code class="language-plaintext highlighter-rouge">solothought["featured"]</code> above with a new list. You can <code class="language-plaintext highlighter-rouge">insert</code> a column at a particular position as well. Use <code class="language-plaintext highlighter-rouge">drop</code> to drop a column. Don’t forget to specify axis. We’ll learn more about it when we know how to select.</p>
 
     <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -856,11 +859,11 @@ B	6
   
     
     
-    <h5><a href="/tutorial/python-numpy/">Visual Explanation of Python NumPy Library</a></h5>
+    <h5><a href="/tutorial/python-function-quick-ref/">Python Method - Quick Reference</a></h5>
   
     
     
-    <h5><a href="/tutorial/python-function-quick-ref/">Python Method - Quick Reference</a></h5>
+    <h5><a href="/tutorial/python-numpy/">Visual Explanation of Python NumPy Library</a></h5>
   
 
     </div>
@@ -898,7 +901,9 @@ B	6
 https://search.google.com/structured-data/testing-tool/u/0/
 ================================================== -->
 
+    </div>
 </div>
+
 
     
 <!-- Bottom Alert Bar for Patreon
