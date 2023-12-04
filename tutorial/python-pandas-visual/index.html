@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/assets/images/icon.png">
+
+<!-- change your GA id in _config.yml -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4812VFLT3M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4812VFLT3M');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4922790412146333" crossorigin="anonymous"></script>
+
+
+
+<title>Visual Explanation of Python Panda Library | SoloThought</title>
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Visual Explanation of Python Panda Library | Solo Thought</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Visual Explanation of Python Panda Library" />
+<meta name="author" content="amit" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="From basics but covers a lot about Panda’s APIs. Use it as a quick reference or detail explanation." />
+<meta property="og:description" content="From basics but covers a lot about Panda’s APIs. Use it as a quick reference or detail explanation." />
+<link rel="canonical" href="https://solothought.com/tutorial/python-pandas-visual/" />
+<meta property="og:url" content="https://solothought.com/tutorial/python-pandas-visual/" />
+<meta property="og:site_name" content="Solo Thought" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-12-02T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Visual Explanation of Python Panda Library" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"amit"},"dateModified":"2023-12-02T00:00:00+00:00","datePublished":"2023-12-02T00:00:00+00:00","description":"From basics but covers a lot about Panda’s APIs. Use it as a quick reference or detail explanation.","headline":"Visual Explanation of Python Panda Library","mainEntityOfPage":{"@type":"WebPage","@id":"https://solothought.com/tutorial/python-pandas-visual/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://solothought.com/assets/images/logo.png"},"name":"amit"},"url":"https://solothought.com/tutorial/python-pandas-visual/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+<link href="/assets/css/screen.css" rel="stylesheet">
+
+<link href="/assets/css/main.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
+</head>
+
+
+
+
+<body class="layout-flexi-post">
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+
+		<!-- <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather+Sans:300,300i,400,400i,700,700i" rel="stylesheet"> -->
+		<link href="https://fonts.googleapis.com/css?family=Righteous&family=Poppins" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+	</noscript>
+
+
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+
+    <div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="/">
+    <img src="/assets/images/logo.png" alt="SoloThought">
+    </a>
+    <!-- End Logo -->
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSolo" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSolo">
+
+        <!-- Begin Menu -->
+
+            <ul class="navbar-nav ms-auto">
+
+                
+                <li class="nav-item">
+                
+                <a class="nav-link" href="/index.html">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Categories
+                    </a>
+                    <div class="dropdown-menu  text-capitalize" aria-labelledby="navbarDropdown">
+                      <!-- <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a> -->
+
+                    
+                        
+                            
+                                <a class="dropdown-item" href="/categories#tutorial">tutorial (13)</a>
+                            
+                                <a class="dropdown-item" href="/categories#info">info (1)</a>
+                            
+                                <a class="dropdown-item" href="/categories#philosophy">philosophy (1)</a>
+                            
+                        
+                    
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown text-capitalize">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Open Source
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <!-- <div class="dropdown-divider">Libraries</div> -->
+                        <a class="dropdown-item" href="https://github.com/NaturalIntelligence/fast-xml-parser"><strong>Fast XML Parser</strong> in JS</a>
+                        <a class="dropdown-item" href="https://github.com/NaturalIntelligence/Stubmatic"><strong>Stubmatic</strong> - Mocking library for QAs</a>
+                      <a class="dropdown-item" href="https://github.com/NaturalIntelligence/nimn-spec"><strong>Nimn</strong> - Smaller than XML, JSON, Msgpack, Gzip</a>
+                      <a class="dropdown-item" href="https://github.com/solothought/shabdawali"><strong>Shabdawali</strong> - Human like Typing Effect</a>
+                      <a class="dropdown-item" href="https://github.com/solothought/vaarta"><strong>Vaarta</strong> - Typing Chat effect</a>
+                      <a class="dropdown-item" href="https://github.com/node-muneem/anumargak"><strong>Anumargak</strong> - Fast routing lib</a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/fast-lorem-ipsum"><strong>Fast Lorem Ipsum</strong> - generator</a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/fastify-xml-body-parser"><strong>Fastify XML Body Parser</strong></a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/cucumon"><strong>Cucumon</strong> - Better parser for Gherkin files</a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/strnum"><strong>Strnum</strong> - String to Number converter</a>
+                      <a class="dropdown-item" href="https://www.npmjs.com/package/detailed-xml-validator"><strong>Detailed XML Validator</strong> - Light and effective XML schema validator</a>
+                      <div class="dropdown-divider">Online tool</div>
+                      <a class="dropdown-item" href="/imglab/"><strong>Imglab</strong> - Annotate images for ML</a>
+                      <a class="dropdown-item" href="/matchit/"><strong>Match it</strong> - Create card game</a>
+                      <div class="dropdown-divider">Research</div>
+                      <a class="dropdown-item" href="https://bigbit.github.io/bigbitjs/"><strong>BigBit</strong> - Numeric Datatype</a>
+                    </div>
+                </li>
+
+                <script src="/assets/js/lunr.js"></script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+</form>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+
+            </ul>
+
+        <!-- End Menu -->
+
+    </div>
+
+    </div>
+</nav>
+<!-- End Navigation
+================================================== -->
+
+<div class="site-content">
+
+
+<div>
+
+<!-- Site Title
+================================================== -->
+
+
+<!-- Content
+================================================== -->
+<!-- <div id="gaerr" class="alert alert-danger">
+    All the stats like page views, trending posts, post for you are derived from Google analytics. Please enable Google analytics for accurate stats.
+</div> -->
+
+<div id="main-content" class="main-content">
+    <!-- Begin Article
+================================================== -->
+<div class="container-fluid">
+            <!-- Post Content -->
+        <article class="article-post">
+            <div class="row justify-content-center">
+
+                <!-- Post Share -->
+            <!-- <div class="col-md-2 pl-0">
+                <div class="share sticky-top sticky-top-offset fixed-left">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ms-1 me-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Visual Explanation of Python Panda Library&url=https://solothought.com/tutorial/python-pandas-visual/" onclick="shareWith('twitter',this.href)">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ms-1 me-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=https://solothought.com/tutorial/python-pandas-visual/" onclick="shareWith('facebook',this.href)">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ms-1 me-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https://solothought.com/tutorial/python-pandas-visual/" onclick="shareWith('linkedin',this.href)">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        
+        <li class="ms-1 me-1">
+            <a target="_blank" href="https://getpocket.com/save?url=https://solothought.com/tutorial/python-pandas-visual/"  target="_blank" onclick="gtag('event', 'share', { 'target': 'getpocket' });">
+                <i class="fab fa-get-pocket"></i>
+            </a>
+        </li>
+
+    </ul>
+    
+    <div class="sep">
+    </div>
+    <ul>
+        <li>
+        <a class="small smoothscroll" href="#disqus_thread"></a>
+        </li>
+    </ul>
+    
+</div>
+<script>
+    function shareWith(target, url){
+        if(target === "linkedin") {window.open(url, 'width=550,height=435');return false;}
+        else if(target === "facebook" || target === "twitter"){
+            window.open(this.href, target+'-share', 'width=550,height=435');return false;
+        }
+        if(gtag){
+            gtag('event', 'share', { 'target': target });
+        }
+   }
+</script>
+            </div> -->
+
+            <!-- Post -->
+            
+            
+            
+            <div class="col-md-7">
+                
+                <div class="mainheading">
+                    <!-- Post Title -->
+                    <h1 class="posttitle">Visual Explanation of Python Panda Library</h1>
+                </div>
+                
+
+                <!-- Post Featured Image -->
+                
+                    
+                
+                <!-- End Featured Image -->
+            </div>
+            </div>
+
+                <!-- <div class="col-md-7 flex-first flex-md-unordered" markdown="1"> -->
+<div class="row justify-content-center">
+  <div class="col-md-7 justify-content-center">
+
+    <p>If you’ve gone through <a href="/tutorial/python-numpy/">visual explanation of Numpy Library</a>, there is one thing common in Numpy and panda that they both are used to store data and perform operations on that data.</p>
+
+    <p>For a quick difference, remember Numpy as a group of lists or multi-dimensional arrays whereas remember Panda as a table. We call those tables, Data Frame.</p>
+
+    <p>Pandas offer 2 data structures;</p>
+    <ol>
+      <li>Series  (one-dimensional)</li>
+      <li>DataFrame (two-dimensional)</li>
+    </ol>
+
+    <p>Each column in a data frame is a series. You can consider a data-frame as a database table where we can query data just like SQL.</p>
+
+    <ul>
+      <li><strong>NumPy</strong>: Use NumPy when you need to perform numerical computations, especially with arrays or matrices. It’s ideal for mathematical operations, linear algebra, and scientific computing.</li>
+      <li><strong>Pandas</strong>: Use Pandas when working with structured or tabular data. If you need to manipulate, clean, analyze, or visualize data stored in tables or CSV files, Pandas is the go-to library.</li>
+    </ul>
+
+    <div class="hr"><hr /></div>
+
+    <p>install</p>
+    <blockquote>
+      <p>pip install pandas</p>
+    </blockquote>
+
+    <p>import</p>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="n">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <div class="alert alert-warning">
+  <p><strong>Contents Sharing Conditions</strong></p>
+  <p><small>All the images and contents used in this article are meant to be used on Solothought.com only. You can use it to make your personal note. But publishing it on any site, blog, video or other medium without a link to this site or article is prohibited.</small></p>
+</div>
+
+    <p><strong>Things to learn</strong>
+You can majorly divide your learning in 4 parts</p>
+    <ol>
+      <li>Build Data frame: either in code itself or from some external file like excel, CSV etc. Adding or deleting rows or columns.</li>
+      <li>Selection of data: Select a particular row or column, or a range. Group by data etc.</li>
+      <li>Operation on data: Like aggregation, Handling NA values etc.</li>
+      <li>Save Dataframe to a file: for future use.</li>
+    </ol>
+
+    <p>For this tutorial, I’ve created a <a href="https://github.com/solothought/py-assets/tree/main/exercies/pandas">Jupiter notebook</a> for direct practice. So download it on your local or test it online while you’re going through this article. All the images in this tutorial are self explaintory. So I’ll not explain much. However, if there is something that you find incorrect, confusing or uncleared then leave me a message on discussion forum.</p>
+
+    <p>First you need to read the data and buid a dataframe.</p>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="n">blog</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="nf">read_csv</span><span class="p">(</span><span class="s">"blog.csv"</span><span class="p">)</span>
+<span class="n">opensource</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="nf">read_csv</span><span class="p">(</span><span class="s">"opensource.csv"</span><span class="p">)</span>
+<span class="n">solothought</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="nf">concat</span><span class="p">([</span><span class="n">blog</span><span class="p">,</span><span class="n">opensource</span><span class="p">],</span><span class="n">keys</span><span class="o">=</span><span class="p">[</span><span class="s">'blog'</span><span class="p">,</span><span class="s">'OpenSource'</span><span class="p">],</span><span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s">'Type'</span><span class="p">,</span><span class="s">'idx'</span><span class="p">])</span>
+<span class="c1"># st = solothought
+</span></pre></td></tr></tbody></table></code></pre></div>    </div>
+
+  </div>
+</div>
+
+<p><img src="/assets/images/posts/solothought-python-pandas-DF.webp" alt="python panda dataframe" /></p>
+
+<!-- <div class="col-md-7 flex-first flex-md-unordered" markdown="1"> -->
+<div class="row justify-content-center">
+  <div class="col-md-7 justify-content-center">
+
+    <p>In above diagram, I’ve tried to explain different parts of a dataframe. This is the same datafram ,we’ll be using in our jupitor notebook and through out this tutorial. So understand it before scroll down.</p>
+
+    <div class="hr"><hr /></div>
+
+    <p>Fetch some records</p>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="n">solothought</span><span class="p">.</span><span class="nf">head</span><span class="p">()</span>                      <span class="c1">#first 5 records
+</span><span class="n">solothought</span><span class="p">.</span><span class="nf">sample</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="n">weights</span><span class="o">=</span><span class="s">"views"</span><span class="p">)</span>   <span class="c1">#any   5 records
+</span><span class="n">solothought</span><span class="p">.</span><span class="nf">tail</span><span class="p">()</span>                      <span class="c1">#last  5 records
+</span></pre></td></tr></tbody></table></code></pre></div>    </div>
+
+    <p>Use <code class="language-plaintext highlighter-rouge">apply</code> or <code class="language-plaintext highlighter-rouge">map</code> function to perform any operation on each value of a column or row. In our sample data, we’ve a column where boolean values are stored as ‘n’ and ‘y’. So we’ll convert them in proper boolean values.</p>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="c1"># convert to boolean
+</span><span class="n">solothought</span><span class="p">[</span><span class="s">"featured"</span><span class="p">]</span> <span class="o">=</span> <span class="n">solothought</span><span class="p">[</span><span class="s">"featured"</span><span class="p">].</span><span class="nf">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="bp">True</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s">'y'</span> <span class="k">else</span> <span class="bp">False</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+
+    <p>You can add a row by concatenating another dataframe. And a column can be added directly like <code class="language-plaintext highlighter-rouge">solothought["published on"] = &lt;Series|list&gt;</code> in last in the same way we replaced <code class="language-plaintext highlighter-rouge">solothought["featured"]</code> above with new list. You can <code class="language-plaintext highlighter-rouge">insert</code> a column at particular position as well. Use <code class="language-plaintext highlighter-rouge">drop</code> to drop a column. Don’t forget to specify axis. We’ll learn more about it when we know how to select.</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="n">l</span> <span class="o">=</span> <span class="nf">list</span><span class="p">([</span><span class="s">"1 Apr 2023"</span><span class="p">,</span> <span class="s">"2 Apr 2023"</span><span class="p">,</span><span class="bp">None</span><span class="p">,</span><span class="bp">None</span><span class="p">,...,</span><span class="bp">None</span><span class="p">])</span> 
+<span class="n">solothought</span><span class="p">[</span><span class="s">"published on"</span><span class="p">]</span> <span class="o">=</span> <span class="n">l</span>
+<span class="c1"># or
+</span><span class="n">solothought</span><span class="p">.</span><span class="nf">insert</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="s">"published on"</span><span class="p">,</span><span class="n">l</span><span class="p">)</span>
+<span class="c1"># or
+</span><span class="n">st</span> <span class="o">=</span> <span class="n">solothought</span><span class="p">.</span><span class="nf">assign</span><span class="p">(</span><span class="o">**</span><span class="p">{</span><span class="s">"published on"</span><span class="p">:</span><span class="n">l</span><span class="p">})</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+
+    <blockquote>
+      <p>Note that, there are many methods in pandas which return a new dataframe instead of updating the used one. So either you need to set <code class="language-plaintext highlighter-rouge">inplace=True</code> method parameter or assign to the data-frame.</p>
+    </blockquote>
+
+  </div>
+</div>
+
+<p><img src="/assets/images/posts/solothought-python-pandas-DF-row-column-oprations.webp" alt="python add row column, delete, drop, handling NA values, describe, info, aggregation" /></p>
+
+<!-- <div class="col-md-7 flex-first flex-md-unordered" markdown="1"> -->
+<div class="row justify-content-center">
+  <div class="col-md-7 justify-content-center">
+
+    <p>Don’t be confused between <code class="language-plaintext highlighter-rouge">null</code> and <code class="language-plaintext highlighter-rouge">na</code>. NA means not available values. You can define a set of values which should be treated as NA values while reading the CSV file. It is quite important to fill NA values before analysis.</p>
+
+    <p>GroupBy operation confuses many. So let me explain that with a simple example;</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="n">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+
+<span class="c1"># Creating lists for each column
+</span><span class="n">c1</span> <span class="o">=</span> <span class="p">[</span><span class="s">'A'</span><span class="p">,</span> <span class="s">'A'</span><span class="p">,</span> <span class="s">'A'</span><span class="p">,</span> <span class="s">'A'</span><span class="p">,</span> <span class="s">'B'</span><span class="p">,</span> <span class="s">'B'</span><span class="p">,</span> <span class="s">'B'</span><span class="p">,</span> <span class="s">'B'</span><span class="p">]</span>
+<span class="n">c2</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">]</span>
+<span class="n">c3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+
+<span class="c1"># Creating the DataFrame
+</span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s">'c1'</span><span class="p">:</span> <span class="n">c1</span><span class="p">,</span> <span class="s">'c2'</span><span class="p">:</span> <span class="n">c2</span><span class="p">,</span> <span class="s">'c3'</span><span class="p">:</span> <span class="n">c3</span><span class="p">}</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="nc">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="c1"># Displaying the DataFrame
+</span><span class="nf">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>Output</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre>  c1 c2  c3
+0  A  a   1
+1  A  a   2
+2  A  b   1
+3  A  b   2
+4  B  a   1
+5  B  a   2
+6  B  b   1
+7  B  b   2
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+
+    <p>If we group by above dataframe using <code class="language-plaintext highlighter-rouge">c1</code> column then it’ll form 2 groups.And each group will have 4 rows.</p>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="n">grp</span> <span class="o">=</span> <span class="n">df</span><span class="p">.</span><span class="nf">groupby</span><span class="p">(</span><span class="s">"c1"</span><span class="p">)</span>
+<span class="n">grp</span><span class="p">.</span><span class="nf">count</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>Output</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>	c2	c3
+c1		
+A	4	4
+B	4	4
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+
+    <p>But if we group by <code class="language-plaintext highlighter-rouge">c1</code> and <code class="language-plaintext highlighter-rouge">c2</code> both then it’ll form 4 groups; (A,a), (A,b), (B,a), (B,b). And each group will have 2 rows.</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre>		c3
+c1	c2	
+A	a	2
+        b	2
+B	a	2
+        b	2
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+
+    <p>Once you form groups using group-by operation, you can perform aggregate operation on a column that would be performed group wise. So the number of rows in output would be equal to number of groups you have.</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="n">grp</span> <span class="o">=</span> <span class="n">df</span><span class="p">.</span><span class="nf">groupby</span><span class="p">([</span><span class="s">"c1"</span><span class="p">])</span>
+<span class="n">grp</span><span class="p">.</span><span class="nf">sum</span><span class="p">(</span><span class="s">"c3"</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>	c3
+c1	
+A	6
+B	6
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+    <p>We’ll some more examples later in this article.</p>
+
+    <div class="hr"><hr /></div>
+  </div>
+</div>
+
+<!-- <div class="col-md-7 flex-first flex-md-unordered" markdown="1"> -->
+<div class="row justify-content-center">
+  <div class="col-md-7 justify-content-center">
+
+    <p>You can select a row or set of rows or just the columns or particular value using proper index directly, or with <code class="language-plaintext highlighter-rouge">loc</code> or <code class="language-plaintext highlighter-rouge">iloc</code> methods.</p>
+  </div>
+</div>
+
+<p><img src="/assets/images/posts/solothough-python-pandas-DF-loc.webp" alt="python pandas loc" />
+<img src="/assets/images/posts/aolothought-python-pandas-DF-loc-iloc-add-drop.webp" alt="python pandas loc iloc add drop" /></p>
+
+<!-- <div class="col-md-7 flex-first flex-md-unordered" markdown="1"> -->
+<div class="row justify-content-center">
+  <div class="col-md-7 justify-content-center">
+
+    <p>When <code class="language-plaintext highlighter-rouge">dropna</code></p>
+    <ul>
+      <li>Use <strong>axis</strong> to drop col or row</li>
+      <li>Use <strong>how</strong> to drop if all values are NA or at least 1</li>
+      <li>Use <strong>thresh</strong> to check min NA before drop.</li>
+      <li>Use <strong>subset</strong> to set cols where to check NA values</li>
+    </ul>
+
+    <p>You can even pass a list of Truth vallues to select rows and columns</p>
+
+  </div>
+</div>
+
+<p><img src="/assets/images/posts/solothought-python-pandas-DF-truth-values-loc.webp" alt="python using truth value list in loc" /></p>
+
+<div class="hr"><hr /></div>
+
+<p><img src="/assets/images/posts/solothought-python-pandas-DF-conditional-selection.webp" alt="python pandas conditional advance selection" /></p>
+
+<!-- <div class="col-md-7 flex-first flex-md-unordered" markdown="1"> -->
+<div class="row justify-content-center">
+  <div class="col-md-7 justify-content-center">
+
+    <p>But there is a better and fast alternate: <code class="language-plaintext highlighter-rouge">query</code>.</p>
+  </div>
+</div>
+<p><img src="/assets/images/posts/solothought-python-pandas-DF-query.webp" alt="python pandas query" /></p>
+
+<div class="hr"><hr /></div>
+
+<p><img src="/assets/images/posts/solothought-python-pandas-DF-groupby-fillna-apply.webp" alt="python pandas groupby fillna, modify data apply" /></p>
+
+<div class="hr"><hr /></div>
+
+<p><img src="/assets/images/posts/solothought-python-pandas-DF-index.webp" alt="python pandas index  multilevel" /></p>
+
+
+                <div class="row justify-content-center">
+                    <div class="col-md-7">
+                
+                <div class="alert alert-secondary" role="alert">
+                    <span>Access high quality images and other source files of this post on <a href="https://www.patreon.com/Solothought">Patreon</a></span>
+                </div>
+                
+                    </div>
+                </div>
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <br />
+                    <div class="hr"><hr /></div>
+                    <div>
+                        <p>
+                            Your <a href="https://github.com/solothought/solothought.github.io/discussions/" target="_blank">feedback</a> is really important. So I can improve my future articles and correct what I have already published. You can also suggest if you want me to write an article on particular topic. 
+                            If you really like this blog, or article, please share with others. That's the only way I can buy time to write more articles.</p>
+                    </div>
+        
+                    <!-- Rating -->
+                    
+        
+                    <!-- Author Box -->
+                    
+                        <div class="row post-top-meta shadow rounded">
+    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+        
+        <img class="author-thumb" src="https://www.gravatar.com/avatar/37060302386aaf411d69559680562234?s=250&d=mm&r=x" alt="Amit">
+        
+    </div>
+    <div class="col-xs-12 col-md-9 col-lg-10 text-md-left">
+        <a target="_blank" class="link-dark" href="https://amitkumargupta.work">Amit</a>
+
+        
+            
+                <a target="_blank" href="https://twitter.com/amitguptagwl" ><i class="fab fa-twitter px-2"></i></a>
+             
+            
+                <a target="_blank" href="https://www.linkedin.com/in/amitguptagwl"><i class="fab fa-linkedin px-2"></i></a>
+             
+            
+                <a target="_blank" href="https://github.com/amitguptagwl"><i class="fab fa-github px-2"></i></a>
+            
+        
+        <span class="author-description">Author & Maintainer of many opensourse projects like fast-xml-parser, imglab, stubmatic etc. Very much interested in research & innovations.</span>
+    </div>
+</div>
+                    
+                    
+                    
+                    <!-- Post Date -->
+                    <div class="after-post-tags clearfix">
+                        <i class="fa fa-calendar-alt me-2"></i>
+                        <span class="post-date"><time class="post-date" datetime="2023-12-02">02 Dec 2023</time></span>           
+                        
+                        <!-- Post Tags -->
+                        <ul class="tags float-end">
+                            
+                            <li><i class="fas fa-tags"></i></li>
+                            
+                            <li>
+                                <a class="smoothscroll" href="/tags#illustrated">#illustrated</a>
+                            </li>
+                            
+                            <li>
+                                <a class="smoothscroll" href="/tags#python">#python</a>
+                            </li>
+                            
+                            <li>
+                                <a class="smoothscroll" href="/tags#quickref">#quickref</a>
+                            </li>
+                            
+                        </ul>
+                        <!-- End Tags -->
+                    </div>
+        
+                    <!-- Prev/Next -->
+                    <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+                    
+                    <a class="prev d-block col-md-6" href="//tutorial/java-all-in-one/"> &laquo; Java concepts - all in one chart</a>
+                    
+                    
+                    <div class="clearfix"></div>
+                    </div>
+                    <!-- End Categories -->
+            </div>
+            </div>
+        </article>
+        
+        <!-- End Post -->
+        
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+<div class="row justify-content-center">
+    <div class="col-md-7">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+  
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+  
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+  
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+  
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+  
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+  
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+  
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+  
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+  
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+  
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+  
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+  
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+  
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+  
+    
+      
+
+  
+
+
+
+
+
+  <h2>Related Articles</h2>
+  
+    
+    
+    <h5><a href="/tutorial/python-list-quick-ref/">Python List - Quick Reference</a></h5>
+  
+    
+    
+    <h5><a href="/tutorial/python-numpy/">Visual Explanation of Python NumPy Library</a></h5>
+  
+    
+    
+    <h5><a href="/tutorial/python-function-quick-ref/">Python Method - Quick Reference</a></h5>
+  
+
+    </div>
+</div>
+<!-- Begin Comments
+================================================== -->
+
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <section class="disqus"></section>
+<!-- <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = ''; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section> -->
+
+            </div>
+        </div>
+    </div>
+
+<!--End Comments
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+</div>
+
+    
+<!-- Bottom Alert Bar for Patreon
+================================================== -->
+<!-- <div class="alertbar">
+	<div class="container text-center">
+		<span>Access high quality assets of this post on <a href="https://www.patreon.com/Solothought">Patreon</a></span>
+	</div>
+</div> -->
+</div>
+
+<!-- Categories Jumbotron
+================================================== -->
+<!-- <div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="d-md-flex align-items-center justify-content-center h-100">
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+            </div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+            
+            
+                
+                    <a class="mt-1 mb-1" href="/categories#tutorial">tutorial (13)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#info">info (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#philosophy">philosophy (1)</a>
+                
+            
+            
+		</div>
+	</div>
+</div> -->
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                Copyright © 2023 SoloThought 
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                <a href="/feed.xml" class="btn-social btn-outline  m-2"><i class="fas fa-rss"></i></a>
+                <a href="/about" class="btn-social btn-outline  m-2"><i class="fas fa-bullhorn"></i></a>
+                <a href="https://github.com/solothought" class="btn-social btn-outline  m-2"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/solothought_q" class="btn-social btn-outline  m-2"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:solothought.official@gmail.com" class="btn-social btn-outline  m-2"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/solothought/solothought.github.io/discussions" class="btn-social btn-outline  m-2"><i class="fas fa-comments"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+  <!-- Cookie consent banner -->
+  <div id="cookieConsent" class="alert alert-dismissible alert-info text-center fixed-bottom mb-0">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    This website uses Google Analytics to analyze website traffic and improve your experience. By continuing to use this site, you consent to the use of cookies in accordance with our <a href="/privacypoicy" >Privacy Policy</a> and <a href="/termandconditions" >Term and Conditions</a>.
+  </div>
+  <script>
+    // Hide cookie consent on button click
+    document.querySelector('#cookieConsent .close').addEventListener('click', function () {
+      document.querySelector('#cookieConsent').style.display = 'none';
+    });
+  </script>
+<!-- Scripts
+================================================== -->
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> -->
+
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+<script src="/assets/js/mediumish.js"></script>
+
+
+
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+<!--  -->
+
+<script>
+    // Wait for the document to be ready
+    $(document).ready(function() {
+      // Add event listener for mouseover (cursor on the image)
+      $('.hovermyst').on('mouseover', function() {
+        $(this).find('.myst-overlay').css('opacity', 0); // Hide the overlay
+      });
+  
+      // Add event listener for mouseout (cursor off the image)
+      $('.hovermyst').on('mouseout', function() {
+        $(this).find('.myst-overlay').css('opacity', 1); // Show the overlay
+      });
+    });
+  </script>
+  
+</body>
+</html>

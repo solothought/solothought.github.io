@@ -13,8 +13,8 @@
     <description>Collection of curated articles with in depth analysis on a topic to present a different perspective with interactive illustrations</description>
     <link>https://solothought.com/</link>
     <atom:link href="https://solothought.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 26 Nov 2023 06:58:44 +0000</pubDate>
-    <lastBuildDate>Sun, 26 Nov 2023 06:58:44 +0000</lastBuildDate>
+    <pubDate>Mon, 04 Dec 2023 05:24:59 +0000</pubDate>
+    <lastBuildDate>Mon, 04 Dec 2023 05:24:59 +0000</lastBuildDate>
     <language>en-US</language>
     <sy:updatePeriod> daily	</sy:updatePeriod>
     <sy:updateFrequency> 1 </sy:updateFrequency>
@@ -22,11 +22,37 @@
 
     
       <item>
+        <title>Visual Explanation of Python Panda Library</title>
+        <description>From basics but covers a lot about Panda&apos;s APIs. Use it as a quick reference or detail explanation.</description>
+        <pubDate>Sat, 02 Dec 2023 00:00:00 +0000</pubDate>
+        <link>https://solothought.com/tutorial/python-pandas-visual/</link>
+        <guid isPermaLink="true">https://solothought.com/tutorial/python-pandas-visual/</guid>
+        
+        <category>tutorial</category>
+        
+        <media:thumbnail url="https://solothought.com//assets/images/posts/solothought-python-pandas-DF_s.webp" width="110" height="110" />
+        <media:thumbnail url="https://solothought.com//assets/images/posts/solothought-python-pandas-DF_l.webp" width="324" height="216" />
+      </item>
+    
+      <item>
+        <title>Java concepts - all in one chart</title>
+        <description>Find all basic concepts of Java language upto Java 17 in single chart</description>
+        <pubDate>Sat, 25 Nov 2023 00:00:00 +0000</pubDate>
+        <link>https://solothought.com/tutorial/java-all-in-one/</link>
+        <guid isPermaLink="true">https://solothought.com/tutorial/java-all-in-one/</guid>
+        
+        <category>tutorial</category>
+        
+        <media:thumbnail url="https://solothought.com//assets/images/posts/java-all-in-one-quickred_s.webp" width="110" height="110" />
+        <media:thumbnail url="https://solothought.com//assets/images/posts/java-all-in-one-quickred_l.webp" width="324" height="216" />
+      </item>
+    
+      <item>
         <title>AWS Database - Quick Reference Mindmap</title>
         <description>A Quick reference visual guide to take decision for a AWS database</description>
         <pubDate>Thu, 23 Nov 2023 00:00:00 +0000</pubDate>
-        <link>https://solothought.com/tutorial/aws-database-decision-tree-mindmap/</link>
-        <guid isPermaLink="true">https://solothought.com/tutorial/aws-database-decision-tree-mindmap/</guid>
+        <link>https://solothought.com/tutorial/aws-database-decision-tree-mindmap-copy/</link>
+        <guid isPermaLink="true">https://solothought.com/tutorial/aws-database-decision-tree-mindmap-copy/</guid>
         
         <category>tutorial</category>
         
@@ -36,8 +62,7 @@
     
       <item>
         <title>Visual Explanation of Python NumPy Library</title>
-        <description>NumPy is one of the popular Python libraries. In this article, we’ll understand its usage with graphics and more practical approach. So you can visually relate and remember it.;
-</description>
+        <description>NumPy is one of the popular Python libraries. In this article, we’ll understand its usage with graphics and more practical approach.</description>
         <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/python-numpy/</link>
         <guid isPermaLink="true">https://solothought.com/tutorial/python-numpy/</guid>
@@ -76,8 +101,7 @@
     
       <item>
         <title>Python List - Quick Reference</title>
-        <description>Just remember &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;list[start:end:-steps]&lt;/code&gt;. That’s all!;
-</description>
+        <description>Just remember `list[start:end:-steps]`. That&apos;s all!</description>
         <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/python-list-quick-ref/</link>
         <guid isPermaLink="true">https://solothought.com/tutorial/python-list-quick-ref/</guid>
@@ -90,8 +114,7 @@
     
       <item>
         <title>Fast XML Parser v5 - Pre release</title>
-        <description>You decide what to change next;
-</description>
+        <description>You decide what to change next</description>
         <pubDate>Sat, 14 Oct 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/info/fxp-5-prerelease/</link>
         <guid isPermaLink="true">https://solothought.com/info/fxp-5-prerelease/</guid>
@@ -104,8 +127,7 @@
     
       <item>
         <title>Amir Wishu Sehgal cafe: The story of opportunities</title>
-        <description>Amir Wishu Sehgal, a 23-year-old with dreams as vast as the open sky, resided in a small flat on rent. This humble abode happened to be in the same building as Gurutaap’s shop. The building was nestled in a close-knit community where people may not have been wealthy in material possessions, but they possessed hearts filled with warmth and generosity. It was a place where neighbors knew each other by name, where doors were always open for a cup of tea and a friendly chat.;
-</description>
+        <description>The story of opportunities. You&apos;ll learn some technical concepts without any discussion about them.</description>
         <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/aws-story/</link>
         <guid isPermaLink="true">https://solothought.com/tutorial/aws-story/</guid>
@@ -118,8 +140,7 @@
     
       <item>
         <title>Chapter 2: The Preparation of Battle</title>
-        <description>The Java valley is always under the threat. So all the masters must be prepared all the time.;
-</description>
+        <description>The Java valley is always under the threat. So all the masters must be prepared all the time.</description>
         <pubDate>Thu, 29 Jun 2023 00:00:00 +0000</pubDate>
         <link>https://solothought.com/tutorial/the-preparation-of-battle/</link>
         <guid isPermaLink="true">https://solothought.com/tutorial/the-preparation-of-battle/</guid>
@@ -128,32 +149,6 @@
         
         <media:thumbnail url="https://solothought.com//assets/images/posts/java_enum_emtions_s.webp" width="110" height="110" />
         <media:thumbnail url="https://solothought.com//assets/images/posts/java_enum_emtions_m.webp" width="324" height="216" />
-      </item>
-    
-      <item>
-        <title>Story of Kungfu Java Valley - Explanation</title>
-        <description>Technical explaination of original Story of Kungfu Java Valley with more uncovered concepts</description>
-        <pubDate>Tue, 27 Jun 2023 00:00:00 +0000</pubDate>
-        <link>https://solothought.com/tutorial/kungfu-java-concepts-explanation/</link>
-        <guid isPermaLink="true">https://solothought.com/tutorial/kungfu-java-concepts-explanation/</guid>
-        
-        <category>tutorial</category>
-        
-        <media:thumbnail url="https://solothought.com//assets/images/posts/panda_teaching_code_s.webp" width="110" height="110" />
-        <media:thumbnail url="https://solothought.com//assets/images/posts/panda_teaching_code_m.webp" width="324" height="216" />
-      </item>
-    
-      <item>
-        <title>Story of Kungfu Java Valley</title>
-        <description>The story of the great masters of Java Valley who followed all the principle of OOPs and protected the Jade temple.</description>
-        <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
-        <link>https://solothought.com/tutorial/kungfu-java-concepts/</link>
-        <guid isPermaLink="true">https://solothought.com/tutorial/kungfu-java-concepts/</guid>
-        
-        <category>tutorial</category>
-        
-        <media:thumbnail url="https://solothought.com//assets/images/posts/KungFu_child_relationship_s.webp" width="110" height="110" />
-        <media:thumbnail url="https://solothought.com//assets/images/posts/KungFu_child_relationship_m.webp" width="324" height="216" />
       </item>
     
   </channel>

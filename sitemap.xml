@@ -3,7 +3,33 @@
   
     
     <url>
-      <loc>https://solothought.com/tutorial/aws-database-decision-tree-mindmap/</loc>
+      <loc>https://solothought.com/tutorial/python-pandas-visual/</loc>
+      
+        <lastmod>2023-12-02T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority></url>
+    
+  
+    
+    <url>
+      <loc>https://solothought.com/tutorial/java-all-in-one/</loc>
+      
+        <lastmod>2023-11-25T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority></url>
+    
+  
+    
+    <url>
+      <loc>https://solothought.com/tutorial/aws-database-decision-tree-mindmap-copy/</loc>
       
         <lastmod>2023-11-23T00:00:00+00:00</lastmod>
       
@@ -177,7 +203,7 @@
       <url>
         <loc>https://solothought.com/about</loc>
         
-          <lastmod>2023-11-26T06:58:44+00:00</lastmod>
+          <lastmod>2023-12-04T05:24:59+00:00</lastmod>
         
         
           <changefreq>monthly</changefreq>
@@ -195,6 +221,21 @@
     
   
     
+      <url>
+        <loc>https://solothought.com/links</loc>
+        
+          <lastmod>2023-12-04T05:24:59+00:00</lastmod>
+        
+        
+          <changefreq>monthly</changefreq>
+        
+        
+          <priority>0.5</priority>
+        
+       </url>
+    
+  
+    
   
     
   
@@ -202,7 +243,7 @@
       <url>
         <loc>https://solothought.com/privacypoicy</loc>
         
-          <lastmod>2023-11-26T06:58:44+00:00</lastmod>
+          <lastmod>2023-12-04T05:24:59+00:00</lastmod>
         
         
           <changefreq>monthly</changefreq>
@@ -221,7 +262,7 @@
       <url>
         <loc>https://solothought.com/termandconditions</loc>
         
-          <lastmod>2023-11-26T06:58:44+00:00</lastmod>
+          <lastmod>2023-12-04T05:24:59+00:00</lastmod>
         
         
           <changefreq>monthly</changefreq>
@@ -230,6 +271,8 @@
           <priority>0.5</priority>
         
        </url>
+    
+  
     
   
     
