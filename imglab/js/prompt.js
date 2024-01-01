@@ -2,7 +2,6 @@ $(function () {
   $.confirm({
     title: "",
     content: `
-        <p style="color: red;text-align: center;font-size: 2em;">Please bookmark the new URL. Imglab.in will no longer be in use. And ready for sale. Contact me on linkedin or github.</p>
         <div id="featurepopup">
             <div class="row text-center">
                 <div class="col-md-3">
@@ -88,8 +87,7 @@ function displayDonationPrompt() {
     title: "Donate",
     content: `<div style="text-align:center;">
 
-                <div><a onclick="javascript:logSponsor('paypal')" href="https://paypal.me/naturalintelligence" target="_blank"><img src="img/support_paypal.svg" width="200px"></a></div>
-                <div><a onclick="javascript:logSponsor('github')" href="https://github.com/sponsors/NaturalIntelligence" target="_blank"><img src="https://github.com/NaturalIntelligence/ThankYouBackers/raw/main/github_sponsor.png" ></a></div>
+                <div><a onclick="javascript:logPaypal()" href="https://paypal.me/naturalintelligence" target="_blank"><img src="img/support_paypal.svg" width="200px"></a></div>
                 
             <div>`,
     escapeKey: true,
@@ -97,10 +95,10 @@ function displayDonationPrompt() {
   });
 }
 
-function logSponsor(target) {
+function logPaypal() {
   gtag("event", "click", {
     event_category: "outbound",
-    event_label: target,
+    event_label: "paypal",
     transport_type: "beacon",
   });
 }
