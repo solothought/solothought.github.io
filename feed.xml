@@ -13,13 +13,26 @@
     <description>Collection of curated articles with in depth analysis on a topic to present a different perspective with interactive illustrations</description>
     <link>https://solothought.com/</link>
     <atom:link href="https://solothought.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 05 Mar 2024 10:24:36 +0000</pubDate>
-    <lastBuildDate>Tue, 05 Mar 2024 10:24:36 +0000</lastBuildDate>
+    <pubDate>Mon, 10 Jun 2024 07:48:47 +0000</pubDate>
+    <lastBuildDate>Mon, 10 Jun 2024 07:48:47 +0000</lastBuildDate>
     <language>en-US</language>
     <sy:updatePeriod> daily	</sy:updatePeriod>
     <sy:updateFrequency> 1 </sy:updateFrequency>
     <generator>Jekyll v4.3.2</generator>
 
+    
+      <item>
+        <title>बारिश का रंग</title>
+        <description>Yesterday, inspired by a friend&apos;s request and the melancholic weather, I attempted to capture the emotions of a ...</description>
+        <pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate>
+        <link>https://solothought.com/literature/%E0%A4%AC%E0%A4%BE%E0%A4%B0%E0%A4%BF%E0%A4%B6-%E0%A4%95%E0%A4%BE-%E0%A4%B0%E0%A4%82%E0%A4%97/</link>
+        <guid isPermaLink="true">https://solothought.com/literature/%E0%A4%AC%E0%A4%BE%E0%A4%B0%E0%A4%BF%E0%A4%B6-%E0%A4%95%E0%A4%BE-%E0%A4%B0%E0%A4%82%E0%A4%97/</guid>
+        
+        <category>literature</category>
+        
+        <media:thumbnail url="https://solothought.com//assets/images/posts/mehandi_baarish_pain-of-love_s.webp" width="110" height="110" />
+        <media:thumbnail url="https://solothought.com//assets/images/posts/mehandi_baarish_pain-of-love_m.jpg" width="324" height="216" />
+      </item>
     
       <item>
         <title>The Power Glasses</title>
@@ -38,8 +51,8 @@
         <title>कभी कभी समंदर को भी सोना चाहिए</title>
         <description>I attended a session few days ago where some people were sharing their problems with a psychologist ...</description>
         <pubDate>Wed, 07 Feb 2024 00:00:00 +0000</pubDate>
-        <link>https://solothought.com/literature/%E0%A4%95%E0%A4%AD%E0%A5%80-%E0%A4%95%E0%A4%AD%E0%A5%80-%E0%A4%B8%E0%A4%AE%E0%A4%82%E0%A4%A6%E0%A4%B0-%E0%A4%95%E0%A5%8B-%E0%A4%AD%E0%A5%80-%E0%A4%B8%E0%A5%8B%E0%A4%A8%E0%A4%BE-%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%8F-copy/</link>
-        <guid isPermaLink="true">https://solothought.com/literature/%E0%A4%95%E0%A4%AD%E0%A5%80-%E0%A4%95%E0%A4%AD%E0%A5%80-%E0%A4%B8%E0%A4%AE%E0%A4%82%E0%A4%A6%E0%A4%B0-%E0%A4%95%E0%A5%8B-%E0%A4%AD%E0%A5%80-%E0%A4%B8%E0%A5%8B%E0%A4%A8%E0%A4%BE-%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%8F-copy/</guid>
+        <link>https://solothought.com/literature/%E0%A4%95%E0%A4%AD%E0%A5%80-%E0%A4%95%E0%A4%AD%E0%A5%80-%E0%A4%B8%E0%A4%AE%E0%A4%82%E0%A4%A6%E0%A4%B0-%E0%A4%95%E0%A5%8B-%E0%A4%AD%E0%A5%80-%E0%A4%B8%E0%A5%8B%E0%A4%A8%E0%A4%BE-%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%8F/</link>
+        <guid isPermaLink="true">https://solothought.com/literature/%E0%A4%95%E0%A4%AD%E0%A5%80-%E0%A4%95%E0%A4%AD%E0%A5%80-%E0%A4%B8%E0%A4%AE%E0%A4%82%E0%A4%A6%E0%A4%B0-%E0%A4%95%E0%A5%8B-%E0%A4%AD%E0%A5%80-%E0%A4%B8%E0%A5%8B%E0%A4%A8%E0%A4%BE-%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%8F/</guid>
         
         <category>literature</category>
         
@@ -136,19 +149,6 @@
         
         <media:thumbnail url="https://solothought.com//assets/images/posts/SoloThoughtArticles-PythonList_s.webp" width="110" height="110" />
         <media:thumbnail url="https://solothought.com//assets/images/posts/SoloThoughtArticles-PythonList_m.webp" width="324" height="216" />
-      </item>
-    
-      <item>
-        <title>Fast XML Parser v5 - Pre release</title>
-        <description>You decide what to change next</description>
-        <pubDate>Sat, 14 Oct 2023 00:00:00 +0000</pubDate>
-        <link>https://solothought.com/info/fxp-5-prerelease/</link>
-        <guid isPermaLink="true">https://solothought.com/info/fxp-5-prerelease/</guid>
-        
-        <category>info</category>
-        
-        <media:thumbnail url="https://solothought.com//assets/images/posts/fxp5_prerelease_s.webp" width="110" height="110" />
-        <media:thumbnail url="https://solothought.com//assets/images/posts/fxp5_prerelease_m.webp" width="324" height="216" />
       </item>
     
   </channel>
