@@ -13,8 +13,8 @@
     <description>Collection of curated articles with in depth analysis on a topic to present a different perspective with interactive illustrations</description>
     <link>https://solothought.com/</link>
     <atom:link href="https://solothought.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 09 Sep 2024 08:47:32 +0000</pubDate>
-    <lastBuildDate>Mon, 09 Sep 2024 08:47:32 +0000</lastBuildDate>
+    <pubDate>Mon, 09 Sep 2024 09:02:55 +0000</pubDate>
+    <lastBuildDate>Mon, 09 Sep 2024 09:02:55 +0000</lastBuildDate>
     <language>en-US</language>
     <sy:updatePeriod> daily	</sy:updatePeriod>
     <sy:updateFrequency> 1 </sy:updateFrequency>
@@ -30,8 +30,8 @@
         
         <category>literature</category>
         
-        <media:thumbnail url="https://solothought.com//assets/images/posts/girl-selling-on-footpath_s.webp" width="110" height="110" />
-        <media:thumbnail url="https://solothought.com//assets/images/posts/girl-selling-on-footpath_l.webp" width="324" height="216" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/girl-selling-on-footpath_s.webp" width="110" height="110" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/girl-selling-on-footpath_l.webp" width="324" height="216" />
       </item>
     
       <item>
@@ -43,8 +43,8 @@
         
         <category>literature</category>
         
-        <media:thumbnail url="https://solothought.com//assets/images/posts/mehandi_baarish_pain-of-love_s.webp" width="110" height="110" />
-        <media:thumbnail url="https://solothought.com//assets/images/posts/mehandi_baarish_pain-of-love_m.jpg" width="324" height="216" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/mehandi_baarish_pain-of-love_s.webp" width="110" height="110" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/mehandi_baarish_pain-of-love_m.jpg" width="324" height="216" />
       </item>
     
       <item>
@@ -56,8 +56,8 @@
         
         <category>literature</category>
         
-        <media:thumbnail url="https://solothought.com//assets/images/posts/The Power Glasses_s.webp" width="110" height="110" />
-        <media:thumbnail url="https://solothought.com//assets/images/posts/The Power Glasses_m.webp" width="324" height="216" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/The Power Glasses_s.webp" width="110" height="110" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/The Power Glasses_m.webp" width="324" height="216" />
       </item>
     
       <item>
@@ -69,8 +69,8 @@
         
         <category>literature</category>
         
-        <media:thumbnail url="https://solothought.com//assets/images/posts/ocean_s.webp" width="110" height="110" />
-        <media:thumbnail url="https://solothought.com//assets/images/posts/ocean_l.webp" width="324" height="216" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/ocean_s.webp" width="110" height="110" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/ocean_l.webp" width="324" height="216" />
       </item>
     
       <item>
@@ -82,8 +82,8 @@
         
         <category>tutorial</category>
         
-        <media:thumbnail url="https://solothought.com//assets/images/posts/solothought-python-pandas-DF_s.webp" width="110" height="110" />
-        <media:thumbnail url="https://solothought.com//assets/images/posts/solothought-python-pandas-DF_l.webp" width="324" height="216" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/solothought-python-pandas-DF_s.webp" width="110" height="110" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/solothought-python-pandas-DF_l.webp" width="324" height="216" />
       </item>
     
       <item>
@@ -95,8 +95,8 @@
         
         <category>tutorial</category>
         
-        <media:thumbnail url="https://solothought.com//assets/images/posts/java-all-in-one-quickred_s.webp" width="110" height="110" />
-        <media:thumbnail url="https://solothought.com//assets/images/posts/java-all-in-one-quickred_l.webp" width="324" height="216" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/java-all-in-one-quickred_s.webp" width="110" height="110" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/java-all-in-one-quickred_l.webp" width="324" height="216" />
       </item>
     
       <item>
@@ -108,8 +108,8 @@
         
         <category>tutorial</category>
         
-        <media:thumbnail url="https://solothought.com//assets/images/posts/solothought-aws-db-quckref_s.webp" width="110" height="110" />
-        <media:thumbnail url="https://solothought.com//assets/images/posts/solothought-aws-db-quckref_l.webp" width="324" height="216" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/solothought-aws-db-quckref_s.webp" width="110" height="110" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/solothought-aws-db-quckref_l.webp" width="324" height="216" />
       </item>
     
       <item>
@@ -121,8 +121,8 @@
         
         <category>tutorial</category>
         
-        <media:thumbnail url="https://solothought.com//assets/images/posts/numpy-create_s.webp" width="110" height="110" />
-        <media:thumbnail url="https://solothought.com//assets/images/posts/numpy-selection.webp" width="324" height="216" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/numpy-create_s.webp" width="110" height="110" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/numpy-selection.webp" width="324" height="216" />
       </item>
     
       <item>
@@ -134,8 +134,8 @@
         
         <category>philosophy</category>
         
-        <media:thumbnail url="https://solothought.com//assets/images/posts/SMS_OTP_arch_thumb_s.webp" width="110" height="110" />
-        <media:thumbnail url="https://solothought.com//assets/images/posts/SMS_OTP_arch_thumb_l.webp" width="324" height="216" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/SMS_OTP_arch_thumb_s.webp" width="110" height="110" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/SMS_OTP_arch_thumb_l.webp" width="324" height="216" />
       </item>
     
       <item>
@@ -147,8 +147,8 @@
         
         <category>tutorial</category>
         
-        <media:thumbnail url="https://solothought.com//assets/images/posts/solothought-python-def_s.webp" width="110" height="110" />
-        <media:thumbnail url="https://solothought.com//assets/images/posts/solothought-python-def_l.webp" width="324" height="216" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/solothought-python-def_s.webp" width="110" height="110" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/solothought-python-def_l.webp" width="324" height="216" />
       </item>
     
   </channel>
