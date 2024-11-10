@@ -13,13 +13,26 @@
     <description>Collection of curated articles with in depth analysis on a topic to present a different perspective with interactive illustrations</description>
     <link>https://solothought.com/</link>
     <atom:link href="https://solothought.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 09 Sep 2024 09:02:55 +0000</pubDate>
-    <lastBuildDate>Mon, 09 Sep 2024 09:02:55 +0000</lastBuildDate>
+    <pubDate>Sun, 10 Nov 2024 15:50:12 +0000</pubDate>
+    <lastBuildDate>Sun, 10 Nov 2024 15:50:12 +0000</lastBuildDate>
     <language>en-US</language>
     <sy:updatePeriod> daily	</sy:updatePeriod>
     <sy:updateFrequency> 1 </sy:updateFrequency>
     <generator>Jekyll v4.3.2</generator>
 
+    
+      <item>
+        <title>Introducing Text2Chart: Transform Text into Interactive Diagrams</title>
+        <description>Create an interactive flow chart from algorithm like text. Embed on any webpage in just one line.</description>
+        <pubDate>Sun, 10 Nov 2024 00:00:00 +0000</pubDate>
+        <link>https://solothought.com/tutorial/flowchart-from-text/</link>
+        <guid isPermaLink="true">https://solothought.com/tutorial/flowchart-from-text/</guid>
+        
+        <category>tutorial</category>
+        
+        <media:thumbnail url="https://solothought.com/assets/images/posts/sampleflow_s.webp" width="110" height="110" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/sampleflow_m.webp" width="324" height="216" />
+      </item>
     
       <item>
         <title>मज़बूत कंधे</title>
@@ -136,19 +149,6 @@
         
         <media:thumbnail url="https://solothought.com/assets/images/posts/SMS_OTP_arch_thumb_s.webp" width="110" height="110" />
         <media:thumbnail url="https://solothought.com/assets/images/posts/SMS_OTP_arch_thumb_l.webp" width="324" height="216" />
-      </item>
-    
-      <item>
-        <title>Python Method - Quick Reference</title>
-        <description>(You are=not *alone **with=us)</description>
-        <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-        <link>https://solothought.com/tutorial/python-function-quick-ref/</link>
-        <guid isPermaLink="true">https://solothought.com/tutorial/python-function-quick-ref/</guid>
-        
-        <category>tutorial</category>
-        
-        <media:thumbnail url="https://solothought.com/assets/images/posts/solothought-python-def_s.webp" width="110" height="110" />
-        <media:thumbnail url="https://solothought.com/assets/images/posts/solothought-python-def_l.webp" width="324" height="216" />
       </item>
     
   </channel>

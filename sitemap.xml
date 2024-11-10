@@ -3,6 +3,19 @@
   
     
     <url>
+      <loc>https://solothought.com/tutorial/flowchart-from-text/</loc>
+      
+        <lastmod>2024-11-10T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority></url>
+    
+  
+    
+    <url>
       <loc>https://solothought.com/literature/majboot-kandhe/</loc>
       
         <lastmod>2024-09-07T00:00:00+00:00</lastmod>
@@ -255,7 +268,7 @@
       <url>
         <loc>https://solothought.com/about</loc>
         
-          <lastmod>2024-09-09T09:02:55+00:00</lastmod>
+          <lastmod>2024-11-10T15:50:12+00:00</lastmod>
         
         
           <changefreq>monthly</changefreq>
@@ -276,7 +289,7 @@
       <url>
         <loc>https://solothought.com/links</loc>
         
-          <lastmod>2024-09-09T09:02:55+00:00</lastmod>
+          <lastmod>2024-11-10T15:50:12+00:00</lastmod>
         
         
           <changefreq>monthly</changefreq>
@@ -295,7 +308,7 @@
       <url>
         <loc>https://solothought.com/privacypoicy</loc>
         
-          <lastmod>2024-09-09T09:02:55+00:00</lastmod>
+          <lastmod>2024-11-10T15:50:12+00:00</lastmod>
         
         
           <changefreq>monthly</changefreq>
@@ -314,7 +327,7 @@
       <url>
         <loc>https://solothought.com/termandconditions</loc>
         
-          <lastmod>2024-09-09T09:02:55+00:00</lastmod>
+          <lastmod>2024-11-10T15:50:12+00:00</lastmod>
         
         
           <changefreq>monthly</changefreq>
@@ -323,6 +336,8 @@
           <priority>0.5</priority>
         
        </url>
+    
+  
     
   
     
