@@ -4,8 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta property="og:image" content="https://solothought.com/assets/images/posts/SMS_OTP_arch_thumb_l.webp">
-
 <link rel="icon" href="/assets/images/icon.png">
 
 <!-- change your GA id in _config.yml -->
@@ -22,27 +20,23 @@
 
 
 
-<title>System Design to secure OTP from Eavesdropping Apps | SoloThought</title>
+<title>Better World | SoloThought</title>
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>System Design to secure OTP from Eavesdropping Apps | Solo Thought</title>
+<title>Better World | Solo Thought</title>
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="System Design to secure OTP from Eavesdropping Apps" />
-<meta name="author" content="amit" />
+<meta property="og:title" content="Better World" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Every app is reading your SMS then how to be safe" />
-<meta property="og:description" content="Every app is reading your SMS then how to be safe" />
-<link rel="canonical" href="https://solothought.com/philosophy/secure-otp-architecture/" />
-<meta property="og:url" content="https://solothought.com/philosophy/secure-otp-architecture/" />
+<meta name="description" content="Collection of curated articles with in depth analysis on a topic to present a different perspective with interactive illustrations" />
+<meta property="og:description" content="Collection of curated articles with in depth analysis on a topic to present a different perspective with interactive illustrations" />
+<link rel="canonical" href="https://solothought.com/category/better-world/" />
+<meta property="og:url" content="https://solothought.com/category/better-world/" />
 <meta property="og:site_name" content="Solo Thought" />
-<meta property="og:image" content="https://solothought.com/SecureOTP_architecture.webp" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-11-01T00:00:00+00:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://solothought.com/SecureOTP_architecture.webp" />
-<meta property="twitter:title" content="System Design to secure OTP from Eavesdropping Apps" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Better World" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"amit"},"dateModified":"2023-11-01T00:00:00+00:00","datePublished":"2023-11-01T00:00:00+00:00","description":"Every app is reading your SMS then how to be safe","headline":"System Design to secure OTP from Eavesdropping Apps","image":"https://solothought.com/SecureOTP_architecture.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://solothought.com/philosophy/secure-otp-architecture/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://solothought.com/assets/images/logo.png"},"name":"amit"},"url":"https://solothought.com/philosophy/secure-otp-architecture/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Collection of curated articles with in depth analysis on a topic to present a different perspective with interactive illustrations","headline":"Better World","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://solothought.com/assets/images/logo.png"}},"url":"https://solothought.com/category/better-world/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -61,7 +55,7 @@
 
 
 
-<body class="layout-post">
+<body class="layout-archive">
 	<!-- defer loading of font and font awesome -->
 	<noscript id="deferred-styles">
 
@@ -207,506 +201,66 @@
 </div> -->
 
 
-<div>
+<div class="container">
 
     <div id="main-content" class="main-content">
-        <!-- Begin Article
+        <!-- Begin List Posts
 ================================================== -->
-<div class="container">
-    <div class="row">
-
-        <!-- Post Share -->
-        <div class="col-md-2 pl-0">
-            <div class="share sticky-top sticky-top-offset fixed-left">
-    <p>
-        Share
-    </p>
-    <ul>
-        <li class="ms-1 me-1">
-            <a target="_blank" href="https://twitter.com/intent/tweet?text=System Design to secure OTP from Eavesdropping Apps&url=https://solothought.com/philosophy/secure-otp-architecture/" onclick="shareWith('twitter',this.href)">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </li>
-
-        <li class="ms-1 me-1">
-            <a target="_blank" href="https://facebook.com/sharer.php?u=https://solothought.com/philosophy/secure-otp-architecture/" onclick="shareWith('facebook',this.href)">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-        </li>
-
-        <li class="ms-1 me-1">
-            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https://solothought.com/philosophy/secure-otp-architecture/" onclick="shareWith('linkedin',this.href)">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-        </li>
-        
-        <li class="ms-1 me-1">
-            <a target="_blank" href="https://getpocket.com/save?url=https://solothought.com/philosophy/secure-otp-architecture/"  target="_blank" onclick="gtag('event', 'share', { 'target': 'getpocket' });">
-                <i class="fab fa-get-pocket"></i>
-            </a>
-        </li>
-
-    </ul>
-    
-    <div class="sep">
-    </div>
-    <ul>
-        <li>
-        <a class="small smoothscroll" href="#disqus_thread"></a>
-        </li>
-    </ul>
-    
+<section class="recent-posts">
+<div class="section-title">
+    <h2>Archive of posts with <span>category 'Better World'</span></h2>
 </div>
-<script>
-    function shareWith(target, url){
-        if(target === "linkedin") {window.open(url, 'width=550,height=435');return false;}
-        else if(target === "facebook" || target === "twitter"){
-            window.open(this.href, target+'-share', 'width=550,height=435');return false;
-        }
-        if(gtag){
-            gtag('event', 'share', { 'target': target });
-        }
-   }
-</script>
+<div class="row listrecent">
+
+
+
+    <!-- begin post -->
+
+
+<div class="col-lg-4 col-md-6 mb-30px card-group">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/better%20world/silent-struggles-of-women/">
+                
+                    
+                        <img class="img-fluid" src="https://solothought.com/assets/images/posts/calm_girl_l.webp" alt="Unsettled Thoughts: The Silent Struggles of Women"> 
+                    
+
+                
+            </a>
         </div>
-
-        <!-- Post -->
-        
-        
-        
-        <div class="col-md-9 flex-first flex-md-unordered">
-            <main>
-            
-            <div class="mainheading">
-                <!-- Post Title -->
-                <h1 class="posttitle">System Design to secure OTP from Eavesdropping Apps</h1>
-            </div>
-            
-            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
-            
-            <!-- End Adsense -->
-
-            <!-- Post Featured Image -->
-            
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/better%20world/silent-struggles-of-women/">Unsettled Thoughts: The Silent Struggles of Women</a>
                 
-                <!-- Display post image if it is not being displayed as hero image  -->
-                <figure>
-                    <div class="container-fluid">
-                        <div class="row">
-                        <div class="col">
-                    
-                    <img class="featured-image img-fluid d-block mx-auto" src="https://solothought.com/assets/images/posts/SecureOTP_architecture.webp" alt="System Design to secure OTP from Eavesdropping Apps">
-                    
-                            </div>
-                        </div>
-                    </div>
-                </figure>
-                
-            
-            <!-- End Featured Image -->
-
-            <!-- Post Content -->
-            <article>
-            <div class="article-post">
-                <!-- Toc if any -->
-                
-                <!-- End Toc -->
-                <p>Now a days, almost all the mobile apps ask for SMS &amp; File permissions. And this is one of the  mandaory permissions for some app to run. Some apps ask this permission so that they can fill the OTP their own so you relax for a few seconds and save your effort in typing 5-6 letters.</p>
-
-<p>But have you ever thought that if they can read one msg then they can read other messages too. And those messages can have very important information like credentials, financial information etc.</p>
-
-<p>Through this article, I’m sharing a technical thought that can stop apps asking for SMS permission for one time password only. It will also build confidence in user to use apps which requires minimum permissions.</p>
-
-<p>As you can see in the above picture, in this solution, we have a SMS Gateway that controls SMS in a device. An app that needs SMS permission to read OTP will generate an unique token and send it to it’s backend server.</p>
-
-<p>User will receive the OTP via SMS that include the unique token generated by app locally on the device. This token is also shared by the SMS controller app so that SMS controller or gateway app can share the message with the requester app.</p>
-
-<p>To extend this solo thought further, the dependency from mobile network can be removed and SMS gateway can be replaced with OTP Gateway that can be used just like OAuth works.</p>
-
-<p>If you really like this thought, please share it with others. If you’re implementing it your own, I would be happy to know about that. If you want to discuss further on this topic, let’s connect on our discussion forum.</p>
-
-                
-            </div>
-            
-            <br />
-            <div class="hr"><hr /></div>
-            <div>
-                <p>
-                    Your <a href="https://github.com/solothought/solothought.github.io/discussions/" target="_blank">feedback</a> is really important. So I can improve my future articles and correct what I have already published. You can also suggest if you want me to write an article on particular topic. 
-                    If you really like this blog, or article, please share with others. That's the only way I can buy time to write more articles.</p>
-            </div>
-
-            <!-- Rating -->
-            
-
-            <!-- Author Box -->
-            
-                <div class="row post-top-meta shadow rounded">
-    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
-        
-        <img class="author-thumb" src="https://www.gravatar.com/avatar/37060302386aaf411d69559680562234?s=250&d=mm&r=x" alt="Amit">
-        
-    </div>
-    <div class="col-xs-12 col-md-9 col-lg-10 text-md-left">
-        <a target="_blank" class="link-dark" href="https://github.com/amitguptagwl">Amit</a>
-
-        
-            
-                <a target="_blank" href="https://twitter.com/amitguptagwl" ><i class="fab fa-twitter px-2"></i></a>
-             
-            
-                <a target="_blank" href="https://www.linkedin.com/in/amitguptagwl"><i class="fab fa-linkedin px-2"></i></a>
-             
-            
-                <a target="_blank" href="https://github.com/amitguptagwl"><i class="fab fa-github px-2"></i></a>
-            
-        
-        <span class="author-description">A free-thinker who values equality, embraces creativity, and believes every problem has a solution—it's just a matter of better design.</span>
-    </div>
-</div>
-            
-            </article>
-            
-            
-            <!-- Post Date -->
-            <div class="after-post-tags clearfix">
-                <i class="fa fa-calendar-alt me-2"></i>
-                <span class="post-date"><time class="post-date" datetime="2023-11-01">01 Nov 2023</time></span>           
-                
-                <!-- Post Tags -->
-                <ul class="tags float-end">
-                    
-                    <li><i class="fas fa-tags"></i></li>
-                    
-                    <li>
-                        <a class="smoothscroll" href="/tags#architecture">#architecture</a>
-                    </li>
-                    
-                    <li>
-                        <a class="smoothscroll" href="/tags#idea">#idea</a>
-                    </li>
-                    
-                </ul>
-                <!-- End Tags -->
-            </div>
-
-            <!-- Prev/Next -->
-            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
-            
-            <a class="prev d-block col-md-6" href="//tutorial/python-function-quick-ref/"> &laquo; Python Method - Quick Reference</a>
-            
-            
-            <a class="next d-block col-md-6 text-lg-right" href="//tutorial/python-numpy/">Visual Explanation of Python NumPy Library &raquo; </a>
-            
-            <div class="clearfix"></div>
-            </div>
-            <!-- End Categories -->
-            </main>
+            </h2>
+            <h4 class="card-text">A small change can change the world ...</h4>
         </div>
-        <!-- End Post -->
-        
-    </div>
-</div>
-<!-- End Article
-================================================== -->
-<!-- Begin Comments
-================================================== -->
-
-    <div class="container">
-        <div id="comments" class="row justify-content-center mb-5">
-            <div class="col-md-8">
-                <section class="disqus"></section>
-<!-- <section class="disqus">
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        var disqus_shortname = ''; 
-        var disqus_developer = 0;
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</section> -->
-
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/37060302386aaf411d69559680562234?s=250&d=mm&r=x" alt="Amit">
+                
+                </span>
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://github.com/amitguptagwl">Amit</a></span><br/>
+                
+                <span class="post-date">18 Feb 2025</span>
+                </span>
+                <!-- <span class="post-read-more"><a href="/better%20world/silent-struggles-of-women/" title="Read Story">pagecount</a></span> -->
+                <!-- <div class="clearfix"></div> -->
             </div>
         </div>
     </div>
+</div>
+<!-- end post -->
 
-<!--End Comments
-================================================== -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-  
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-  
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-  
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-  
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-  
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-  
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-  
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-  
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-  
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-  
-    
-      
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-  
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-  
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-  
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-  
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-  
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-  
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-  
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-  
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-  
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-  
-
-  
-
-
-
-
-
-
-<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
-https://search.google.com/structured-data/testing-tool/u/0/
-================================================== -->
+</div>
+</section>
 
     </div>
 </div>
@@ -801,9 +355,7 @@ https://search.google.com/structured-data/testing-tool/u/0/
 
 <script src="/assets/js/ie10-viewport-bug-workaround.js"></script> 
 
-<!-- 
-<script id="dsq-count-scr" src="//.disqus.com/count.js"></script>
- -->
+<!--  -->
 
 <script>
     // Wait for the document to be ready
