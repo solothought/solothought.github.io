@@ -930,3 +930,39 @@ iframe {
     opacity: 0;
     transition: opacity .25s;
 }
+
+.language-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto; /* Push to the right */
+}
+
+.language-section p {
+    margin: 0 10px 0 0; /* Spacing between text and images */
+    font-size: 14px;
+    color: #666;
+}
+
+.language-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 8px; /* Spacing between language icons */
+}
+
+.language-section ul li {
+    display: inline-block;
+}
+
+.language-section ul li img {
+    width: 75px; /* Adjust size as needed */
+    height: 75px;
+    border-radius: 50%; /* Optional: Make icons circular */
+    transition: transform 0.2s ease;
+}
+
+.language-section ul li img:hover {
+    transform: scale(1.1); /* Optional: Add hover effect */
+}
