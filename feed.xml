@@ -13,13 +13,26 @@
     <description>Collection of curated articles with in depth analysis on a topic to present a different perspective with interactive illustrations</description>
     <link>https://solothought.com/</link>
     <atom:link href="https://solothought.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 27 Feb 2025 03:03:24 +0000</pubDate>
-    <lastBuildDate>Thu, 27 Feb 2025 03:03:24 +0000</lastBuildDate>
+    <pubDate>Tue, 06 May 2025 12:49:32 +0000</pubDate>
+    <lastBuildDate>Tue, 06 May 2025 12:49:32 +0000</lastBuildDate>
     <language>en-US</language>
     <sy:updatePeriod> daily	</sy:updatePeriod>
     <sy:updateFrequency> 1 </sy:updateFrequency>
     <generator>Jekyll v4.3.2</generator>
 
+    
+      <item>
+        <title>Break the Chains: Women’s Defiance Against Blackmail and Exploitation</title>
+        <description>You can stop it ...</description>
+        <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
+        <link>https://solothought.com/rethink/break_the_chains_of_blackmail/</link>
+        <guid isPermaLink="true">https://solothought.com/rethink/break_the_chains_of_blackmail/</guid>
+        
+        <category>rethink</category>
+        
+        <media:thumbnail url="https://solothought.com/assets/images/posts/The_predators_chain_s.webp" width="110" height="110" />
+        <media:thumbnail url="https://solothought.com/assets/images/posts/The_predators_chain_l.webp" width="324" height="216" />
+      </item>
     
       <item>
         <title>मौन संघर्ष</title>
@@ -136,19 +149,6 @@
         
         <media:thumbnail url="https://solothought.com/assets/images/posts/java-all-in-one-quickred_s.webp" width="110" height="110" />
         <media:thumbnail url="https://solothought.com/assets/images/posts/java-all-in-one-quickred_l.webp" width="324" height="216" />
-      </item>
-    
-      <item>
-        <title>AWS Database - Quick Reference Mindmap</title>
-        <description>A Quick reference visual guide to take decision for a AWS database</description>
-        <pubDate>Thu, 23 Nov 2023 00:00:00 +0000</pubDate>
-        <link>https://solothought.com/tutorial/aws-database-decision-tree-mindmap/</link>
-        <guid isPermaLink="true">https://solothought.com/tutorial/aws-database-decision-tree-mindmap/</guid>
-        
-        <category>tutorial</category>
-        
-        <media:thumbnail url="https://solothought.com/assets/images/posts/solothought-aws-db-quckref_s.webp" width="110" height="110" />
-        <media:thumbnail url="https://solothought.com/assets/images/posts/solothought-aws-db-quckref_l.webp" width="324" height="216" />
       </item>
     
   </channel>
