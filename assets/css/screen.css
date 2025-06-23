@@ -966,3 +966,8 @@ iframe {
 .language-section ul li img:hover {
     transform: scale(1.1); /* Optional: Add hover effect */
 }
+
+.highlight-b{
+    border: 4px solid rebeccapurple;
+    border-radius: 10px;
+}
