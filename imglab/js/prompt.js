@@ -21,12 +21,12 @@ const ads = [
       alt: 'Wishin Product'
     },
     {
-      image: 'https://solothought.com/products/assets/images/wishin/old-habit.png',
+      image: 'https://solothought.com/products/assets/images/wishin/old-habit.jpg',
       url: 'https://play.google.com/store/apps/details?id=com.solothought.wishin',
       alt: 'Wishin Product'
     },
     {
-      image: 'https://solothought.com/products/assets/images/wishin/reason-for-habit.png',
+      image: 'https://solothought.com/products/assets/images/wishin/reason-for-habit.jpg',
       url: 'https://play.google.com/store/apps/details?id=com.solothought.wishin',
       alt: 'Wishin Product'
     },
@@ -44,9 +44,10 @@ function getRandomAd() {
 
 // Function to check if ad should be shown today
 function shouldShowAd() {
-  const lastShown = localStorage.getItem('adLastShown');
-  const today = new Date().toDateString();
-  return lastShown !== today;
+  // const lastShown = localStorage.getItem('adLastShown');
+  // const today = new Date().toDateString();
+  // return lastShown !== today;
+  return true;
 }
 
 // Function to show the ad popup
