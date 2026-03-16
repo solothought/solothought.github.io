@@ -13,13 +13,39 @@
     <description>Collection of curated articles with in depth analysis on a topic to present a different perspective with interactive illustrations</description>
     <link>https://solothought.com/</link>
     <atom:link href="https://solothought.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 15 Feb 2026 10:06:11 +0000</pubDate>
-    <lastBuildDate>Sun, 15 Feb 2026 10:06:11 +0000</lastBuildDate>
+    <pubDate>Mon, 16 Mar 2026 06:25:24 +0000</pubDate>
+    <lastBuildDate>Mon, 16 Mar 2026 06:25:24 +0000</lastBuildDate>
     <language>en-US</language>
     <sy:updatePeriod> daily	</sy:updatePeriod>
     <sy:updateFrequency> 1 </sy:updateFrequency>
     <generator>Jekyll v4.3.2</generator>
 
+    
+      <item>
+        <title>Truth (Ghajal)</title>
+        <description>क्या ही कह दिया कि मैं रह ना सका</description>
+        <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+        <link>https://solothought.com/literature/truth-ghajal/</link>
+        <guid isPermaLink="true">https://solothought.com/literature/truth-ghajal/</guid>
+        
+        <category>literature</category>
+        
+        <media:thumbnail url="" width="110" height="110" />
+        <media:thumbnail url="" width="324" height="216" />
+      </item>
+    
+      <item>
+        <title>Do we have a free will?</title>
+        <description>Do you think you&apos;re reading this post by your own independent choice?</description>
+        <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
+        <link>https://solothought.com/literature/no-free-will/</link>
+        <guid isPermaLink="true">https://solothought.com/literature/no-free-will/</guid>
+        
+        <category>literature</category>
+        
+        <media:thumbnail url="" width="110" height="110" />
+        <media:thumbnail url="" width="324" height="216" />
+      </item>
     
       <item>
         <title>Break the Chains: Women’s Defiance Against Blackmail and Exploitation</title>
@@ -123,32 +149,6 @@
         
         <media:thumbnail url="https://solothought.com/assets/images/posts/ocean_s.webp" width="110" height="110" />
         <media:thumbnail url="https://solothought.com/assets/images/posts/ocean_l.webp" width="324" height="216" />
-      </item>
-    
-      <item>
-        <title>Visual Explanation of Python Panda Library</title>
-        <description>From basics but covers a lot about Panda&apos;s APIs. Use it as a quick reference or detail explanation.</description>
-        <pubDate>Sat, 02 Dec 2023 00:00:00 +0000</pubDate>
-        <link>https://solothought.com/tutorial/python-pandas-visual/</link>
-        <guid isPermaLink="true">https://solothought.com/tutorial/python-pandas-visual/</guid>
-        
-        <category>tutorial</category>
-        
-        <media:thumbnail url="https://solothought.com/assets/images/posts/solothought-python-pandas-DF_s.webp" width="110" height="110" />
-        <media:thumbnail url="https://solothought.com/assets/images/posts/solothought-python-pandas-DF_l.webp" width="324" height="216" />
-      </item>
-    
-      <item>
-        <title>Java concepts - all in one chart</title>
-        <description>Find all basic concepts of Java language upto Java 17 in single chart</description>
-        <pubDate>Sat, 25 Nov 2023 00:00:00 +0000</pubDate>
-        <link>https://solothought.com/tutorial/java-all-in-one/</link>
-        <guid isPermaLink="true">https://solothought.com/tutorial/java-all-in-one/</guid>
-        
-        <category>tutorial</category>
-        
-        <media:thumbnail url="https://solothought.com/assets/images/posts/java-all-in-one-quickred_s.webp" width="110" height="110" />
-        <media:thumbnail url="https://solothought.com/assets/images/posts/java-all-in-one-quickred_l.webp" width="324" height="216" />
       </item>
     
   </channel>
